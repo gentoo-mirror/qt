@@ -12,11 +12,12 @@ if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc64 ~x86"
 fi
 
-# TODO: directfb, linuxfb, offscreen (auto-depends on X11)
+# TODO: directfb, linuxfb
 
 IUSE="accessibility dbus egl eglfs evdev +gif gles2 gtkstyle
 	ibus jpeg libinput +png tslib tuio +udev +xcb"
 REQUIRED_USE="
+	|| ( eglfs xcb )
 	accessibility? ( dbus xcb )
 	egl? ( evdev )
 	eglfs? ( egl )
@@ -53,8 +54,8 @@ RDEPEND="
 	xcb? (
 		x11-libs/libICE
 		x11-libs/libSM
-		>=x11-libs/libX11-1.5
-		>=x11-libs/libXi-1.6
+		x11-libs/libX11
+		>=x11-libs/libXi-1.7.4
 		x11-libs/libXrender
 		>=x11-libs/libxcb-1.10:=[xkb]
 		>=x11-libs/libxkbcommon-0.4.1[X]
