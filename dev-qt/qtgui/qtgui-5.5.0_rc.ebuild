@@ -12,16 +12,16 @@ if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc64 ~x86"
 fi
 
-# TODO: directfb, linuxfb, offscreen (auto-depends on X11), libinput
+# TODO: directfb, linuxfb, offscreen (auto-depends on X11)
 
-IUSE="accessibility dbus egl eglfs evdev +gif gles2 gtkstyle +harfbuzz
-	ibus jpeg kms +png tslib tuio udev +xcb"
+IUSE="accessibility dbus egl eglfs evdev +gif gles2 gtkstyle
+	ibus jpeg libinput +png tslib tuio +udev +xcb"
 REQUIRED_USE="
 	accessibility? ( dbus xcb )
 	egl? ( evdev )
 	eglfs? ( egl )
 	ibus? ( dbus )
-	kms? ( egl gles2 )
+	libinput? ( udev )
 "
 
 RDEPEND="
@@ -29,6 +29,7 @@ RDEPEND="
 	~dev-qt/qtcore-${PV}
 	media-libs/fontconfig
 	>=media-libs/freetype-2.5.5:2
+	>=media-libs/harfbuzz-0.9.40:=
 	>=sys-libs/zlib-1.2.5
 	virtual/opengl
 	dbus? ( ~dev-qt/qtdbus-${PV} )
@@ -40,12 +41,10 @@ RDEPEND="
 		!!x11-libs/cairo[qt4]
 	)
 	gles2? ( media-libs/mesa[gles2] )
-	harfbuzz? ( >=media-libs/harfbuzz-0.9.40:= )
 	jpeg? ( virtual/jpeg:0 )
-	kms? (
-		media-libs/mesa[gbm]
-		virtual/libudev:=
-		x11-libs/libdrm
+	libinput? (
+		dev-libs/libinput:=
+		x11-libs/libxkbcommon
 	)
 	png? ( media-libs/libpng:0= )
 	tslib? ( x11-libs/tslib )
@@ -67,7 +66,7 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}
 	evdev? ( sys-kernel/linux-headers )
-	test? ( ~dev-qt/qtnetwork-${PV} )
+	udev? ( sys-kernel/linux-headers )
 "
 PDEPEND="
 	ibus? ( app-i18n/ibus )
@@ -100,11 +99,12 @@ QT5_GENTOO_CONFIG=(
 	gtkstyle:gtkstyle:
 	gtkstyle:gtk2:STYLE_GTK
 	!:no-gui:
-	harfbuzz:system-harfbuzz:HARFBUZZ
-	!harfbuzz:no-harfbuzz:
+	:system-harfbuzz:HARFBUZZ
+	!:no-harfbuzz:
 	jpeg:system-jpeg:IMAGEFORMAT_JPEG
 	!jpeg:no-jpeg:
-	kms:kms:
+	libinput
+	libinput:xkbcommon-evdev:
 	:opengl
 	png:png:
 	png:system-png:IMAGEFORMAT_PNG
@@ -150,9 +150,10 @@ src_configure() {
 		-system-freetype
 		$(usex gif '' -no-gif)
 		$(qt_use gtkstyle)
-		$(qt_use harfbuzz harfbuzz system)
+		-system-harfbuzz
 		$(qt_use jpeg libjpeg system)
-		$(qt_use kms)
+		$(qt_use libinput)
+		$(qt_use libinput xkbcommon-evdev)
 		-opengl $(usex gles2 es2 desktop)
 		$(qt_use png libpng system)
 		$(qt_use tslib)
