@@ -1,0 +1,11 @@
+_eclasses_=qmake-utils	95a3c468e79603f6094c5433ca4e5716	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=1ba9cca5820018a7a7a9e5f3e624f416
+SLOT=0
+DEFINED_PHASES=compile install test unpack
+EAPI=5
+DEPEND=qt5? ( test? ( dev-qt/qtcore:5 dev-qt/qttest:5 ) ) >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Qt4/Qt5 version chooser
+LICENSE=|| ( LGPL-2.1 GPL-3 )
+IUSE=qt5 test
+HOMEPAGE=https://code.qt.io/cgit/qt/qtchooser.git/
+RDEPEND=!<dev-qt/assistant-4.8.6:4 !<dev-qt/designer-4.8.6:4 !<dev-qt/linguist-4.8.6:4 !<dev-qt/pixeltool-4.8.6:4 !<dev-qt/qdbusviewer-4.8.6:4 !<dev-qt/qt3support-4.8.6:4 !<dev-qt/qtbearer-4.8.6:4 !<dev-qt/qtcore-4.8.6:4 !<dev-qt/qtdbus-4.8.6:4 !<dev-qt/qtdeclarative-4.8.6:4 !<dev-qt/qtdemo-4.8.6:4 !<dev-qt/qtgui-4.8.6:4 !<dev-qt/qthelp-4.8.6:4 !<dev-qt/qtmultimedia-4.8.6:4 !<dev-qt/qtopengl-4.8.6:4 !<dev-qt/qtopenvg-4.8.6:4 !<dev-qt/qtphonon-4.8.6:4 !<dev-qt/qtscript-4.8.6:4 !<dev-qt/qtsql-4.8.6:4 !<dev-qt/qtsvg-4.8.6:4 !<dev-qt/qttest-4.8.6:4 !<dev-qt/qtwebkit-4.8.6:4 !<dev-qt/qtxmlpatterns-4.8.6:4

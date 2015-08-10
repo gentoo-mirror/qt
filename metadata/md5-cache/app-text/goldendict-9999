@@ -1,0 +1,11 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	95a3c468e79603f6094c5433ca4e5716	base	84d9f879f57a8316ff02be0373a3d6f9	qt4-r2	6f521eb13f72077a69d410eedc7429c2	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=94f954488cd845f250e521bbd76798e4
+SLOT=0
+DEFINED_PHASES=compile configure install prepare unpack
+EAPI=5
+DEPEND=>=app-text/hunspell-1.2 dev-libs/eb dev-qt/qtsingleapplication media-libs/libao media-libs/libogg media-libs/libvorbis sys-libs/zlib x11-libs/libXtst >=dev-qt/qtcore-4.5:4[exceptions] >=dev-qt/qthelp-4.5:4[exceptions] >=dev-qt/qtgui-4.5:4[exceptions] >=dev-qt/qtwebkit-4.5:4[exceptions] !kde? ( || ( >=dev-qt/qtphonon-4.5:4[exceptions] media-libs/phonon[qt4] ) ) kde? ( media-libs/phonon ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1
+DESCRIPTION=Feature-rich dictionary lookup program
+LICENSE=GPL-3
+IUSE=debug kde linguas_ar linguas_bg linguas_cs linguas_de linguas_el linguas_lt linguas_ru linguas_zh
+HOMEPAGE=http://goldendict.org/
+RDEPEND=>=app-text/hunspell-1.2 dev-libs/eb dev-qt/qtsingleapplication media-libs/libao media-libs/libogg media-libs/libvorbis sys-libs/zlib x11-libs/libXtst >=dev-qt/qtcore-4.5:4[exceptions] >=dev-qt/qthelp-4.5:4[exceptions] >=dev-qt/qtgui-4.5:4[exceptions] >=dev-qt/qtwebkit-4.5:4[exceptions] !kde? ( || ( >=dev-qt/qtphonon-4.5:4[exceptions] media-libs/phonon[qt4] ) ) kde? ( media-libs/phonon )
