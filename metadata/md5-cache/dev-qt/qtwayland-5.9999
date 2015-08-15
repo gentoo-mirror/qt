@@ -1,11 +1,11 @@
-_eclasses_=virtualx	7d550983f9b6adb3e7091f4090ddae2f	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	qt5-build	1fc5dd32d78df25aa22d256dd700bf8a	flag-o-matic	2090c5a622458303e6bf68837ac6b96	git-r3	1502b9838d043db47700b8120083e637	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	eutils	351a78113be5b393c09a2c948701ad36
-_md5_=fb2ef22137e5f5b36c7935861c4fd1ba
-SLOT=5/5.9999
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
-EAPI=5
 DEPEND=>=dev-libs/wayland-1.4.0 >=dev-qt/qtcore-5.9999:5 >=dev-qt/qtgui-5.9999:5[egl=] media-libs/mesa[egl?] >=x11-libs/libxkbcommon-0.2.0 qml? ( >=dev-qt/qtdeclarative-5.9999:5 ) xcomposite? ( x11-libs/libX11 x11-libs/libXcomposite ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost ) >=dev-vcs/git-1.8.2.1 dev-lang/perl virtual/pkgconfig test? ( >=dev-qt/qttest-5.9999:5 )
 DESCRIPTION=Wayland platform plugin for Qt
-LICENSE=|| ( LGPL-2.1 LGPL-3 ) FDL-1.3
-IUSE=egl qml wayland-compositor xcomposite test debug test
+EAPI=5
 HOMEPAGE=https://www.qt.io/
+IUSE=egl qml wayland-compositor xcomposite test debug test
+LICENSE=|| ( LGPL-2.1 LGPL-3 ) FDL-1.3
 RDEPEND=>=dev-libs/wayland-1.4.0 >=dev-qt/qtcore-5.9999:5 >=dev-qt/qtgui-5.9999:5[egl=] media-libs/mesa[egl?] >=x11-libs/libxkbcommon-0.2.0 qml? ( >=dev-qt/qtdeclarative-5.9999:5 ) xcomposite? ( x11-libs/libX11 x11-libs/libXcomposite ) dev-qt/qtchooser
+SLOT=5/5.9999
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	02090c5a622458303e6bf68837ac6b96	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qt5-build	1fc5dd32d78df25aa22d256dd700bf8a	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	7d550983f9b6adb3e7091f4090ddae2f
+_md5_=fb2ef22137e5f5b36c7935861c4fd1ba

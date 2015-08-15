@@ -1,11 +1,11 @@
-_eclasses_=qmake-utils	95a3c468e79603f6094c5433ca4e5716	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	l10n	714aaf78929eade946da5eaff7d2001a	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	git-2	1bb87192831f668cd20d93ffb1689c94	base	84d9f879f57a8316ff02be0373a3d6f9	qt4-r2	6f521eb13f72077a69d410eedc7429c2	eutils	351a78113be5b393c09a2c948701ad36
-_md5_=bb5c09f86d59aec9190a18ceb3739756
-SLOT=0
 DEFINED_PHASES=compile configure install prepare unpack
-EAPI=5
 DEPEND=>=dev-qt/qtcore-4.7:4 >=dev-qt/qtgui-4.7:4 >=dev-qt/qtscript-4.7:4 >=dev-qt/qtsql-4.7:4 >=dev-qt/qtwebkit-4.7:4 dbus? ( >=dev-qt/qtdbus-4.7:4 ) dev-vcs/git
 DESCRIPTION=Qt WebKit web browser
-LICENSE=GPL-3
-IUSE=dbus debug kde nonblockdialogs linguas_ar_SA linguas_bg_BG linguas_ca_ES linguas_cs_CZ linguas_de_DE linguas_el_GR linguas_es_ES linguas_es_MX linguas_es_VE linguas_eu_ES linguas_fa_IR linguas_fi_FI linguas_fr_FR linguas_gl_ES linguas_he_IL linguas_hu_HU linguas_id_ID linguas_it_IT linguas_ja_JP linguas_ka_GE linguas_lg linguas_lv_LV linguas_nl_NL linguas_nqo linguas_pl_PL linguas_pt_BR linguas_pt_PT linguas_ro_RO linguas_ru_RU linguas_sk_SK linguas_sr@ijekavianlatin linguas_sr@ijekavian linguas_sr@latin linguas_sr linguas_sv_SE linguas_tr_TR linguas_uk_UA linguas_uz@Latn linguas_zh_CN linguas_zh_TW
+EAPI=5
 HOMEPAGE=http://www.qupzilla.com/
+IUSE=dbus debug kde nonblockdialogs linguas_ar_SA linguas_bg_BG linguas_ca_ES linguas_cs_CZ linguas_de_DE linguas_el_GR linguas_es_ES linguas_es_MX linguas_es_VE linguas_eu_ES linguas_fa_IR linguas_fi_FI linguas_fr_FR linguas_gl_ES linguas_he_IL linguas_hu_HU linguas_id_ID linguas_it_IT linguas_ja_JP linguas_ka_GE linguas_lg linguas_lv_LV linguas_nl_NL linguas_nqo linguas_pl_PL linguas_pt_BR linguas_pt_PT linguas_ro_RO linguas_ru_RU linguas_sk_SK linguas_sr@ijekavianlatin linguas_sr@ijekavian linguas_sr@latin linguas_sr linguas_sv_SE linguas_tr_TR linguas_uk_UA linguas_uz@Latn linguas_zh_CN linguas_zh_TW
+LICENSE=GPL-3
 RDEPEND=>=dev-qt/qtcore-4.7:4 >=dev-qt/qtgui-4.7:4 >=dev-qt/qtscript-4.7:4 >=dev-qt/qtsql-4.7:4 >=dev-qt/qtwebkit-4.7:4 dbus? ( >=dev-qt/qtdbus-4.7:4 )
+SLOT=0
+_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	351a78113be5b393c09a2c948701ad36	git-2	1bb87192831f668cd20d93ffb1689c94	l10n	714aaf78929eade946da5eaff7d2001a	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	95a3c468e79603f6094c5433ca4e5716	qt4-r2	6f521eb13f72077a69d410eedc7429c2	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+_md5_=bb5c09f86d59aec9190a18ceb3739756

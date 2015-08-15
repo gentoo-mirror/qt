@@ -1,11 +1,11 @@
-_eclasses_=subversion	d11b897c0c78e23413f0af0959ec6b92	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	95a3c468e79603f6094c5433ca4e5716	base	84d9f879f57a8316ff02be0373a3d6f9	qt4-r2	6f521eb13f72077a69d410eedc7429c2	eutils	351a78113be5b393c09a2c948701ad36
-_md5_=e9f988619e45f2bb9b1a886a5efbb231
-SLOT=0
 DEFINED_PHASES=compile configure install preinst prepare unpack
-EAPI=5
 DEPEND=app-arch/unzip dev-qt/qtgui:4 || ( dev-vcs/subversion[http] dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=Download (and convert) videos from various Web Video Services
-LICENSE=GPL-3
-IUSE=debug linguas_br linguas_ca linguas_cs linguas_da linguas_de linguas_es linguas_fr linguas_gl linguas_hu linguas_it linguas_ja linguas_ko linguas_nl linguas_pl linguas_ro linguas_ru linguas_sv
+EAPI=5
 HOMEPAGE=http://xviservicethief.sourceforge.net/
+IUSE=debug linguas_br linguas_ca linguas_cs linguas_da linguas_de linguas_es linguas_fr linguas_gl linguas_hu linguas_it linguas_ja linguas_ko linguas_nl linguas_pl linguas_ro linguas_ru linguas_sv
+LICENSE=GPL-3
 RDEPEND=dev-qt/qtgui:4 media-video/ffmpeg media-video/flvstreamer
+SLOT=0
+_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	95a3c468e79603f6094c5433ca4e5716	qt4-r2	6f521eb13f72077a69d410eedc7429c2	subversion	d11b897c0c78e23413f0af0959ec6b92	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=e9f988619e45f2bb9b1a886a5efbb231
