@@ -7,5 +7,5 @@ IUSE=debug kde linguas_ar linguas_bg linguas_cs linguas_de linguas_el linguas_lt
 LICENSE=GPL-3
 RDEPEND=>=app-text/hunspell-1.2 dev-libs/eb dev-qt/qtsingleapplication media-libs/libao media-libs/libogg media-libs/libvorbis sys-libs/zlib x11-libs/libXtst >=dev-qt/qtcore-4.5:4[exceptions] >=dev-qt/qthelp-4.5:4[exceptions] >=dev-qt/qtgui-4.5:4[exceptions] >=dev-qt/qtwebkit-4.5:4[exceptions] !kde? ( || ( >=dev-qt/qtphonon-4.5:4[exceptions] media-libs/phonon[qt4] ) ) kde? ( media-libs/phonon )
 SLOT=0
-_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	351a78113be5b393c09a2c948701ad36	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	95613dd6157fb4a3b225eafdc56bd441	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	1dfcad7b3f439dbc511d76c49f23da0d
 _md5_=eb76f11979fd592a08082258b39eebd7
