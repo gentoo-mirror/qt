@@ -9,7 +9,7 @@ inherit qt5-build
 DESCRIPTION="Bluetooth support library for the Qt5 framework"
 
 if [[ ${QT5_BUILD_TYPE} == release ]]; then
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~arm ~x86"
 fi
 
 IUSE="qml"
@@ -22,6 +22,7 @@ RDEPEND="
 	qml? ( >=dev-qt/qtdeclarative-${PV}:5 )
 "
 DEPEND="${RDEPEND}
+	>=dev-qt/qtnetwork-${PV}:5
 	virtual/pkgconfig
 "
 
