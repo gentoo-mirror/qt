@@ -1,10 +1,10 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-qt/linguist-tools:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 kde-frameworks/solid:5 ~lxqt-base/liblxqt-9999 >=dev-libs/libqtxdg-1.0.0 x11-libs/libX11 x11-libs/libxcb:= virtual/pkgconfig sys-devel/make >=dev-util/cmake-2.8.12 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=dev-vcs/git-1.8.2.1
+DEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 kde-frameworks/solid:5 ~lxqt-base/liblxqt-9999 >=dev-libs/libqtxdg-1.0.0 x11-libs/libX11 x11-libs/libxcb:= dev-qt/linguist-tools:5 virtual/pkgconfig sys-devel/make >=dev-util/cmake-2.8.12 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) >=dev-vcs/git-1.8.2.1
 DESCRIPTION=LXQt daemon for power management and auto-suspend
 EAPI=5
 HOMEPAGE=http://lxqt.org/
 LICENSE=GPL-2 LGPL-2.1+
-RDEPEND=dev-qt/linguist-tools:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 kde-frameworks/solid:5 ~lxqt-base/liblxqt-9999 >=dev-libs/libqtxdg-1.0.0 x11-libs/libX11 x11-libs/libxcb:= || ( sys-power/upower sys-power/upower-pm-utils )
+RDEPEND=dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtsvg:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 kde-frameworks/solid:5 ~lxqt-base/liblxqt-9999 >=dev-libs/libqtxdg-1.0.0 x11-libs/libX11 x11-libs/libxcb:= || ( sys-power/upower sys-power/upower-pm-utils )
 SLOT=0
 _eclasses_=cmake-utils	f474224ef49d530640a43a04ae94928e	eutils	43da5163ba106e87d22d2e7d6d67537f	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	git-r3	1502b9838d043db47700b8120083e637	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	1dfcad7b3f439dbc511d76c49f23da0d
-_md5_=d5576b43cb57d83a4e4ff03fc1f55c78
+_md5_=42bced7d084367ce2659d5aa9279d081
