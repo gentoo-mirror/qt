@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=x11-libs/libXcursor x11-libs/libXfixes dev-qt/qtgui:4 dev-vcs/git
+DEPEND=dev-qt/qtgui:4 x11-libs/libXcursor x11-libs/libXfixes dev-vcs/git
 DESCRIPTION=Qt utility to change Xcrusor themes without restarting X Server.
-EAPI=4
+EAPI=5
 HOMEPAGE=http://gitorious.org/qt-xcurtheme
 IUSE=tools
 LICENSE=GPL-2 WTFPL-2
-RDEPEND=x11-libs/libXcursor x11-libs/libXfixes dev-qt/qtgui:4
+RDEPEND=dev-qt/qtgui:4 x11-libs/libXcursor x11-libs/libXfixes
 SLOT=0
 _eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	43da5163ba106e87d22d2e7d6d67537f	git-2	1bb87192831f668cd20d93ffb1689c94	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	1dfcad7b3f439dbc511d76c49f23da0d
-_md5_=e08b038c4563a803dcb4fc97f3c7f473
+_md5_=1756b9105c833a06de196234d6ee89a8
