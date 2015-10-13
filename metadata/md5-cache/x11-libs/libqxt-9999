@@ -7,5 +7,5 @@ IUSE=berkdb debug doc sql ssl web xscreensaver zeroconf
 LICENSE=|| ( CPL-1.0 LGPL-2.1 )
 RDEPEND=x11-libs/libXrandr dev-qt/qtcore:4 dev-qt/qtgui:4 berkdb? ( >=sys-libs/db-4.6 ) sql? ( dev-qt/qtsql:4 ) ssl? ( >=dev-libs/openssl-0.9.8 dev-qt/qtcore:4[ssl] ) zeroconf? ( net-dns/avahi[mdnsresponder-compat] ) xscreensaver? ( x11-libs/libXScrnSaver )
 SLOT=0
-_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	43da5163ba106e87d22d2e7d6d67537f	git-2	1bb87192831f668cd20d93ffb1689c94	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	1dfcad7b3f439dbc511d76c49f23da0d
+_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	43da5163ba106e87d22d2e7d6d67537f	git-2	1bb87192831f668cd20d93ffb1689c94	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=866b607e2e661686bb8947cd0f910aa2
