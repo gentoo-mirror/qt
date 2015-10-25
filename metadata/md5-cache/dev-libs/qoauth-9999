@@ -7,5 +7,5 @@ IUSE=debug doc static-libs test
 LICENSE=LGPL-2.1
 RDEPEND=app-crypt/qca:2[debug?,qt4(+)] || ( app-crypt/qca-ossl:2[debug?] app-crypt/qca:2[debug?,openssl] )
 SLOT=0
-_eclasses_=base	9fc6743731ec1d8d8a5eb88ccd5944b6	eutils	43da5163ba106e87d22d2e7d6d67537f	git-2	1bb87192831f668cd20d93ffb1689c94	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=base	9fc6743731ec1d8d8a5eb88ccd5944b6	eutils	43da5163ba106e87d22d2e7d6d67537f	git-2	32530738ee006bc09e1ac93f6e73d719	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=f899739a5dcae99e6e69fc2a6a9eafc1
