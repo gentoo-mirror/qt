@@ -1,6 +1,5 @@
 app-admin/keepassx 9999: Qt password manager compatible with its Win32 and Pocket PC versions
 app-admin/qgrubeditor 2.5.0: QGRUBEditor is a system tool to view and edit the GRUB boot loader
-app-crypt/pinentry 9999: Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
