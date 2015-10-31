@@ -4,7 +4,6 @@ app-crypt/pinentry 9999: Collection of simple PIN or passphrase entry dialogs wh
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
-app-laptop/batterymeter 0.2: Simple battery state program
 app-text/coolreader3 9999: ebook reader
 app-text/goldendict 9999: Feature-rich dictionary lookup program
 dev-games/tiled 9999: A general purpose tile map editor.
@@ -92,7 +91,6 @@ lxqt-base/lxqt-session 9999: LXQT session manager
 mail-client/imapquickcheck 1.3-r1: Lightweight systray IMAP mail checker
 media-gfx/lximage-qt 9999: LXImage Image Viewer - GPicView replacement
 media-gfx/phototonic 9999: Image viewer and organizer
-media-gfx/qosmic 9999: A cosmic recursive flame fractal editor
 media-sound/kajammer 0.9.3-r1: Simple Qt audio player
 media-sound/mp3diags 9999: Qt-based MP3 diagnosis and repair tool
 media-sound/qpitch 9999: A program to tune musical instruments using Qt4
@@ -102,14 +100,12 @@ media-video/minitube 9999: Qt4 YouTube Client
 media-video/prismatik 5.10.6: Prismatik is an open-source software to control Lightpack devices
 media-video/xvideoservicethief 9999: Download (and convert) videos from various Web Video Services
 net-im/qtwitter 9999: A Qt-based microblogging client
-net-im/qwit 9999: Qt4 cross-platform client for Twitter
 net-libs/qmf 9999: The Qt Messaging Framework
 net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
 net-misc/kontrolpack 3.0.0: Remote shell command executor and LAN manager
 net-misc/mediadownloader 1.5.2: Qt4 application for searching, watching and downloading items with Google Images and YouTube
 net-misc/networkled 9999: Qt4 network traffic monitor running on system tray
 net-misc/qconnman 9999: Qt4 Connman Applet
-net-misc/qrdc 9999: Small RDC client
 sci-calculators/speedcrunch 9999: A fast and usable calculator for power users
 sys-auth/qauth 9999: User authentication library for Qt
 www-client/qupzilla 9999: Qt WebKit web browser
@@ -119,7 +115,6 @@ x11-misc/compton-conf 9999: LXDE-Qt Compton Composite configuration tools
 x11-misc/obconf-qt 9999: Openbox window manager configuration tool
 x11-misc/pcmanfm-qt 9999: Fast lightweight tabbed filemanager (Qt port)
 x11-misc/ptbatterysystemtray 9999: A simple battery monitor in the system tray
-x11-misc/qxkb 9999: Qt4-based keyboard layout switcher
 x11-misc/sddm 9999: Simple Desktop Display Manager
 x11-terms/qterminal 9999: Qt-based multitab terminal emulator
 x11-themes/qt-gtk-engine 9999: LXDE-Qt GTK3 to QT Rendering Engine
