@@ -52,6 +52,7 @@ dev-qt/qtquickcontrols 5.5.9999 5.6.9999 5.9999: Set of controls used in conjunc
 dev-qt/qtscript 4.8.9999 5.5.9999 5.6.9999 5.9999: Application scripting library for the Qt5 framework (deprecated)
 dev-qt/qtsensors 5.5.9999 5.6.9999 5.9999: Hardware sensor access library for the Qt5 framework
 dev-qt/qtserialport 5.5.9999 5.6.9999 5.9999: Serial port abstraction library for the Qt5 framework
+dev-qt/qtspeech 5.9999: Text-to-speech library for the Qt5 framework
 dev-qt/qtsql 4.8.9999 5.5.9999 5.6.9999 5.9999: SQL abstraction library for the Qt5 tooolkit
 dev-qt/qtsvg 4.8.9999 5.5.9999 5.6.9999 5.9999: SVG rendering library for the Qt5 framework
 dev-qt/qttest 4.8.9999 5.5.9999 5.6.9999 5.9999: Unit testing library for the Qt5 framework
