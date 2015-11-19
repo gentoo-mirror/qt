@@ -3,7 +3,7 @@
 # $Id$
 
 EAPI=5
-inherit cmake-utils
+inherit cmake-utils virtualx
 
 DESCRIPTION="A Qt implementation of XDG standards"
 HOMEPAGE="http://lxqt.org/"
@@ -37,8 +37,11 @@ RDEPEND="${CDEPEND}
 
 src_configure() {
 	local mycmakeargs=(
-		-DUSE_QT4=OFF
-		$(cmake-utils_use_build test TESTS)
+		-DBUILD_TESTS=$(usex test)
 	)
 	cmake-utils_src_configure
+}
+
+src_test() {
+	VIRTUALX_COMMAND="cmake-utils_src_test" virtualmake
 }
