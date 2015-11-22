@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-arch/gzip media-gfx/imagemagick dev-qt/qtcore:4 dev-qt/qtgui:4 || ( sys-boot/grub sys-boot/grub-static )
 SLOT=0
 SRC_URI=http://qt-apps.org/CONTENT/content-files/60391-QGRUBEditor-2.5.0-src.tar.bz2
-_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	f813d23e417656bf3917483643165d5a	multilib	3972ca401cf7dbb430df9995f5d8d580	qmake-utils	05b63bb5c708c5903a9de5c58c8e43c8	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	f813d23e417656bf3917483643165d5a	multilib	3972ca401cf7dbb430df9995f5d8d580	qmake-utils	bd69cb386c63df4642cf1392b50c8d81	qt4-r2	92e03f6cbfe7e1721a53db20cc00cf0a	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=38e2c5ceb18332790feb780ed79abd3c
