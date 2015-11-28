@@ -58,10 +58,10 @@ dev-qt/qtsvg 4.8.9999 5.5.9999 5.6.9999 5.9999: SVG rendering library for the Qt
 dev-qt/qttest 4.8.9999 5.5.9999 5.6.9999 5.9999: Unit testing library for the Qt5 framework
 dev-qt/qttranslations 4.8.9999 5.5.9999 5.6.9999 5.9999: Translation files for the Qt5 framework
 dev-qt/qtwayland 5.5.9999 5.6.9999 5.9999: Wayland platform plugin for Qt
-dev-qt/qtwebchannel 5.5.9999 5.6.9999 5.9999: Qt5 framework module for integrating C++ and QML applications with HTML/JavaScript clients
+dev-qt/qtwebchannel 5.5.9999 5.6.9999 5.9999: Qt5 module for integrating C++ and QML applications with HTML/JavaScript clients
 dev-qt/qtwebkit 4.8.9999 5.5.9999 5.6.9999 5.9999: WebKit rendering library for the Qt5 framework (deprecated)
 dev-qt/qtwebsockets 5.5.9999 5.6.9999 5.9999: Implementation of the WebSocket protocol for the Qt5 framework
-dev-qt/qtwidgets 5.5.9999 5.6.9999 5.9999: Set of UI elements for creating classic desktop-style user interfaces for the Qt5 framework
+dev-qt/qtwidgets 5.5.9999 5.6.9999 5.9999: Set of components for creating classic desktop-style UIs for the Qt5 framework
 dev-qt/qtx11extras 5.5.9999 5.6.9999 5.9999: Linux/X11-specific support library for the Qt5 framework
 dev-qt/qtxml 5.5.9999 5.6.9999 5.9999: SAX and DOM implementation library for the Qt5 framework
 dev-qt/qtxmlpatterns 4.8.9999 5.5.9999 5.6.9999 5.9999: XPath, XQuery, and XSLT support library for the Qt5 framework
@@ -109,7 +109,7 @@ net-misc/qconnman 9999: Qt4 Connman Applet
 sci-calculators/speedcrunch 9999: A fast and usable calculator for power users
 sys-auth/qauth 9999: User authentication library for Qt
 www-client/qupzilla 9999: Qt WebKit web browser
-x11-libs/libqxt 9999: The Qt eXTension library provides cross-platform utility classes for the Qt toolkit
+x11-libs/libqxt 9999: Extension library providing cross-platform utility classes for the Qt toolkit
 x11-libs/qtermwidget 9999: Qt terminal emulator widget
 x11-misc/compton-conf 9999: LXDE-Qt Compton Composite configuration tools
 x11-misc/obconf-qt 9999: Openbox window manager configuration tool
