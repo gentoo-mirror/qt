@@ -38,7 +38,7 @@ dev-qt/qtgraphicaleffects 5.5.9999 5.6.9999 5.9999: Set of QML types for adding 
 dev-qt/qtgui 4.8.9999 5.5.9999 5.6.9999 5.9999: The GUI module and platform plugins for the Qt5 framework
 dev-qt/qthelp 4.8.9999 5.5.9999 5.6.9999 5.9999: The Help module for the Qt5 framework
 dev-qt/qtimageformats 5.5.9999 5.6.9999 5.9999: Additional format plugins for the Qt image I/O system
-dev-qt/qtlocation 5.9999: The Location module for the Qt5 framework
+dev-qt/qtlocation 5.6.9999 5.9999: The Location module for the Qt5 framework
 dev-qt/qtmultimedia 4.8.9999 5.5.9999 5.6.9999 5.9999: The Multimedia module for the Qt5 framework
 dev-qt/qtnetwork 5.5.9999 5.6.9999 5.9999: Network abstraction library for the Qt5 framework
 dev-qt/qtopengl 4.8.9999 5.5.9999 5.6.9999 5.9999: OpenGL support library for the Qt5 framework (deprecated)
