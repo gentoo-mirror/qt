@@ -8,5 +8,5 @@ LICENSE=|| ( LGPL-2.1 LGPL-3 ) FDL-1.3
 RDEPEND=~dev-qt/qtcore-5.6.9999 ~dev-qt/qtgui-5.6.9999[gles2=] ~dev-qt/qtnetwork-5.6.9999 ~dev-qt/qttest-5.6.9999 localstorage? ( ~dev-qt/qtsql-5.6.9999 ) widgets? ( ~dev-qt/qtwidgets-5.6.9999[gles2=] ) xml? ( ~dev-qt/qtxmlpatterns-5.6.9999 ) dev-qt/qtchooser
 SLOT=5/5.6
 _eclass_exported_funcs=pkg_postrm:qt5-build pkg_postinst:qt5-build src_unpack:qt5-build src_prepare:- src_configure:qt5-build src_compile:qt5-build src_test:qt5-build src_install:qt5-build
-_eclasses_=eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	git-r3	0961ca04f93a7ae0e4c4a0b2b8c3be99	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	2c151578c65782d5a902605f9c9a6bd7	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	e0b4d88543a7001a6b55bc2c81dcfd48
+_eclasses_=eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	git-r3	0961ca04f93a7ae0e4c4a0b2b8c3be99	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	c1b758a0147434836525686151190fa8	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	e0b4d88543a7001a6b55bc2c81dcfd48
 _md5_=0209ddc3beb60934f2a37b5025c8c1e4
