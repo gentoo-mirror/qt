@@ -4,7 +4,7 @@
 
 # @ECLASS: qt5-build.eclass
 # @MAINTAINER:
-# Qt herd <qt@gentoo.org>
+# qt@gentoo.org
 # @AUTHOR:
 # Davide Pesavento <pesa@gentoo.org>
 # @BLURB: Eclass for Qt5 split ebuilds.
@@ -16,6 +16,41 @@ case ${EAPI} in
 	5|6)	: ;;
 	*)	die "qt5-build.eclass: unsupported EAPI=${EAPI:-0}" ;;
 esac
+
+# @ECLASS-VARIABLE: QT5_MODULE
+# @DESCRIPTION:
+# The upstream name of the module this package belongs to. Used for
+# SRC_URI and EGIT_REPO_URI. Must be defined before inheriting the eclass.
+: ${QT5_MODULE:=${PN}}
+
+# @ECLASS-VARIABLE: QT5_BUILD_DIR
+# @DESCRIPTION:
+# Build directory for out-of-source builds.
+case ${QT5_BUILD_TYPE} in
+	live)    : ${QT5_BUILD_DIR:=${S}_build} ;;
+	release) : ${QT5_BUILD_DIR:=${S}} ;; # workaround for bug 497312
+esac
+
+# @ECLASS-VARIABLE: QT5_TARGET_SUBDIRS
+# @DEFAULT_UNSET
+# @DESCRIPTION:
+# Array variable containing the source directories that should be built.
+# All paths must be relative to ${S}.
+
+# @ECLASS-VARIABLE: QT5_GENTOO_CONFIG
+# @DEFAULT_UNSET
+# @DESCRIPTION:
+# Array of <useflag:feature:macro> triplets that are evaluated in src_install
+# to generate the per-package list of enabled QT_CONFIG features and macro
+# definitions, which are then merged together with all other Qt5 packages
+# installed on the system to obtain the global qconfig.{h,pri} files.
+
+# @ECLASS-VARIABLE: VIRTUALX_REQUIRED
+# @DESCRIPTION:
+# For proper description see virtualx.eclass man page.
+# Here we redefine default value to be manual, if your package needs virtualx
+# for tests you should proceed with setting VIRTUALX_REQUIRED=test.
+: ${VIRTUALX_REQUIRED:=manual}
 
 [[ ${EAPI} == 5 ]] && inherit multilib
 inherit eutils flag-o-matic toolchain-funcs versionator virtualx
@@ -32,12 +67,6 @@ if [[ ${QT5_MINOR_VERSION} -ge 6 ]]; then
 else
 	SLOT=5
 fi
-
-# @ECLASS-VARIABLE: QT5_MODULE
-# @DESCRIPTION:
-# The upstream name of the module this package belongs to. Used for
-# SRC_URI and EGIT_REPO_URI. Must be defined before inheriting the eclass.
-: ${QT5_MODULE:=${PN}}
 
 case ${PV} in
 	5.9999)
@@ -90,55 +119,10 @@ RDEPEND="
 	dev-qt/qtchooser
 "
 
-EXPORT_FUNCTIONS src_unpack src_prepare src_configure src_compile src_install src_test pkg_postinst pkg_postrm
-
-
-# @ECLASS-VARIABLE: PATCHES
-# @DEFAULT_UNSET
-# @DESCRIPTION:
-# Array variable containing all the patches to be applied. This variable
-# is expected to be defined in the global scope of ebuilds. Make sure to
-# specify the full path. This variable is used in src_prepare phase.
-#
-# Example:
-# @CODE
-#	PATCHES=(
-#		"${FILESDIR}/mypatch.patch"
-#		"${FILESDIR}/mypatch2.patch"
-#	)
-# @CODE
-
-# @ECLASS-VARIABLE: QT5_TARGET_SUBDIRS
-# @DEFAULT_UNSET
-# @DESCRIPTION:
-# Array variable containing the source directories that should be built.
-# All paths must be relative to ${S}.
-
-# @ECLASS-VARIABLE: QT5_BUILD_DIR
-# @DESCRIPTION:
-# Build directory for out-of-source builds.
-case ${QT5_BUILD_TYPE} in
-	live)    : ${QT5_BUILD_DIR:=${S}_build} ;;
-	release) : ${QT5_BUILD_DIR:=${S}} ;; # workaround for bug 497312
-esac
-
-# @ECLASS-VARIABLE: QT5_GENTOO_CONFIG
-# @DEFAULT_UNSET
-# @DESCRIPTION:
-# Array of <useflag:feature:macro> triplets that are evaluated in src_install
-# to generate the per-package list of enabled QT_CONFIG features and macro
-# definitions, which are then merged together with all other Qt5 packages
-# installed on the system to obtain the global qconfig.{h,pri} files.
-
-# @ECLASS-VARIABLE: VIRTUALX_REQUIRED
-# @DESCRIPTION:
-# For proper description see virtualx.eclass man page.
-# Here we redefine default value to be manual, if your package needs virtualx
-# for tests you should proceed with setting VIRTUALX_REQUIRED=test.
-: ${VIRTUALX_REQUIRED:=manual}
-
 
 ######  Phase functions  ######
+
+EXPORT_FUNCTIONS src_unpack src_prepare src_configure src_compile src_install src_test pkg_postinst pkg_postrm
 
 # @FUNCTION: qt5-build_src_unpack
 # @DESCRIPTION:
@@ -253,13 +237,11 @@ qt5-build_src_test() {
 	_EOF_
 	chmod +x "${testrunner}"
 
-	local testcmd=(
-		qt5_foreach_target_subdir emake TESTRUNNER="'${testrunner}'" check
-	)
+	set -- qt5_foreach_target_subdir emake TESTRUNNER="'${testrunner}'" check
 	if [[ ${VIRTUALX_REQUIRED} == test ]]; then
-		virtx "${testcmd[@]}"
+		virtx "$@"
 	else
-		"${testcmd[@]}"
+		"$@"
 	fi
 }
 
@@ -424,28 +406,31 @@ qt5_prepare_env() {
 # @FUNCTION: qt5_foreach_target_subdir
 # @INTERNAL
 # @DESCRIPTION:
-# Executes the arguments inside each directory listed in QT5_TARGET_SUBDIRS.
+# Executes the command given as argument from inside each directory
+# listed in QT5_TARGET_SUBDIRS. Handles autotests subdirs automatically.
 qt5_foreach_target_subdir() {
 	[[ -z ${QT5_TARGET_SUBDIRS[@]} ]] && QT5_TARGET_SUBDIRS=("")
 
-	local ret=0 subdir=
+	local die_args=()
+	[[ ${EAPI} != 5 ]] && die_args+=(-n)
+
+	local subdir=
 	for subdir in "${QT5_TARGET_SUBDIRS[@]}"; do
 		if [[ ${EBUILD_PHASE} == test ]]; then
 			subdir=tests/auto${subdir#src}
 			[[ -d ${S}/${subdir} ]] || continue
 		fi
 
-		mkdir -p "${QT5_BUILD_DIR}/${subdir}" || die
-		pushd "${QT5_BUILD_DIR}/${subdir}" >/dev/null || die
+		local msg="Running $* ${subdir:+in ${subdir}}"
+		einfo "${msg}"
 
-		einfo "Running $* ${subdir:+in ${subdir}}"
-		"$@"
-		((ret+=$?))
+		mkdir -p "${QT5_BUILD_DIR}/${subdir}" || die "${die_args[@]}" || return $?
+		pushd "${QT5_BUILD_DIR}/${subdir}" >/dev/null || die "${die_args[@]}" || return $?
 
-		popd >/dev/null || die
+		"$@" || die "${die_args[@]}" "${msg} failed" || return $?
+
+		popd >/dev/null || die "${die_args[@]}" || return $?
 	done
-
-	return ${ret}
 }
 
 # @FUNCTION: qt5_symlink_tools_to_build_dir
