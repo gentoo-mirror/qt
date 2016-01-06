@@ -117,10 +117,6 @@ dev-qt/qtphonon:qt3support - Enable the Qt3Support libraries for Qt4. Note that 
 dev-qt/qtpositioning:geoclue - Use enhanced location information from app-misc/geoclue
 dev-qt/qtpositioning:qml - Build QML bindings
 dev-qt/qtprintsupport:gles2 - Use GLES 2.0 or later instead of full OpenGL
-dev-qt/qtquick1:designer - Build plugin for dev-qt/designer
-dev-qt/qtquick1:gles2 - Use GLES 2.0 or later instead of full OpenGL
-dev-qt/qtquick1:webkit - Build the WebView import for QtQuick1 (requires QtWebKit)
-dev-qt/qtquick1:xml - Build the XmlListModel import for QtQuick1 (requires QtXmlPatterns)
 dev-qt/qtquickcontrols:widgets - Enable QtWidgets support
 dev-qt/qtscript:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
 dev-qt/qtscript:scripttools - Build the QtScriptTools module (requires QtWidgets)
