@@ -50,7 +50,7 @@ inherit eutils flag-o-matic toolchain-funcs versionator virtualx
 HOMEPAGE="https://www.qt.io/"
 LICENSE="|| ( LGPL-2.1 LGPL-3 ) FDL-1.3"
 
-declare -r QT5_MINOR_VERSION=$(get_version_component_range 2)
+readonly QT5_MINOR_VERSION=$(get_version_component_range 2)
 
 if [[ ${QT5_MINOR_VERSION} -ge 6 ]]; then
 	# IMPORTANT: add a subslot dependency to your package only if you are sure
@@ -601,7 +601,7 @@ qt5_base_configure() {
 
 		# disable all platform plugins by default, override in qtgui
 		-no-xcb -no-eglfs -no-kms -no-directfb -no-linuxfb
-		$([[ ${QT5_MINOR_VERSION} -ge 6 ]] && echo -no-mirclient)
+		$([[ ${QT5_MINOR_VERSION} -ge 6 ]] && echo -no-mirclient -no-qpa-platform-guard)
 
 		# disable undocumented X11-related flags, override in qtgui
 		# (not shown in ./configure -help output)
