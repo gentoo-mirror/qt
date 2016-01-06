@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=~dev-qt/qtcore-5.6.0_beta freetds? ( dev-db/freetds ) mysql? ( virtual/libmysqlclient:= ) oci8? ( dev-db/oracle-instantclient-basic ) odbc? ( || ( dev-db/unixODBC dev-db/libiodbc ) ) postgres? ( dev-db/postgresql:* ) sqlite? ( >=dev-db/sqlite-3.8.10.2:3 ) dev-lang/perl virtual/pkgconfig test? ( ~dev-qt/qttest-5.6.0_beta )
 DESCRIPTION=SQL abstraction library for the Qt5 tooolkit
-EAPI=5
+EAPI=6
 HOMEPAGE=https://www.qt.io/
 IUSE=freetds mysql oci8 odbc postgres +sqlite debug test
 KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc64 ~x86
@@ -13,4 +13,4 @@ SLOT=5/5.6
 SRC_URI=http://download.qt.io/development_releases/qt/5.6/5.6.0-beta/submodules/qtbase-opensource-src-5.6.0-beta.tar.gz
 _eclass_exported_funcs=pkg_postrm:qt5-build pkg_postinst:qt5-build src_unpack:qt5-build src_prepare:qt5-build src_configure:- src_compile:qt5-build src_test:qt5-build src_install:qt5-build
 _eclasses_=eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	17943d563d496ae793db47c2374cd8ac	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	6c01101f3b4d92c77de3e8a77cc2418b
-_md5_=4e4360d2e361a578269093829f0ecb3e
+_md5_=ba25202a64197385d095d6165cd877dc
