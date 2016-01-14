@@ -11,5 +11,5 @@ RESTRICT=test
 SLOT=5/5.6
 SRC_URI=http://download.qt.io/development_releases/qt/5.6/5.6.0-beta/submodules/qtx11extras-opensource-src-5.6.0-beta.tar.gz
 _eclass_exported_funcs=pkg_postrm:qt5-build pkg_postinst:qt5-build src_unpack:qt5-build src_prepare:qt5-build src_configure:qt5-build src_compile:qt5-build src_test:qt5-build src_install:qt5-build
-_eclasses_=eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	f93f85593eb240e32b550ba0d913fd24	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	86c9305a59b3e0459e7fbef3a5f30b96
+_eclasses_=eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	18bb21bcc0c494d553004ea9e97b8497	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	86c9305a59b3e0459e7fbef3a5f30b96
 _md5_=0b4f639b71085248b725f7994589070d
