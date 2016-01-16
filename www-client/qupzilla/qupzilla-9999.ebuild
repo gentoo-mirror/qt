@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -32,20 +32,19 @@ SLOT="0"
 IUSE="dbus debug gnome-keyring nonblockdialogs"
 
 RDEPEND="dev-libs/openssl:0
-	>=dev-qt/qtconcurrent-5.5:5
-	>=dev-qt/qtcore-5.5:5
-	>=dev-qt/qtgui-5.5:5
-	>=dev-qt/qtnetwork-5.5:5
-	>=dev-qt/qtprintsupport-5.5:5
-	>=dev-qt/qtscript-5.5:5
-	>=dev-qt/qtsql-5.5:5[sqlite]
-	>=dev-qt/qtwebengine-5.5:5[widgets]
-	>=dev-qt/qtwidgets-5.5:5
+	>=dev-qt/qtconcurrent-5.6:5
+	>=dev-qt/qtcore-5.6:5
+	>=dev-qt/qtgui-5.6:5
+	>=dev-qt/qtnetwork-5.6:5
+	>=dev-qt/qtprintsupport-5.6:5
+	>=dev-qt/qtsql-5.6:5[sqlite]
+	>=dev-qt/qtwebengine-5.6:5[widgets]
+	>=dev-qt/qtwidgets-5.6:5
 	x11-libs/libX11
-	dbus? ( >=dev-qt/qtdbus-5.5:5 )
+	dbus? ( >=dev-qt/qtdbus-5.6:5 )
 	gnome-keyring? ( gnome-base/gnome-keyring )"
 DEPEND="${RDEPEND}
-	>=dev-qt/linguist-tools-5.5:5
+	>=dev-qt/linguist-tools-5.6:5
 	virtual/pkgconfig"
 
 DOCS=( AUTHORS BUILDING CHANGELOG FAQ README.md )
@@ -98,11 +97,4 @@ src_configure() {
 src_install() {
 	emake INSTALL_ROOT="${D}" install
 	einstalldocs
-}
-
-pkg_postinst() {
-	if has_version www-plugins/adobe-flash; then
-		ewarn "For using adobe flash plugin you may need to run"
-		ewarn "    \"paxctl-ng -m /usr/bin/qupzilla\""
-	fi
 }
