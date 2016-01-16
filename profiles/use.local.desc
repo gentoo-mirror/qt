@@ -185,5 +185,3 @@ x11-misc/sddm:consolekit - Use ck-launch-session from sys-auth/consolekit by def
 x11-themes/qtcurve:kde - Enable KDE4 support. This adds a QtCurve configuration module to KDE's SystemSettings
 x11-themes/qtcurve:kf5 - Enable KDE Frameworks 5 support
 x11-themes/qtcurve:windeco - Enable window decoration for KWin
-x11-themes/xcurtheme:tools - Install the cursorFX converter (lcft)
-x11-wm/kwin-standalone:gles - Enable support for GLES.

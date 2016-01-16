@@ -1,11 +1,10 @@
 app-admin/keepassx 9999: Qt password manager compatible with its Win32 and Pocket PC versions
-app-admin/qgrubeditor 2.5.0: QGRUBEditor is a system tool to view and edit the GRUB boot loader
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
 app-text/coolreader3 9999: ebook reader
 app-text/goldendict 9999: Feature-rich dictionary lookup program
-dev-games/tiled 9999: A general purpose tile map editor.
+dev-games/tiled 9999: A general purpose tile map editor
 dev-libs/libqtxdg 9999: A Qt implementation of XDG standards
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-libs/qjson 9999: A library for mapping JSON data to QVariant objects
@@ -106,7 +105,6 @@ net-misc/kontrolpack 3.0.0: Remote shell command executor and LAN manager
 net-misc/mediadownloader 1.5.2: Qt4 application for searching, watching and downloading items with Google Images and YouTube
 net-misc/networkled 9999: Qt4 network traffic monitor running on system tray
 net-misc/qconnman 9999: Qt4 Connman Applet
-sci-calculators/speedcrunch 9999: A fast and usable calculator for power users
 sys-auth/qauth 9999: User authentication library for Qt
 www-client/qupzilla 9999: Qt WebKit web browser
 x11-libs/libqxt 9999: Extension library providing cross-platform utility classes for the Qt toolkit
@@ -114,11 +112,8 @@ x11-libs/qtermwidget 9999: Qt terminal emulator widget
 x11-misc/compton-conf 9999: LXDE-Qt Compton Composite configuration tools
 x11-misc/obconf-qt 9999: Openbox window manager configuration tool
 x11-misc/pcmanfm-qt 9999: Fast lightweight tabbed filemanager (Qt port)
-x11-misc/ptbatterysystemtray 9999: A simple battery monitor in the system tray
 x11-misc/sddm 9999: Simple Desktop Display Manager
 x11-terms/qterminal 9999: Qt-based multitab terminal emulator
 x11-themes/qt-gtk-engine 9999: LXDE-Qt GTK3 to QT Rendering Engine
 x11-themes/qtcurve 9999: A set of widget styles for Qt and GTK2
 x11-themes/quantumstyle 0_rc8: SVG themable style for Qt4 and KDE
-x11-themes/xcurtheme 9999: Qt utility to change Xcrusor themes without restarting X Server.
-x11-wm/kwin-standalone 9999: KWin version that only depends on kdelibs
