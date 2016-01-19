@@ -58,7 +58,7 @@ dev-qt/qttranslations 4.8.9999 5.6.0_beta 5.6.9999 5.9999: Translation files for
 dev-qt/qtwayland 5.6.0_beta 5.6.9999 5.9999: Wayland platform plugin for Qt
 dev-qt/qtwebchannel 5.6.0_beta 5.6.9999 5.9999: Qt5 module for integrating C++ and QML applications with HTML/JavaScript clients
 dev-qt/qtwebengine 5.6.0_beta 5.6.9999 5.9999: Library for rendering dynamic web content in Qt5 C++ and QML applications
-dev-qt/qtwebkit 4.8.9999 5.5.9999 5.6.9999 5.9999: WebKit rendering library for the Qt5 framework (deprecated)
+dev-qt/qtwebkit 4.8.9999 5.6.9999 5.9999: WebKit rendering library for the Qt5 framework (deprecated)
 dev-qt/qtwebsockets 5.6.0_beta 5.6.9999 5.9999: Implementation of the WebSocket protocol for the Qt5 framework
 dev-qt/qtwidgets 5.6.0_beta 5.6.9999 5.9999: Set of components for creating classic desktop-style UIs for the Qt5 framework
 dev-qt/qtx11extras 5.6.0_beta 5.6.9999 5.9999: Linux/X11-specific support library for the Qt5 framework
