@@ -55,8 +55,6 @@ dev-qt/qt-creator:qnx - Build plugin for QNX/Blackberry devices
 dev-qt/qt-creator:systemd - Add support for retrieving application output from journald
 dev-qt/qt-creator:valgrind - Add support for memory debugging using dev-util/valgrind
 dev-qt/qt-creator:winrt - Build plugin for WinRT devices
-dev-qt/qt3support:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
-dev-qt/qtbearer:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
 dev-qt/qtbluetooth:qml - Build QML/QtQuick bindings and imports
 dev-qt/qtcore:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
 dev-qt/qtcore:glib - Enable dev-libs/glib eventloop support
@@ -70,15 +68,6 @@ dev-qt/qtdeclarative:qt3support - Enable the Qt3Support libraries for Qt4. Note 
 dev-qt/qtdeclarative:webkit - Build the WebView QML component
 dev-qt/qtdeclarative:widgets - Enable QtWidgets support
 dev-qt/qtdeclarative:xml - Build the XmlListModel import for QtQuick (requires QtXmlPatterns)
-dev-qt/qtdemo:dbus - Build QtDBus examples and demos
-dev-qt/qtdemo:declarative - Build QtDeclarative examples and demos
-dev-qt/qtdemo:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
-dev-qt/qtdemo:multimedia - Build QtMultimedia examples and demos
-dev-qt/qtdemo:opengl - Build QtOpenGL examples and demos
-dev-qt/qtdemo:openvg - Build QtOpenVG examples and demos
-dev-qt/qtdemo:phonon - Build Phonon examples and demos
-dev-qt/qtdemo:webkit - Build QtWebKit examples and demos
-dev-qt/qtdemo:xmlpatterns - Build QtXmlPatterns examples and demos
 dev-qt/qtgui:egl - Enable EGL integration
 dev-qt/qtgui:eglfs - Build the EGL Full Screen/Single Surface platform plugin
 dev-qt/qtgui:evdev - Enable support for input devices via evdev
@@ -110,10 +99,6 @@ dev-qt/qtopengl:egl - Use EGL instead of default GLX to manage OpenGL contexts o
 dev-qt/qtopengl:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
 dev-qt/qtopengl:gles2 - Use GLES 2.0 or later instead of full OpenGL
 dev-qt/qtopengl:qt3support - Enable the Qt3Support libraries for Qt4
-dev-qt/qtopenvg:exceptions - Build with support for exceptions
-dev-qt/qtopenvg:qt3support - Enable the Qt3Support libraries for Qt4
-dev-qt/qtphonon:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by upstream)
-dev-qt/qtphonon:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 dev-qt/qtpositioning:geoclue - Use enhanced location information from app-misc/geoclue
 dev-qt/qtpositioning:qml - Build QML bindings
 dev-qt/qtprintsupport:gles2 - Use GLES 2.0 or later instead of full OpenGL
