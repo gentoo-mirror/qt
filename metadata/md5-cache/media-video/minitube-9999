@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-qt/qtgui-4.8:4[accessibility] >=dev-qt/qtdbus-4.8:4 >=dev-qt/qtsql-4.8:4 kde? ( || ( media-libs/phonon[gstreamer?,qt4] >=dev-qt/qtphonon-4.8:4 ) ) !kde? ( || ( >=dev-qt/qtphonon-4.8:4 media-libs/phonon[gstreamer?,qt4] ) ) gstreamer? ( media-plugins/gst-plugins-soup media-plugins/gst-plugins-ffmpeg media-plugins/gst-plugins-faac media-plugins/gst-plugins-faad )
 SLOT=0
 _eclass_exported_funcs=pkg_pretend:- pkg_postinst:- src_unpack:git-2 src_prepare:- src_configure:qt4-r2 src_compile:qt4-r2 src_install:-
-_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	7332d4dd366dcd51c0014dde21f21897	git-2	df00117322129fb906bb0a53c3d6a020	l10n	714aaf78929eade946da5eaff7d2001a	multilib	3972ca401cf7dbb430df9995f5d8d580	qmake-utils	0a242e7177789b0028b4045f336dd4db	qt4-r2	e3f8f5849a578dc0cd96c26611377941	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	8982475656ba7ade9b3201397efbd612	git-2	df00117322129fb906bb0a53c3d6a020	l10n	714aaf78929eade946da5eaff7d2001a	multilib	3972ca401cf7dbb430df9995f5d8d580	qmake-utils	0a242e7177789b0028b4045f336dd4db	qt4-r2	e3f8f5849a578dc0cd96c26611377941	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=a2e0fcf36977c12d4cccc4f9991f25bd
