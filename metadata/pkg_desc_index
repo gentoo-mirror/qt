@@ -92,11 +92,9 @@ media-video/elltube 9999: A YouTube downloader and converter
 media-video/minitube 9999: Qt4 YouTube Client
 media-video/prismatik 5.10.6: Prismatik is an open-source software to control Lightpack devices
 media-video/xvideoservicethief 9999: Download (and convert) videos from various Web Video Services
-net-im/qtwitter 9999: A Qt-based microblogging client
 net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
 net-misc/kontrolpack 3.0.0: Remote shell command executor and LAN manager
-net-misc/mediadownloader 1.5.2: Qt4 application for searching, watching and downloading items with Google Images and YouTube
-net-misc/networkled 9999: Qt4 network traffic monitor running on system tray
+net-misc/mediadownloader 1.5.2: Search, watch, and download stuff from Google Images and YouTube
 net-misc/qconnman 9999: Qt4 Connman Applet
 sys-auth/qauth 9999: User authentication library for Qt
 www-client/qupzilla 9999: Qt WebKit web browser
