@@ -4,7 +4,6 @@ app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
 app-text/coolreader3 9999: ebook reader
 app-text/goldendict 9999: Feature-rich dictionary lookup program
-dev-games/tiled 9999: A general purpose tile map editor
 dev-libs/libqtxdg 9999: A Qt implementation of XDG standards
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-libs/qjson 9999: A library for mapping JSON data to QVariant objects
