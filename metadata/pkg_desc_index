@@ -89,7 +89,6 @@ media-sound/mp3diags 9999: Qt-based MP3 diagnosis and repair tool
 media-sound/qpitch 9999: A program to tune musical instruments using Qt4
 media-sound/qtmpc 9999: Qt MPD client with a tree view music library interface
 media-video/elltube 9999: A YouTube downloader and converter
-media-video/minitube 9999: Qt4 YouTube Client
 media-video/prismatik 5.10.6: Prismatik is an open-source software to control Lightpack devices
 media-video/xvideoservicethief 9999: Download (and convert) videos from various Web Video Services
 net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
@@ -107,4 +106,3 @@ x11-misc/sddm 9999: Simple Desktop Display Manager
 x11-terms/qterminal 9999: Qt-based multitab terminal emulator
 x11-themes/qt-gtk-engine 9999: LXDE-Qt GTK3 to QT Rendering Engine
 x11-themes/qtcurve 9999: A set of widget styles for Qt and GTK2
-x11-themes/quantumstyle 0_rc8: SVG themable style for Qt4 and KDE

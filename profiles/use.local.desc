@@ -129,7 +129,6 @@ lxqt-base/lxqt-panel:tray - Build tray plugin
 lxqt-base/lxqt-panel:volume - Build volume plugin
 lxqt-base/lxqt-panel:worldclock - Build worldclock plugin
 media-sound/kajammer:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
-media-video/minitube:download - Enable support for downloading YouTube videos
 net-libs/telepathy-qt:farstream - Enable support for audio/video calls via farstream
 www-client/qupzilla:nonblockdialogs - Enable fancy non-blocking JavaScript dialogs shown inside the page, not blocking the application window. When closing browser windows with open dialogs, this can crash the application.
 x11-libs/libqxt:berkdb - Build the QxtBerkeley module
