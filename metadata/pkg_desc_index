@@ -63,21 +63,18 @@ dev-vcs/qgit 9999: Qt4 GUI for git repositories
 lxde-base/lxmenu-data 9999: Application menu resources
 lxde-base/menu-cache 9999: A library creating and utilizing caches to speed up freedesktop.org application menus
 lxqt-base/liblxqt 9999: Common base library for the LXQt desktop environment
-lxqt-base/liblxqt-mount 9999: LXQt library for removable media and devices
 lxqt-base/libsysstat 9999: A Qt-based interface to system statistics
 lxqt-base/lxqt-about 9999: LXQt about dialog
 lxqt-base/lxqt-admin 9999: LXQt system administration tool
 lxqt-base/lxqt-appswitcher 9999: LXDE-Qt applications switcher
 lxqt-base/lxqt-common 9999: LXQt common resources
 lxqt-base/lxqt-config 9999: LXQt system configuration control center
-lxqt-base/lxqt-config-randr 9999: LXQt monitor configuration
 lxqt-base/lxqt-globalkeys 9999: Daemon and library for global keyboard shortcuts registration
 lxqt-base/lxqt-meta 9999: Meta ebuild for LXQt, the Lightweight Desktop Environment
 lxqt-base/lxqt-notificationd 9999: LXQt notification daemon and library
 lxqt-base/lxqt-openssh-askpass 9999: LXQt OpenSSH user password prompt tool
 lxqt-base/lxqt-panel 9999: LXQt desktop panel and plugins
 lxqt-base/lxqt-policykit 9999: LXQt PolKit authentication agent
-lxqt-base/lxqt-power 9999: LXDE-Qt tool to poweroff or hibernate
 lxqt-base/lxqt-powermanagement 9999: LXQt daemon for power management and auto-suspend
 lxqt-base/lxqt-qtplugin 9999: LXQt system integration plugin for Qt
 lxqt-base/lxqt-runner 9999: LXQt quick launcher
