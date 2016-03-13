@@ -84,7 +84,7 @@ case ${PV} in
 		QT5_BUILD_TYPE="release"
 		MY_P=${QT5_MODULE}-opensource-src-${PV/_/-}
 		SRC_URI="http://download.qt.io/development_releases/qt/${PV%.*}/${PV/_/-}/submodules/${MY_P}.tar.xz"
-		S=${WORKDIR}/${MY_P}
+		S=${WORKDIR}/${MY_P%-alpha}
 		;;
 	*)
 		# official stable release
@@ -136,23 +136,23 @@ EXPORT_FUNCTIONS src_unpack src_prepare src_configure src_compile src_install sr
 # @DESCRIPTION:
 # Unpacks the sources.
 qt5-build_src_unpack() {
-	local gcc_version_check_fatal=false
 	local min_gcc4_minor_version=5
-	if [[ ${QT5_MINOR_VERSION} -ge 6 ]]; then
-		gcc_version_check_fatal=true
-	fi
 	if [[ ${QT5_MINOR_VERSION} -ge 7 || ${PN} == qtwebengine ]]; then
 		min_gcc4_minor_version=7
 	fi
 	if [[ $(gcc-major-version) -lt 4 ]] || \
 	   [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt ${min_gcc4_minor_version} ]]; then
-		if ${gcc_version_check_fatal}; then
-			die "GCC version 4.${min_gcc4_minor_version} or later is required to build this package"
+		if [[ ${QT5_MINOR_VERSION} -ge 6 ]]; then
+			eerror "GCC version 4.${min_gcc4_minor_version} or later is required to build this package"
+			die "GCC 4.${min_gcc4_minor_version} or later required"
 		else
+			ewarn
 			ewarn "Using a GCC version lower than 4.${min_gcc4_minor_version} is not supported"
+			ewarn
 		fi
 	fi
 
+	# bug 307861
 	if [[ ${PN} == qtwebengine || ${PN} == qtwebkit ]]; then
 		eshopts_push -s extglob
 		if is-flagq '-g?(gdb)?([1-9])'; then
@@ -160,7 +160,6 @@ qt5-build_src_unpack() {
 			ewarn "You have enabled debug info (probably have -g or -ggdb in your CFLAGS/CXXFLAGS)."
 			ewarn "You may experience really long compilation times and/or increased memory usage."
 			ewarn "If compilation fails, please try removing -g/-ggdb before reporting a bug."
-			ewarn "For more info check out https://bugs.gentoo.org/307861"
 			ewarn
 		fi
 		eshopts_pop
