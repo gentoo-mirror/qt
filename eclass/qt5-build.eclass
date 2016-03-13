@@ -188,18 +188,18 @@ qt5-build_src_prepare() {
 		sed -i -e "/outpath\/qmake\".*\"\$MAKE\")/ s:): \
 			${MAKEOPTS} ${EXTRA_EMAKE} 'CC=$(tc-getCC)' 'CXX=$(tc-getCXX)' \
 			'QMAKE_CFLAGS=${CFLAGS}' 'QMAKE_CXXFLAGS=${CXXFLAGS}' 'QMAKE_LFLAGS=${LDFLAGS}'&:" \
-			-e '/"$CFG_RELEASE_QMAKE"/,/^\s\+fi$/ d' \
+			-e 's/\(setBootstrapVariable\s\+\|EXTRA_C\(XX\)\?FLAGS=.*\)QMAKE_C\(XX\)\?FLAGS_\(DEBUG\|RELEASE\).*/:/' \
 			configure || die "sed failed (respect env for qmake build)"
 		sed -i -e '/^CPPFLAGS\s*=/ s/-g //' \
 			qmake/Makefile.unix || die "sed failed (CPPFLAGS for qmake build)"
 
-		# Respect CXX in {bsymbolic_functions,fvisibility,precomp}.test
+		# Respect CXX in bsymbolic_functions, fvisibility, precomp, and a few other tests
 		sed -i -e "/^QMAKE_CONF_COMPILER=/ s:=.*:=\"$(tc-getCXX)\":" \
 			configure || die "sed failed (QMAKE_CONF_COMPILER)"
 
 		# Respect toolchain and flags in config.tests
 		find config.tests/unix -name '*.test' -type f -execdir \
-			sed -i -e '/bin\/qmake/ s/-nocache //' '{}' + || die
+			sed -i -re '/(bin\/qmake|QMAKE")/ s/-nocache //' '{}' + || die
 
 		# Don't add -O3 to CXXFLAGS (bug 549140)
 		sed -i -e '/CONFIG\s*+=/ s/optimize_full//' \
