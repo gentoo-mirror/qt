@@ -8,5 +8,5 @@ LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
 RDEPEND=~dev-qt/qtcore-5.9999 ~dev-qt/qtgui-5.9999 ~dev-qt/qtwidgets-5.9999 >=sys-libs/zlib-1.2.5 dev-qt/qtchooser
 SLOT=5/5.9999
 _eclass_exported_funcs=pkg_postrm:qt5-build pkg_postinst:qt5-build src_unpack:qt5-build src_prepare:qt5-build src_configure:qt5-build src_compile:qt5-build src_test:qt5-build src_install:qt5-build
-_eclasses_=eutils	9d81603248f2ba3ec59124320d123e5e	flag-o-matic	d270fa247153df66074f795fa42dba3e	git-r3	ef66dfc3db09f327af21cf32f140fb2b	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	e14e6ab14fe34118c0ca2cc7a6eff335	toolchain-funcs	d513d423d449877e49d99af3f7af7acb	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	86c9305a59b3e0459e7fbef3a5f30b96
+_eclasses_=eutils	9d81603248f2ba3ec59124320d123e5e	flag-o-matic	d270fa247153df66074f795fa42dba3e	git-r3	ef66dfc3db09f327af21cf32f140fb2b	multilib	3972ca401cf7dbb430df9995f5d8d580	qt5-build	345e578f9f197fffa60856c08ca059d1	toolchain-funcs	d513d423d449877e49d99af3f7af7acb	versionator	99ae9d758cbe7cfed19170e7d48f5a9c	virtualx	86c9305a59b3e0459e7fbef3a5f30b96
 _md5_=900f6a7f73a240f4cf92519900cf921f
