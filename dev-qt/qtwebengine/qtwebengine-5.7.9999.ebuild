@@ -68,8 +68,6 @@ DEPEND="${RDEPEND}
 	sys-devel/bison
 "
 
-PATCHES=( "${FILESDIR}/${PN}-5.6.0-icu.patch" )
-
 src_prepare() {
 	qt_use_disable_mod geolocation positioning \
 		src/core/core_common.pri \
@@ -84,9 +82,9 @@ src_prepare() {
 src_configure() {
 	export NINJA_PATH="/usr/bin/ninja"
 	local myqmakeargs=(
-		$(usex bindist '' 'WEBENGINE_CONFIG+="use_proprietary_codecs"')
-		$(usex system-ffmpeg 'WEBENGINE_CONFIG+="use_system_ffmpeg"' '')
-		$(usex system-icu 'WEBENGINE_CONFIG+="use_system_icu"' '')
+		$(usex bindist '' 'WEBENGINE_CONFIG+=use_proprietary_codecs')
+		$(usex system-ffmpeg 'WEBENGINE_CONFIG+=use_system_ffmpeg' '')
+		$(usex system-icu 'WEBENGINE_CONFIG+=use_system_icu' '')
 	)
 	qt5-build_src_configure
 }

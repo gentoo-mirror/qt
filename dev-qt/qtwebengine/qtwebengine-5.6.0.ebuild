@@ -56,7 +56,7 @@ RDEPEND="
 	x11-libs/libXScrnSaver
 	x11-libs/libXtst
 	geolocation? ( ~dev-qt/qtpositioning-${PV} )
-	system-ffmpeg? ( media-video/ffmpeg:= )
+	system-ffmpeg? ( =media-video/ffmpeg-2*:= )
 	system-icu? ( dev-libs/icu:= )
 	widgets? ( ~dev-qt/qtwidgets-${PV} )
 "
@@ -88,9 +88,9 @@ src_prepare() {
 src_configure() {
 	export NINJA_PATH="/usr/bin/ninja"
 	local myqmakeargs=(
-		$(usex bindist '' 'WEBENGINE_CONFIG+="use_proprietary_codecs"')
-		$(usex system-ffmpeg 'WEBENGINE_CONFIG+="use_system_ffmpeg"' '')
-		$(usex system-icu 'WEBENGINE_CONFIG+="use_system_icu"' '')
+		$(usex bindist '' 'WEBENGINE_CONFIG+=use_proprietary_codecs')
+		$(usex system-ffmpeg 'WEBENGINE_CONFIG+=use_system_ffmpeg' '')
+		$(usex system-icu 'WEBENGINE_CONFIG+=use_system_icu' '')
 	)
 	qt5-build_src_configure
 }
