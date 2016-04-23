@@ -4,7 +4,6 @@ app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
 app-text/coolreader3 9999: ebook reader
 app-text/goldendict 9999: Feature-rich dictionary lookup program
-dev-libs/libqtxdg 9999: A Qt implementation of XDG standards
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-libs/qjson 9999: A library for mapping JSON data to QVariant objects
 dev-libs/qjsonrpc 9999: Qt implementation of the JSON-RPC 2.0 protocol
@@ -76,8 +75,6 @@ sys-auth/qauth 9999: User authentication library for Qt
 www-client/qupzilla 9999: Qt WebKit web browser
 x11-libs/libqxt 9999: Extension library providing cross-platform utility classes for the Qt toolkit
 x11-libs/qtermwidget 9999: Qt terminal emulator widget
-x11-misc/compton-conf 9999: LXDE-Qt Compton Composite configuration tools
-x11-misc/obconf-qt 9999: Openbox window manager configuration tool
 x11-misc/sddm 9999: Simple Desktop Display Manager
 x11-terms/qterminal 9999: Qt-based multitab terminal emulator
 x11-themes/qtcurve 9999: A set of widget styles for Qt and GTK2
