@@ -70,8 +70,8 @@ dev-qt/qtgui:tslib - Enable support for touchscreen devices via x11-libs/tslib
 dev-qt/qtgui:tuio - Build plugin to receive touch events over the TUIO protocol
 dev-qt/qtgui:xcb - Build the XCB platform plugin and enable X11 integration
 dev-qt/qtmultimedia:gles2 - Use GLES 2.0 or later instead of full OpenGL
-dev-qt/qtmultimedia:gstreamer - Enable audio support via media-libs/gstreamer:1.0
-dev-qt/qtmultimedia:gstreamer010 - Enable audio support via media-libs/gstreamer:0.10
+dev-qt/qtmultimedia:gstreamer - Enable audio support via media-libs/gstreamer using SLOT 1.0
+dev-qt/qtmultimedia:gstreamer010 - Enable audio support via media-libs/gstreamer using SLOT 0.10
 dev-qt/qtmultimedia:qml - Build QML/QtQuick bindings and imports
 dev-qt/qtmultimedia:widgets - Build the QtMultimediaWidgets module
 dev-qt/qtnetwork:bindist - Disable EC support via dev-libs/openssl
@@ -98,8 +98,8 @@ dev-qt/qtwebengine:system-ffmpeg - Use the system-wide media-video/ffmpeg instea
 dev-qt/qtwebengine:system-icu - Use the system-wide dev-libs/icu instead of bundled.
 dev-qt/qtwebengine:widgets - Enable QtWidgets support
 dev-qt/qtwebkit:geolocation - Enable physical position determination via dev-qt/qtpositioning
-dev-qt/qtwebkit:gstreamer - Enable HTML5 audio/video support via media-libs/gstreamer:1.0
-dev-qt/qtwebkit:gstreamer010 - Enable HTML5 audio/video support via media-libs/gstreamer:0.10
+dev-qt/qtwebkit:gstreamer - Enable HTML5 audio/video support via media-libs/gstreamer using SLOT 1.0
+dev-qt/qtwebkit:gstreamer010 - Enable HTML5 audio/video support via media-libs/gstreamer using SLOT 0.10
 dev-qt/qtwebkit:multimedia - Enable HTML5 audio/video support via dev-qt/qtmultimedia
 dev-qt/qtwebkit:orientation - Enable device orientation detection via dev-qt/qtsensors
 dev-qt/qtwebkit:printsupport - Enable printing via dev-qt/qtprintsupport
@@ -109,33 +109,6 @@ dev-qt/qtwebkit:webp - Add support for WebP image format
 dev-qt/qtwebsockets:qml - Build QML bindings
 dev-qt/qtwidgets:gles2 - Use GLES 2.0 or later instead of full OpenGL
 dev-qt/qtwidgets:gtkstyle - Build a Qt style called GTK+ that mimics the active GTK+ theme
-lxqt-base/lxqt-meta:admin - Install app-admin/lxqt-admin
-lxqt-base/lxqt-meta:filemanager - Install x11-misc/pcmanfm-qt file manager
-lxqt-base/lxqt-meta:icons - Install lxde-base/lxde-icon-theme icon theme (pulls in x11-libs/gtk+)
-lxqt-base/lxqt-meta:lightdm - Install x11-misc/lightdm display manager
-lxqt-base/lxqt-meta:lximage - Install media-gfx/lximage-qt image viewer
-lxqt-base/lxqt-meta:minimal - Do not install x11-wm/openbox window manager
-lxqt-base/lxqt-meta:powermanagement - Install lxqt-base/lxqt-powermanagement package
-lxqt-base/lxqt-meta:sddm - Install x11-misc/sddm display manager
-lxqt-base/lxqt-meta:ssh-askpass - Install net-misc/lxqt-openssh-askpass user password prompt tool
-lxqt-base/lxqt-panel:clock - Build clock plugin
-lxqt-base/lxqt-panel:colorpicker - Build colorpicker plugin
-lxqt-base/lxqt-panel:cpuload - Build cpuload plugin
-lxqt-base/lxqt-panel:desktopswitch - Build desktopswitch plugin
-lxqt-base/lxqt-panel:dom - Build dom plugin
-lxqt-base/lxqt-panel:kbindicator - Build kbindicator plugin
-lxqt-base/lxqt-panel:mainmenu - Build mainmenu plugin
-lxqt-base/lxqt-panel:mount - Build mount plugin
-lxqt-base/lxqt-panel:networkmonitor - Build networkmonitor plugin
-lxqt-base/lxqt-panel:quicklaunch - Build quicklaunch plugin
-lxqt-base/lxqt-panel:screensaver - Build screensaver plugin
-lxqt-base/lxqt-panel:sensors - Build sensors plugin
-lxqt-base/lxqt-panel:showdesktop - Build showdesktop plugin
-lxqt-base/lxqt-panel:sysstat - Build sysstat plugin
-lxqt-base/lxqt-panel:taskbar - Build taskbar plugin
-lxqt-base/lxqt-panel:tray - Build tray plugin
-lxqt-base/lxqt-panel:volume - Build volume plugin
-lxqt-base/lxqt-panel:worldclock - Build worldclock plugin
 media-sound/kajammer:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
 net-libs/telepathy-qt:farstream - Enable support for audio/video calls via farstream
 www-client/qupzilla:nonblockdialogs - Enable fancy non-blocking JavaScript dialogs shown inside the page, not blocking the application window. When closing browser windows with open dialogs, this can crash the application.
