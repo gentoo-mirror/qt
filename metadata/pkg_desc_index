@@ -36,7 +36,8 @@ dev-qt/qtlocation 5.6.9999 5.7.0_beta 5.7.9999 5.9999: The Location module for t
 dev-qt/qtmultimedia 5.6.9999 5.7.0_beta 5.7.9999 5.9999: The Multimedia module for the Qt5 framework
 dev-qt/qtnetwork 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Network abstraction library for the Qt5 framework
 dev-qt/qtopengl 5.6.9999 5.7.0_beta 5.7.9999 5.9999: OpenGL support library for the Qt5 framework (deprecated)
-dev-qt/qtpaths 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Tool to query Qt path information
+dev-qt/qtpaths 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Command line client to QStandardPaths
+dev-qt/qtplugininfo 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Qt5 plugin metadata dumper
 dev-qt/qtpositioning 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Physical position determination library for the Qt5 framework
 dev-qt/qtprintsupport 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Printing support library for the Qt5 framework
 dev-qt/qtquick1 5.6.9999 5.7.9999 5.9999: Legacy declarative UI module for the Qt5 framework (deprecated)
