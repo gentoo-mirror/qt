@@ -16,11 +16,11 @@ IUSE="icu systemd"
 
 DEPEND="
 	dev-libs/glib:2
-	>=dev-libs/libpcre-8.35[pcre16]
+	>=dev-libs/libpcre-8.38[pcre16,unicode]
 	>=sys-libs/zlib-1.2.5
 	virtual/libiconv
 	icu? ( dev-libs/icu:= )
-	systemd? ( sys-apps/systemd )
+	systemd? ( sys-apps/systemd:= )
 "
 RDEPEND="${DEPEND}"
 
