@@ -70,7 +70,6 @@ net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
 net-misc/kontrolpack 3.0.0: Remote shell command executor and LAN manager
 net-misc/mediadownloader 1.5.2: Search, watch, and download stuff from Google Images and YouTube
 net-misc/qconnman 9999: Qt4 Connman Applet
-sys-auth/qauth 9999: User authentication library for Qt
 www-client/qupzilla 9999: A cross-platform web browser using QtWebEngine
 x11-libs/libqxt 9999: Extension library providing cross-platform utility classes for the Qt toolkit
 x11-libs/qtermwidget 9999: Qt terminal emulator widget
