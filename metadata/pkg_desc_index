@@ -2,12 +2,10 @@ app-admin/keepassx 9999: Qt password manager compatible with its Win32 and Pocke
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
-app-text/coolreader3 9999: ebook reader
 app-text/goldendict 9999: Feature-rich dictionary lookup program
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-libs/qjson 9999: A library for mapping JSON data to QVariant objects
 dev-libs/qjsonrpc 9999: Qt implementation of the JSON-RPC 2.0 protocol
-dev-libs/qoauth 9999: A Qt-based library for OAuth support
 dev-libs/quazip 9999: A simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
 dev-python/pyside 9999: Python bindings for the Qt framework
 dev-python/shiboken 9999: A tool for creating Python bindings for C++ libraries
