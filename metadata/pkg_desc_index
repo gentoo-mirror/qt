@@ -56,7 +56,6 @@ dev-qt/qtwidgets 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Set of components for crea
 dev-qt/qtx11extras 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Linux/X11-specific support library for the Qt5 framework
 dev-qt/qtxml 5.6.9999 5.7.0_beta 5.7.9999 5.9999: SAX and DOM implementation library for the Qt5 framework
 dev-qt/qtxmlpatterns 5.6.9999 5.7.0_beta 5.7.9999 5.9999: XPath, XQuery, and XSLT support library for the Qt5 framework
-dev-vcs/qgit 9999: Qt4 GUI for git repositories
 mail-client/imapquickcheck 1.3-r1: Lightweight systray IMAP mail checker
 media-gfx/phototonic 9999: Image viewer and organizer
 media-sound/kajammer 0.9.3-r1: Simple Qt audio player
