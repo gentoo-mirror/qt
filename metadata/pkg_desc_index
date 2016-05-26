@@ -19,6 +19,7 @@ dev-qt/qdbusviewer 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Graphical tool that lets
 dev-qt/qdoc 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Qt documentation generator
 dev-qt/qt3d 5.7.0_beta 5.7.9999 5.9999: The 3D module for the Qt5 framework
 dev-qt/qtbluetooth 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Bluetooth support library for the Qt5 framework
+dev-qt/qtcharts 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Chart component library for the Qt5 framework
 dev-qt/qtchooser 9999: Qt4/Qt5 version chooser
 dev-qt/qtconcurrent 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Multi-threading concurrence support library for the Qt5 framework
 dev-qt/qtcore 5.6.9999 5.7.0_beta 5.7.9999 5.9999: Cross-platform application development framework

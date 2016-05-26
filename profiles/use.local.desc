@@ -33,6 +33,7 @@ dev-qt/designer:declarative - Build the qdeclarativeview plugin
 dev-qt/designer:webkit - Build the qwebview plugin
 dev-qt/linguist-tools:qml - Enable QML support in lupdate
 dev-qt/qtbluetooth:qml - Build QML/QtQuick bindings and imports
+dev-qt/qtcharts:qml - Build QML/QtQuick bindings and imports
 dev-qt/qtcore:systemd - Enable native journald logging support
 dev-qt/qtdeclarative:gles2 - Use GLES 2.0 or later instead of full OpenGL
 dev-qt/qtdeclarative:localstorage - Build the LocalStorage import for QtQuick (requires QtSql)
