@@ -39,6 +39,7 @@ dev-qt/qtplugininfo 5.6.9999 5.7.0 5.7.9999 5.9999: Qt5 plugin metadata dumper
 dev-qt/qtpositioning 5.6.9999 5.7.0 5.7.9999 5.9999: Physical position determination library for the Qt5 framework
 dev-qt/qtprintsupport 5.6.9999 5.7.0 5.7.9999 5.9999: Printing support library for the Qt5 framework
 dev-qt/qtquickcontrols 5.6.9999 5.7.0 5.7.9999 5.9999: Set of controls used in conjunction with Qt Quick to build complete interfaces
+dev-qt/qtquickcontrols2 5.7.0 5.7.9999 5.9999: Set of next generation Qt Quick controls for the Qt5 framework
 dev-qt/qtscript 5.6.9999 5.7.0 5.7.9999 5.9999: Application scripting library for the Qt5 framework (deprecated)
 dev-qt/qtsensors 5.6.9999 5.7.0 5.7.9999 5.9999: Hardware sensor access library for the Qt5 framework
 dev-qt/qtserialport 5.6.9999 5.7.0 5.7.9999 5.9999: Serial port abstraction library for the Qt5 framework
