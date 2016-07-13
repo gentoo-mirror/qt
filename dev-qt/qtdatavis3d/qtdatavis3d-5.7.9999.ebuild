@@ -5,24 +5,26 @@
 EAPI=6
 inherit qt5-build
 
-DESCRIPTION="Chart component library for the Qt5 framework"
+DESCRIPTION="3D data visualization library for the Qt5 framework"
 LICENSE="GPL-3"
 
 if [[ ${QT5_BUILD_TYPE} == release ]]; then
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~x86"
 fi
 
-IUSE="qml"
+IUSE="gles2 qml"
 
 DEPEND="
 	~dev-qt/qtcore-${PV}
-	~dev-qt/qtgui-${PV}
-	~dev-qt/qtwidgets-${PV}
-	qml? ( ~dev-qt/qtdeclarative-${PV} )
+	~dev-qt/qtgui-${PV}[gles2=]
+	qml? ( ~dev-qt/qtdeclarative-${PV}[gles2=] )
 "
 RDEPEND="${DEPEND}"
 
 src_prepare() {
+	# eliminate bogus dependency on qtwidgets
+	sed -i -e '/requires.*widgets/d' qtdatavis3d.pro || die
+
 	qt_use_disable_mod qml quick \
 		src/src.pro
 
