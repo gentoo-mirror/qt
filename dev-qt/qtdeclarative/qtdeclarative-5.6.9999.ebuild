@@ -3,7 +3,9 @@
 # $Id$
 
 EAPI=6
-inherit qt5-build
+
+PYTHON_COMPAT=( python2_7 python3_4 )
+inherit python-any-r1 qt5-build
 
 DESCRIPTION="The QML and Quick modules for the Qt5 framework"
 
@@ -14,7 +16,7 @@ fi
 IUSE="gles2 +jit localstorage +widgets xml"
 
 # qtgui[gles2=] is needed because of bug 504322
-DEPEND="
+RDEPEND="
 	~dev-qt/qtcore-${PV}
 	~dev-qt/qtgui-${PV}[gles2=]
 	~dev-qt/qtnetwork-${PV}
@@ -26,7 +28,9 @@ DEPEND="
 		~dev-qt/qtxmlpatterns-${PV}
 	)
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}
+	${PYTHON_DEPS}
+"
 
 src_prepare() {
 	use jit || PATCHES+=("${FILESDIR}/${PN}-5.4.2-disable-jit.patch")
