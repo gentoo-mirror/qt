@@ -5,8 +5,6 @@ app-emulation/q4wine 9999: Qt GUI configuration tool for Wine
 app-text/goldendict 9999: Feature-rich dictionary lookup program
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-libs/qjson 9999: A library for mapping JSON data to QVariant objects
-dev-libs/qjsonrpc 9999: Qt implementation of the JSON-RPC 2.0 protocol
-dev-libs/quazip 9999: A simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
 dev-python/pyside 9999: Python bindings for the Qt framework
 dev-python/shiboken 9999: A tool for creating Python bindings for C++ libraries
 dev-qt/assistant 5.6.9999 5.7.9999 5.8.9999 5.9999: Tool for viewing on-line documentation in Qt help file format

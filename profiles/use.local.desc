@@ -22,7 +22,6 @@ dev-python/pyside:designer - Build QtDesigner and QtUiTools modules
 dev-python/pyside:help - Build QtHelp module
 dev-python/pyside:multimedia - Build QtMultimedia module
 dev-python/pyside:opengl - Build QtOpenGL module
-dev-python/pyside:phonon - Build phonon module
 dev-python/pyside:script - Build QtScript module
 dev-python/pyside:scripttools - Build QtScriptTools module
 dev-python/pyside:sql - Build QtSql module
