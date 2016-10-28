@@ -1,4 +1,3 @@
-app-admin/keepassx 9999: Qt password manager compatible with its Win32 and Pocket PC versions
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt GUI configuration tool for Wine
