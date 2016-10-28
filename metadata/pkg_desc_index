@@ -1,7 +1,7 @@
 app-admin/keepassx 9999: Qt password manager compatible with its Win32 and Pocket PC versions
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
-app-emulation/q4wine 9999: Qt4 GUI configuration tool for Wine
+app-emulation/q4wine 9999: Qt GUI configuration tool for Wine
 app-text/goldendict 9999: Feature-rich dictionary lookup program
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-libs/qjson 9999: A library for mapping JSON data to QVariant objects
