@@ -64,13 +64,11 @@ media-gfx/phototonic 9999: Image viewer and organizer
 media-sound/kajammer 0.9.3-r1: Simple Qt audio player
 media-sound/mp3diags 9999: Qt-based MP3 diagnosis and repair tool
 media-sound/qpitch 9999: A program to tune musical instruments using Qt4
-media-sound/qtmpc 9999: Qt MPD client with a tree view music library interface
 media-video/elltube 9999: A YouTube downloader and converter
 media-video/xvideoservicethief 9999: Download (and convert) videos from various Web Video Services
 net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
 net-misc/kontrolpack 3.0.0: Remote shell command executor and LAN manager
 net-misc/mediadownloader 1.5.2: Search, watch, and download stuff from Google Images and YouTube
-net-misc/qconnman 9999: Qt4 Connman Applet
 www-client/qupzilla 9999: A cross-platform web browser using QtWebEngine
 x11-libs/libqxt 9999: Extension library providing cross-platform utility classes for the Qt toolkit
 x11-misc/sddm 9999: Simple Desktop Display Manager
