@@ -16,7 +16,7 @@ KEYWORDS=""
 IUSE="debug ffmpeg libav"
 
 RDEPEND="
-	>=app-text/hunspell-1.2
+	>=app-text/hunspell-1.2:=
 	dev-libs/eb
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
@@ -24,8 +24,8 @@ RDEPEND="
 	dev-qt/qtsingleapplication[qt5]
 	dev-qt/qtsvg:5
 	dev-qt/qtwebkit:5
-	dev-qt/qtx11extras:5
 	dev-qt/qtwidgets:5
+	dev-qt/qtx11extras:5
 	media-libs/libogg
 	media-libs/libvorbis
 	sys-libs/zlib
@@ -58,7 +58,7 @@ src_configure() {
 	local myconf=()
 
 	if ! use ffmpeg && ! use libav ; then
-		myconf+=("DISABLE_INTERNAL_PLAYER=1")
+		myconf+=( DISABLE_INTERNAL_PLAYER=1 )
 	fi
 
 	eqmake5 "${myconf[@]}"
