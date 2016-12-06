@@ -86,6 +86,7 @@ dev-qt/qtwebkit:webchannel - Enable integration with dev-qt/qtwebchannel
 dev-qt/qtwebkit:webp - Add support for WebP image format
 dev-qt/qtwebsockets:qml - Build QML bindings
 dev-qt/qtwidgets:gles2 - Use GLES 2.0 or later instead of full OpenGL
+dev-qt/qtwidgets:gtk - Build the GTK platform theme plugin
 dev-qt/qtwidgets:gtkstyle - Build a Qt style called GTK+ that mimics the active GTK+ theme
 net-libs/telepathy-qt:farstream - Enable support for audio/video calls via farstream
 www-client/qupzilla:nonblockdialogs - Enable fancy non-blocking JavaScript dialogs shown inside the page, not blocking the application window. When closing browser windows with open dialogs, this can crash the application.
