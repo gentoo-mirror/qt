@@ -1,14 +1,14 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 EAPI=6
 
 PLOCALES="ar_SA bg_BG ca_ES cs_CZ da_DK de_DE el_GR es_ES es_MX es_VE eu_ES
-	fa_IR fi_FI fr_FR gl_ES he_IL hr_HR hu_HU id_ID it_IT ja_JP ka_GE lg
-	lt lv_LV nl_NL nqo pl_PL pt_BR pt_PT ro_RO ru_RU sk_SK sr
+	fa_IR fi_FI fr_FR gl_ES he_IL hr_HR hu_HU id_ID is it_IT ja_JP ka_GE
+	lg lt lv_LV nl_NL nqo pl_PL pt_BR pt_PT ro_RO ru_RU sk_SK sr
 	sr@ijekavian sr@ijekavianlatin sr@latin sv_SE tr_TR uk_UA uz@Latn
-	zh_CN zh_TW"
+	zh_CN zh_HK zh_TW"
 
 PLUGINS_HASH='c332d306c0f6cf645c75eaf198d2fc5e12339e9e'
 PLUGINS_VERSION='2016.05.02' # if there are no updates, we can use the older archive
@@ -34,26 +34,26 @@ SLOT="0"
 IUSE="dbus debug gnome-keyring kde libressl nonblockdialogs"
 
 RDEPEND="
-	>=dev-qt/qtconcurrent-5.6:5
-	>=dev-qt/qtcore-5.6:5
-	>=dev-qt/qtdeclarative-5.6:5[widgets]
-	>=dev-qt/qtgui-5.6:5
-	>=dev-qt/qtnetwork-5.6:5[ssl]
-	>=dev-qt/qtprintsupport-5.6:5
-	>=dev-qt/qtsql-5.6:5[sqlite]
-	>=dev-qt/qtwebchannel-5.6:5
-	>=dev-qt/qtwebengine-5.6:5[widgets]
-	>=dev-qt/qtwidgets-5.6:5
-	>=dev-qt/qtx11extras-5.6:5
+	>=dev-qt/qtconcurrent-5.8:5
+	>=dev-qt/qtcore-5.8:5
+	>=dev-qt/qtdeclarative-5.8:5[widgets]
+	>=dev-qt/qtgui-5.8:5
+	>=dev-qt/qtnetwork-5.8:5[ssl]
+	>=dev-qt/qtprintsupport-5.8:5
+	>=dev-qt/qtsql-5.8:5[sqlite]
+	>=dev-qt/qtwebchannel-5.8:5
+	>=dev-qt/qtwebengine-5.8:5[widgets]
+	>=dev-qt/qtwidgets-5.8:5
+	>=dev-qt/qtx11extras-5.8:5
 	x11-libs/libxcb:=
-	dbus? ( >=dev-qt/qtdbus-5.6:5 )
+	dbus? ( >=dev-qt/qtdbus-5.8:5 )
 	gnome-keyring? ( gnome-base/gnome-keyring )
 	kde? ( kde-frameworks/kwallet:5 )
 	libressl? ( dev-libs/libressl:= )
 	!libressl? ( dev-libs/openssl:0 )
 "
 DEPEND="${RDEPEND}
-	>=dev-qt/linguist-tools-5.6:5
+	>=dev-qt/linguist-tools-5.8:5
 	virtual/pkgconfig
 "
 
