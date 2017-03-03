@@ -1,6 +1,5 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 QT5_MODULE="qtconnectivity"
@@ -18,7 +17,7 @@ RDEPEND="
 	~dev-qt/qtconcurrent-${PV}
 	~dev-qt/qtcore-${PV}
 	~dev-qt/qtdbus-${PV}
-	>=net-wireless/bluez-5
+	>=net-wireless/bluez-5:=
 	qml? ( ~dev-qt/qtdeclarative-${PV} )
 "
 DEPEND="${RDEPEND}
