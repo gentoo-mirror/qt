@@ -13,5 +13,5 @@ RESTRICT=test
 SLOT=5/5.8
 SRC_URI=https://download.qt.io/official_releases/qt/5.8/5.8.0/submodules/qtbase-opensource-src-5.8.0.tar.xz
 _eclass_exported_funcs=pkg_postrm:qt5-build pkg_postinst:qt5-build src_unpack:qt5-build src_prepare:- src_configure:- src_compile:qt5-build src_test:qt5-build src_install:qt5-build
-_eclasses_=eutils	3c847a0129fed780bd709b98e426f89c	flag-o-matic	979af9133d4de419fa98992355b07ca4	multilib	0236be304ee52e7f179ed2f337075515	qt5-build	eb8635e74688f92ece1fd18f9a24c4d0	toolchain-funcs	53b75b4a49cf3e61530a523804045432	versionator	c80ccf29e90adea7c5cae94b42eb76d0	virtualx	171580f737f5aaf18fcb456548588066
-_md5_=bda55fa9ef25057473b416de4f6ba548
+_eclasses_=eutils	3c847a0129fed780bd709b98e426f89c	flag-o-matic	979af9133d4de419fa98992355b07ca4	multilib	0236be304ee52e7f179ed2f337075515	qt5-build	c3883ce8dc6fb1fb60bcb73d26006d00	toolchain-funcs	53b75b4a49cf3e61530a523804045432	versionator	c80ccf29e90adea7c5cae94b42eb76d0	virtualx	171580f737f5aaf18fcb456548588066
+_md5_=1c4c74c61afef7f98d418b0fbeec4627
