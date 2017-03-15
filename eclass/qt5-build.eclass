@@ -593,8 +593,7 @@ qt5_base_configure() {
 		# prefer system libraries (only common hard deps here)
 		-system-zlib
 		-system-pcre
-		# TODO after bug 581054
-		#$([[ ${QT5_MINOR_VERSION} -ge 7 ]] && echo -system-doubleconversion)
+		$([[ ${QT5_MINOR_VERSION} -ge 7 ]] && echo -system-doubleconversion)
 
 		# disable everything to prevent automagic deps (part 1)
 		-no-mtdev
@@ -627,7 +626,8 @@ qt5_base_configure() {
 		-verbose
 
 		# always enable iconv support
-		-iconv
+		# since 5.8 this is handled in qtcore
+		$([[ ${QT5_MINOR_VERSION} -lt 8 ]] && echo -iconv)
 
 		# disable everything to prevent automagic deps (part 3)
 		-no-cups -no-evdev -no-tslib -no-icu -no-fontconfig -no-dbus
