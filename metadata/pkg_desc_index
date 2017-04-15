@@ -1,5 +1,4 @@
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
-app-editors/vim-qt 99999999: Qt GUI version of the Vim text editor
 app-emulation/q4wine 9999: Qt GUI configuration tool for Wine
 app-text/goldendict 9999: Feature-rich dictionary lookup program
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API

@@ -10,8 +10,6 @@ app-crypt/qca:nss - Enable NSS plugin
 app-crypt/qca:pkcs11 - Enable PKCS#11 plugin
 app-crypt/qca:sasl - Enable SASL plugin
 app-crypt/qca:softstore - Enable softstore plugin
-app-editors/vim-qt:luajit - Use dev-lang/luajit instead of dev-lang/lua
-app-editors/vim-qt:racket - Enable support for Scheme using dev-lang/racket
 app-emulation/q4wine:ico - Enable ico support via media-gfx/icoutils
 app-emulation/q4wine:iso - Support unprivileged mounting of ISO9660 images via sys-fs/fuseiso
 app-emulation/q4wine:wineappdb - Enable Wine AppDB browser support
