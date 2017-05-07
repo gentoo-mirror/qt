@@ -19,7 +19,7 @@ dev-python/pyside:declarative - Build QtQml, QtQuick, and QtQuickWidgets modules
 dev-python/pyside:designer - Build QtDesigner and QtUiTools modules
 dev-python/pyside:gui - Build QtGui module
 dev-python/pyside:help - Build QtHelp module
-dev-python/pyside:multimedia - Build QtMultimedia module
+dev-python/pyside:multimedia - Build QtMultimedia and QtMultimediaWidgets modules
 dev-python/pyside:network - Build QtNetwork module
 dev-python/pyside:opengl - Build QtOpenGL module
 dev-python/pyside:printsupport - Build QtPrintSupport module
