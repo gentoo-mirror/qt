@@ -14,6 +14,7 @@ dev-qt/pixeltool 5.6.9999 5.7.9999 5.9.0 5.9.9999 5.9999: Qt screen magnifier
 dev-qt/qdbus 5.6.9999 5.7.9999 5.9.0 5.9.9999 5.9999: Interface to Qt applications communicating over D-Bus
 dev-qt/qdbusviewer 5.6.9999 5.7.9999 5.9.0 5.9.9999 5.9999: Graphical tool that lets you introspect D-Bus objects and messages
 dev-qt/qdoc 5.6.9999 5.7.9999 5.9.0 5.9.9999 5.9999: Qt documentation generator
+dev-qt/qt-docs 5.9.1_p201706130610: Documentation for Qt5, for use with Qt Creator and other tools
 dev-qt/qt3d 5.7.9999 5.9.0 5.9.9999 5.9999: The 3D module for the Qt5 framework
 dev-qt/qtbluetooth 5.6.9999 5.7.9999 5.9.0 5.9.9999 5.9999: Bluetooth support library for the Qt5 framework
 dev-qt/qtcharts 5.7.9999 5.9.0 5.9.9999 5.9999: Chart component library for the Qt5 framework
