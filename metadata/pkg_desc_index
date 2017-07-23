@@ -43,12 +43,14 @@ dev-qt/qtquickcontrols2 5.7.9999 5.9.1 5.9.9999 5.9999: Set of next generation Q
 dev-qt/qtscript 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Application scripting library for the Qt5 framework (deprecated)
 dev-qt/qtscxml 5.7.9999 5.9.1 5.9.9999 5.9999: State Chart XML (SCXML) support library for the Qt5 framework
 dev-qt/qtsensors 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Hardware sensor access library for the Qt5 framework
+dev-qt/qtserialbus 5.9.1 5.9.9999 5.9999: Support for CAN and other serial buses
 dev-qt/qtserialport 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Serial port abstraction library for the Qt5 framework
 dev-qt/qtspeech 5.9.1 5.9.9999 5.9999: Text-to-speech library for the Qt5 framework
 dev-qt/qtsql 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: SQL abstraction library for the Qt5 tooolkit
 dev-qt/qtsvg 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: SVG rendering library for the Qt5 framework
 dev-qt/qttest 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Unit testing library for the Qt5 framework
 dev-qt/qttranslations 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Translation files for the Qt5 framework
+dev-qt/qtvirtualkeyboard 5.7.1 5.7.9999 5.9.1 5.9.9999 5.9999: Virtual keyboard plugin for the Qt5 framework
 dev-qt/qtwayland 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Wayland platform plugin for Qt
 dev-qt/qtwebchannel 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Qt5 module for integrating C++ and QML applications with HTML/JavaScript clients
 dev-qt/qtwebengine 5.6.9999 5.7.9999 5.9.1 5.9.9999 5.9999: Library for rendering dynamic web content in Qt5 C++ and QML applications
