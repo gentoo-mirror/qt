@@ -43,12 +43,14 @@
 =dev-qt/qtscript-5.9.1*
 =dev-qt/qtscxml-5.9.1*
 =dev-qt/qtsensors-5.9.1*
+=dev-qt/qtserialbus-5.9.1*
 =dev-qt/qtserialport-5.9.1*
 =dev-qt/qtspeech-5.9.1*
 =dev-qt/qtsql-5.9.1*
 =dev-qt/qtsvg-5.9.1*
 =dev-qt/qttest-5.9.1*
 =dev-qt/qttranslations-5.9.1*
+=dev-qt/qtvirtualkeyboard-5.9.1*
 =dev-qt/qtwayland-5.9.1*
 =dev-qt/qtwebchannel-5.9.1*
 =dev-qt/qtwebengine-5.9.1*
