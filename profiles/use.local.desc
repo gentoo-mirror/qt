@@ -77,6 +77,7 @@ dev-qt/qtpositioning:geoclue - Use enhanced location information from app-misc/g
 dev-qt/qtpositioning:qml - Build QML bindings
 dev-qt/qtprintsupport:gles2 - Use GLES 2.0 or later instead of full OpenGL
 dev-qt/qtquickcontrols:widgets - Enable QtWidgets support
+dev-qt/qtquickcontrols2:widgets - Enable QtWidgets support
 dev-qt/qtscript:scripttools - Build the QtScriptTools module (requires QtWidgets)
 dev-qt/qtsensors:qml - Build QML bindings
 dev-qt/qtwayland:egl - Use EGL instead of GLX to manage OpenGL contexts
