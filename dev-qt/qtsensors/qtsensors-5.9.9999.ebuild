@@ -10,10 +10,12 @@ if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc64 ~x86"
 fi
 
+# TODO: simulator
 IUSE="qml"
 
 RDEPEND="
 	~dev-qt/qtcore-${PV}
+	~dev-qt/qtdbus-${PV}
 	qml? ( ~dev-qt/qtdeclarative-${PV} )
 "
 DEPEND="${RDEPEND}"
