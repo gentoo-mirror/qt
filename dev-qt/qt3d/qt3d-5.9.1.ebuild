@@ -18,8 +18,7 @@ DEPEND="
 	~dev-qt/qtcore-${PV}
 	~dev-qt/qtgui-${PV}
 	~dev-qt/qtnetwork-${PV}
-	>=media-libs/assimp-3.1.1
-	sys-libs/zlib
+	>=media-libs/assimp-4.0.0
 	qml? ( ~dev-qt/qtdeclarative-${PV}[gles2=] )
 "
 RDEPEND="${DEPEND}"
@@ -27,9 +26,7 @@ RDEPEND="${DEPEND}"
 src_prepare() {
 	rm -r src/3rdparty/assimp/{code,contrib,include} || die
 
-	qt5-build_src_prepare
+	qt_use_disable_mod qml quick src/src.pro
 
-	if ! use qml; then
-		sed -i -e "/quick3d/s/^/#/" src/src.pro || die
-	fi
+	qt5-build_src_prepare
 }
