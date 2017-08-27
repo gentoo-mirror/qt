@@ -56,7 +56,6 @@ dev-qt/qtgui:egl - Enable EGL integration
 dev-qt/qtgui:eglfs - Build the EGL Full Screen/Single Surface platform plugin
 dev-qt/qtgui:evdev - Enable support for input devices via evdev
 dev-qt/qtgui:gles2 - Use GLES 2.0 or later instead of full OpenGL
-dev-qt/qtgui:gtk - Build the GTK platform theme plugin
 dev-qt/qtgui:gtkstyle - Build a widgets style that mimics the active GTK+ theme
 dev-qt/qtgui:ibus - Build the IBus input method plugin
 dev-qt/qtgui:libinput - Enable support for input devices via dev-libs/libinput
