@@ -71,25 +71,16 @@ DEPEND="${RDEPEND}
 	pax_kernel? ( sys-apps/elfix )
 "
 
-PATCHES=(
-	"${FILESDIR}/${PN}-5.7.1-fix-audio-detection.patch"
-	"${FILESDIR}/${PN}-5.7.0-fix-system-ffmpeg.patch"
-	"${FILESDIR}/${PN}-5.7.0-icu58.patch"
-	"${FILESDIR}/${PN}-5.7.0-undef-madv_free.patch"
-	"${FILESDIR}/${PN}-5.7.1-gcc-7.patch"
-)
-
 src_prepare() {
-	use pax_kernel && PATCHES+=( "${FILESDIR}/${PN}-paxmark-mksnapshot.patch" )
+	use pax_kernel && PATCHES+=( "${FILESDIR}/${PN}-5.9.0-paxmark-mksnapshot.patch" )
 
-	if use system-icu; then
-		# ensure build against system headers - bug #601264
-		rm -r src/3rdparty/chromium/third_party/icu/source || die
-	fi
+	qt_use_disable_config alsa alsa src/core/config/linux.pri
+	qt_use_disable_config pulseaudio pulseaudio src/core/config/linux.pri
 
 	qt_use_disable_mod geolocation positioning \
-		src/core/core_common.pri \
-		src/core/core_gyp_generator.pro
+		mkspecs/features/configure.prf \
+		src/core/core_chromium.pri \
+		src/core/core_common.pri
 
 	qt_use_disable_mod widgets widgets src/src.pro
 
@@ -101,9 +92,7 @@ src_configure() {
 	export NINJAFLAGS="${NINJAFLAGS:--j$(makeopts_jobs) -l$(makeopts_loadavg "${MAKEOPTS}" 0) -v}"
 
 	local myqmakeargs=(
-		$(usex alsa 'WEBENGINE_CONFIG+=use_alsa' '')
 		$(usex bindist '' 'WEBENGINE_CONFIG+=use_proprietary_codecs')
-		$(usex pulseaudio 'WEBENGINE_CONFIG+=use_pulseaudio' '')
 		$(usex system-ffmpeg 'WEBENGINE_CONFIG+=use_system_ffmpeg' '')
 		$(usex system-icu 'WEBENGINE_CONFIG+=use_system_icu' '')
 	)

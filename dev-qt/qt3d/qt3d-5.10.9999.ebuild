@@ -10,7 +10,7 @@ if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~x86"
 fi
 
-# TODO: tools
+# TODO: gamepad, tools
 IUSE="gles2 qml"
 
 DEPEND="
@@ -18,15 +18,15 @@ DEPEND="
 	~dev-qt/qtcore-${PV}
 	~dev-qt/qtgui-${PV}
 	~dev-qt/qtnetwork-${PV}
-	sys-libs/zlib
+	>=media-libs/assimp-4.0.0
 	qml? ( ~dev-qt/qtdeclarative-${PV}[gles2=] )
 "
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	qt5-build_src_prepare
+	rm -r src/3rdparty/assimp/{code,contrib,include} || die
 
-	if ! use qml; then
-		sed -i -e "/quick3d/s/^/#/" src/src.pro || die
-	fi
+	qt_use_disable_mod qml quick src/src.pro
+
+	qt5-build_src_prepare
 }

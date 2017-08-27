@@ -13,8 +13,8 @@ fi
 
 # TODO: linuxfb
 
-IUSE="accessibility dbus egl eglfs evdev +gif gles2 gtk
-	ibus jpeg libinput +png tslib tuio +udev +xcb"
+IUSE="accessibility dbus egl eglfs evdev +gif gles2 ibus
+	jpeg libinput +png tslib tuio +udev vnc +xcb"
 REQUIRED_USE="
 	|| ( eglfs xcb )
 	accessibility? ( dbus xcb )
@@ -39,12 +39,6 @@ RDEPEND="
 		x11-libs/libdrm
 	)
 	evdev? ( sys-libs/mtdev )
-	gtk? (
-		x11-libs/gtk+:3
-		x11-libs/libX11
-		x11-libs/pango
-		!!x11-libs/cairo[qt4]
-	)
 	gles2? ( media-libs/mesa[gles2] )
 	jpeg? ( virtual/jpeg:0 )
 	libinput? (
@@ -55,12 +49,12 @@ RDEPEND="
 	tslib? ( x11-libs/tslib )
 	tuio? ( ~dev-qt/qtnetwork-${PV} )
 	udev? ( virtual/libudev:= )
+	vnc? ( ~dev-qt/qtnetwork-${PV} )
 	xcb? (
 		x11-libs/libICE
 		x11-libs/libSM
 		x11-libs/libX11
 		>=x11-libs/libXi-1.7.4
-		x11-libs/libXrender
 		>=x11-libs/libxcb-1.10:=[xkb]
 		>=x11-libs/libxkbcommon-0.4.1[X]
 		x11-libs/xcb-util-image
@@ -86,7 +80,6 @@ QT5_TARGET_SUBDIRS=(
 	src/plugins/imageformats
 	src/plugins/platforms
 	src/plugins/platforminputcontexts
-	src/plugins/platformthemes
 )
 
 QT5_GENTOO_CONFIG=(
@@ -103,7 +96,6 @@ QT5_GENTOO_CONFIG=(
 	!gif:no-gif:
 	gles2::OPENGL_ES
 	gles2:opengles2:OPENGL_ES_2
-	gtk:gtk3:
 	!:no-gui:
 	:system-harfbuzz:HARFBUZZ
 	!:no-harfbuzz:
@@ -125,23 +117,22 @@ QT5_GENTOO_CONFIG=(
 	xcb:xcb-xlib:
 	xcb:xinput2:
 	xcb::XKB
-	xcb:xrender
 )
 
 src_prepare() {
 	# egl_x11 is activated when both egl and xcb are enabled
 	use egl && QT5_GENTOO_CONFIG+=(xcb:egl_x11) || QT5_GENTOO_CONFIG+=(egl:egl_x11)
 
-	# avoid automagic dep on qtdbus
-	use dbus || sed -i -e 's/contains(QT_CONFIG, dbus)/false/' \
-		src/platformsupport/platformsupport.pro || die
+	qt_use_disable_config dbus dbus \
+		src/platformsupport/themes/genericunix/genericunix.pri
+
+	qt_use_disable_config tuio udpsocket src/plugins/generic/generic.pro
 
 	qt_use_disable_mod ibus dbus \
 		src/plugins/platforminputcontexts/platforminputcontexts.pro
 
-	# avoid automagic dep on qtnetwork
-	use tuio || sed -i -e '/SUBDIRS += tuiotouch/d' \
-		src/plugins/generic/generic.pro || die
+	use vnc || sed -i -e '/SUBDIRS += vnc/d' \
+		src/plugins/platforms/platforms.pro || die
 
 	qt5-build_src_prepare
 }
@@ -157,7 +148,6 @@ src_configure() {
 		-fontconfig
 		-system-freetype
 		$(usex gif '' -no-gif)
-		$(qt_use gtk)
 		-system-harfbuzz
 		$(qt_use jpeg libjpeg system)
 		$(qt_use libinput)
@@ -168,7 +158,7 @@ src_configure() {
 		$(qt_use udev libudev)
 		$(qt_use xcb xcb system)
 		$(qt_use xcb xkbcommon-x11 system)
-		$(usex xcb '-xcb-xlib -xinput2 -xkb -xrender' '')
+		$(usex xcb '-xcb-xlib -xinput2 -xkb' '')
 	)
 	qt5-build_src_configure
 }
