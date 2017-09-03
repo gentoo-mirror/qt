@@ -80,7 +80,6 @@ dev-qt/qtquickcontrols2:widgets - Enable QtWidgets support
 dev-qt/qtscript:scripttools - Build the QtScriptTools module (requires QtWidgets)
 dev-qt/qtsensors:qml - Build QML bindings
 dev-qt/qtvirtualkeyboard:handwriting - Adds handwriting recognition integration support
-dev-qt/qtwayland:egl - Use EGL instead of GLX to manage OpenGL contexts
 dev-qt/qtwayland:libinput - Enable support for input devices via dev-libs/libinput
 dev-qt/qtwayland:qml - Build QML/QtQuick bindings
 dev-qt/qtwayland:wayland-compositor - Build Qt compositor for wayland
