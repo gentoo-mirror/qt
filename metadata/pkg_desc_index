@@ -50,7 +50,7 @@ dev-qt/qtsql 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: SQL abstraction library f
 dev-qt/qtsvg 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: SVG rendering library for the Qt5 framework
 dev-qt/qttest 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: Unit testing library for the Qt5 framework
 dev-qt/qttranslations 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: Translation files for the Qt5 framework
-dev-qt/qtvirtualkeyboard 5.7.1 5.9.1 5.9.9999 5.10.9999 5.9999: Virtual keyboard plugin for the Qt5 framework
+dev-qt/qtvirtualkeyboard 5.9.1 5.9.9999 5.10.9999 5.9999: Virtual keyboard plugin for the Qt5 framework
 dev-qt/qtwayland 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: Wayland platform plugin for Qt
 dev-qt/qtwebchannel 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: Qt5 module for integrating C++ and QML applications with HTML/JavaScript clients
 dev-qt/qtwebengine 5.6.9999 5.9.1 5.9.9999 5.10.9999 5.9999: Library for rendering dynamic web content in Qt5 C++ and QML applications
