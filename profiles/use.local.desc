@@ -106,6 +106,36 @@ dev-qt/qtwebsockets:qml - Build QML bindings
 dev-qt/qtwidgets:gles2 - Use GLES 2.0 or later instead of full OpenGL
 dev-qt/qtwidgets:gtk - Build the GTK platform theme plugin
 dev-qt/qtwidgets:gtkstyle - Build a Qt style called GTK+ that mimics the active GTK+ theme
+lxqt-base/lxqt-meta:about - Install lxqt-base/lxqt-about
+lxqt-base/lxqt-meta:admin - Install lxqt-base/lxqt-admin
+lxqt-base/lxqt-meta:filemanager - Install x11-misc/pcmanfm-qt file manager
+lxqt-base/lxqt-meta:icons - Install an icon theme
+lxqt-base/lxqt-meta:lightdm - Install x11-misc/lightdm display manager
+lxqt-base/lxqt-meta:lximage - Install media-gfx/lximage-qt image viewer
+lxqt-base/lxqt-meta:minimal - Do not install x11-wm/openbox window manager
+lxqt-base/lxqt-meta:oxygen - Prefer kde-frameworks/oxygen-icons (default)
+lxqt-base/lxqt-meta:powermanagement - Install lxqt-base/lxqt-powermanagement package
+lxqt-base/lxqt-meta:sddm - Install x11-misc/sddm display manager
+lxqt-base/lxqt-meta:ssh-askpass - Install lxqt-base/lxqt-openssh-askpass user password prompt tool
+lxqt-base/lxqt-meta:sudo - Install lxqt-base/lxqt-sudo
+lxqt-base/lxqt-panel:clock - Build clock plugin
+lxqt-base/lxqt-panel:colorpicker - Build colorpicker plugin
+lxqt-base/lxqt-panel:cpuload - Build cpuload plugin
+lxqt-base/lxqt-panel:desktopswitch - Build desktopswitch plugin
+lxqt-base/lxqt-panel:dom - Build dom plugin
+lxqt-base/lxqt-panel:kbindicator - Build kbindicator plugin
+lxqt-base/lxqt-panel:mainmenu - Build mainmenu plugin
+lxqt-base/lxqt-panel:mount - Build mount plugin
+lxqt-base/lxqt-panel:networkmonitor - Build networkmonitor plugin
+lxqt-base/lxqt-panel:quicklaunch - Build quicklaunch plugin
+lxqt-base/lxqt-panel:sensors - Build sensors plugin
+lxqt-base/lxqt-panel:showdesktop - Build showdesktop plugin
+lxqt-base/lxqt-panel:statusnotifier - Build statusnotifier plugin
+lxqt-base/lxqt-panel:sysstat - Build sysstat plugin
+lxqt-base/lxqt-panel:taskbar - Build taskbar plugin
+lxqt-base/lxqt-panel:tray - Build tray plugin
+lxqt-base/lxqt-panel:volume - Build volume plugin
+lxqt-base/lxqt-panel:worldclock - Build worldclock plugin
 net-libs/telepathy-qt:farstream - Enable support for audio/video calls via farstream
 www-client/qupzilla:kwallet - Enable encrypted storage of passwords with kde-frameworks/kwallet
 www-client/qupzilla:nonblockdialogs - Enable fancy non-blocking JavaScript dialogs shown inside the page, not blocking the application window. When closing browser windows with open dialogs, this can crash the application.
