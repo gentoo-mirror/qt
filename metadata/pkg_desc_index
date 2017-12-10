@@ -56,7 +56,7 @@ dev-qt/qtwebchannel 5.9.9999 5.10.0 5.10.9999 5.9999: Qt5 module for integrating
 dev-qt/qtwebengine 5.9.9999 5.10.0 5.10.9999 5.9999: Library for rendering dynamic web content in Qt5 C++ and QML applications
 dev-qt/qtwebkit 5.9.9999 5.9999: WebKit rendering library for the Qt5 framework (deprecated)
 dev-qt/qtwebsockets 5.9.9999 5.10.0 5.10.9999 5.9999: Implementation of the WebSocket protocol for the Qt5 framework
-dev-qt/qtwebview 5.9.9999 5.10.9999 5.9999: Module for displaying web content in a QML application using the Qt5 framework
+dev-qt/qtwebview 5.9.9999 5.10.0 5.10.9999 5.9999: Module for displaying web content in a QML application using the Qt5 framework
 dev-qt/qtwidgets 5.9.9999 5.10.0 5.10.9999 5.9999: Set of components for creating classic desktop-style UIs for the Qt5 framework
 dev-qt/qtx11extras 5.9.9999 5.10.0 5.10.9999 5.9999: Linux/X11-specific support library for the Qt5 framework
 dev-qt/qtxml 5.9.9999 5.10.0 5.10.9999 5.9999: Implementation of SAX and DOM for the Qt5 framework
