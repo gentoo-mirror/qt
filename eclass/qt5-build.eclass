@@ -13,7 +13,7 @@
 # Requires EAPI 6.
 
 if [[ ${CATEGORY} != dev-qt ]]; then
-	die "qt5-build.eclass is only to be used for building Qt 5."
+	die "qt5-build.eclass is only to be used for building Qt 5"
 fi
 
 case ${EAPI} in
@@ -57,15 +57,14 @@ esac
 # for tests you should proceed with setting VIRTUALX_REQUIRED=test.
 : ${VIRTUALX_REQUIRED:=manual}
 
-inherit estack flag-o-matic ltprune toolchain-funcs versionator virtualx
+inherit eapi7-ver estack flag-o-matic toolchain-funcs virtualx
 
 HOMEPAGE="https://www.qt.io/"
 LICENSE="|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3"
-SLOT=5/$(get_version_component_range 1-2)
+SLOT=5/$(ver_cut 1-2)
 
-QT5_MINOR_VERSION=$(get_version_component_range 2)
-QT5_PATCH_VERSION=$(get_version_component_range 3)
-readonly QT5_MINOR_VERSION QT5_PATCH_VERSION
+QT5_MINOR_VERSION=$(ver_cut 2)
+readonly QT5_MINOR_VERSION
 
 case ${PV} in
 	5.9999)
@@ -147,15 +146,6 @@ EXPORT_FUNCTIONS src_unpack src_prepare src_configure src_compile src_install sr
 # @DESCRIPTION:
 # Unpacks the sources.
 qt5-build_src_unpack() {
-	if tc-is-gcc; then
-		local min_gcc4_minor_version=7
-		if [[ $(gcc-major-version) -lt 4 ]] || \
-		   [[ $(gcc-major-version) -eq 4 && $(gcc-minor-version) -lt ${min_gcc4_minor_version} ]]; then
-			eerror "GCC version 4.${min_gcc4_minor_version} or later is required to build this package"
-			die "GCC 4.${min_gcc4_minor_version} or later required"
-		fi
-	fi
-
 	# bug 307861
 	if [[ ${PN} == qtwebengine || ${PN} == qtwebkit ]]; then
 		eshopts_push -s extglob
@@ -330,7 +320,9 @@ qt5-build_src_install() {
 	fi
 
 	qt5_install_module_config
-	prune_libtool_files
+
+	# prune libtool files
+	find "${D}" -name '*.la' -delete || die
 }
 
 # @FUNCTION: qt5-build_pkg_postinst
