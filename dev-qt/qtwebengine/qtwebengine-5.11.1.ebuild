@@ -80,8 +80,10 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES+=(
-	"${FILESDIR}/${P}-fix-build-w-o-qtlocation.patch"
-	"${FILESDIR}/${P}-fix-page-render.patch"
+	"${FILESDIR}/${P}-libxml2-disable-catalogs.patch" # bug 653078
+	"${FILESDIR}/${P}-ffmpeg4.patch"
+	"${FILESDIR}/${P}-eglGetProcAddress-fallback-lookup.patch" # 5.11 branch
+	"${FILESDIR}/${P}-nouveau-disable-gpu.patch" # bug 609752
 )
 
 src_prepare() {
