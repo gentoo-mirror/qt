@@ -79,8 +79,8 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES+=(
+	"${FILESDIR}/${PN}-5.12.0-build-without-webrtc.patch"
 	"${FILESDIR}/${PN}-5.12.0-libxml2-disable-catalogs.patch" # bug 653078
-	"${FILESDIR}/${PN}-5.11.1-nouveau-disable-gpu.patch" # bug 609752
 )
 
 src_prepare() {
@@ -113,6 +113,7 @@ src_configure() {
 		-opus
 		-printing-and-pdf
 		-webp
+		-no-webengine-webrtc
 		$(usex alsa '-alsa' '')
 		$(usex bindist '' '-proprietary-codecs')
 		$(usex pulseaudio '-pulseaudio' '')
