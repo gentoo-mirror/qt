@@ -2,9 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
+QT5_MODULE="qttools"
 inherit qt5-build
 
-DESCRIPTION="XPath, XQuery, XSLT, and XML Schema validation library for the Qt5 framework"
+DESCRIPTION="Qt5 module for integrating online documentation into applications"
 
 if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~x86 ~amd64-fbsd"
@@ -14,8 +15,14 @@ IUSE=""
 
 DEPEND="
 	~dev-qt/qtcore-${PV}
+	~dev-qt/qtgui-${PV}
 	~dev-qt/qtnetwork-${PV}
+	~dev-qt/qtsql-${PV}[sqlite]
+	~dev-qt/qtwidgets-${PV}
 "
-RDEPEND="${DEPEND}
-	!<dev-qt/qtdeclarative-5.12.0_beta4:5
-"
+RDEPEND="${DEPEND}"
+
+QT5_TARGET_SUBDIRS=(
+	src/assistant/help
+	src/assistant/qhelpgenerator
+)
