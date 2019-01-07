@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=~dev-qt/qtcore-5.9999 ~dev-qt/qtdeclarative-5.9999 ~dev-qt/qtgui-5.9999 widgets? ( ~dev-qt/qtwidgets-5.9999 ) >=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig test? ( ~dev-qt/qttest-5.9999 )
-DESCRIPTION=Set of controls used in conjunction with Qt Quick to build complete interfaces
+DESCRIPTION=Set of Qt Quick controls to create complete user interfaces (deprecated)
 EAPI=6
 HOMEPAGE=https://www.qt.io/
 IUSE=+widgets debug test
@@ -8,4 +8,4 @@ LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
 RDEPEND=~dev-qt/qtcore-5.9999 ~dev-qt/qtdeclarative-5.9999 ~dev-qt/qtgui-5.9999 widgets? ( ~dev-qt/qtwidgets-5.9999 ) dev-qt/qtchooser
 SLOT=5/5.9999
 _eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	eapi7-ver	756b3f27d8e46131d5cf3c51bd876446	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	55aaa148741116aa54ad0d80e361818e	git-r3	0d4635eeb5a96cd5315597a47eba25c9	ltprune	08f9e1d9ee0af8f5d9a7854efbcd8c0e	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	qt5-build	4a99ea32a89fcb7e2e13ccf2fe3ce0f6	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	virtualx	401b718cc14d43a5a7fbe062c4851ba5
-_md5_=06cac9e9f94c9abfa93ddd7c99a5870d
+_md5_=c3fae7a093cd2ebdf16c32bba7864363
