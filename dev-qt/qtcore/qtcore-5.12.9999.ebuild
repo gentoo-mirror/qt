@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -17,7 +17,7 @@ DEPEND="
 	dev-libs/double-conversion:=
 	dev-libs/glib:2
 	dev-libs/libpcre2[pcre16,unicode]
-	sys-libs/zlib
+	sys-libs/zlib:=
 	icu? ( dev-libs/icu:= )
 	!icu? ( virtual/libiconv )
 	systemd? ( sys-apps/systemd:= )
@@ -56,10 +56,8 @@ src_install() {
 	qt5-build_src_install
 
 	local flags=(
-		ALSA CUPS DBUS EGL EGLFS EGL_X11 EVDEV FONTCONFIG FREETYPE
-		HARFBUZZ IMAGEFORMAT_JPEG IMAGEFORMAT_PNG LIBPROXY MITSHM
-		OPENGL OPENSSL OPENVG PULSEAUDIO SHAPE SSL TSLIB WIDGETS
-		XCURSOR	XFIXES XKB XRANDR XSYNC ZLIB
+		DBUS FREETYPE IMAGEFORMAT_JPEG IMAGEFORMAT_PNG
+		OPENGL OPENSSL SSL WIDGETS
 	)
 
 	for flag in ${flags[@]}; do
