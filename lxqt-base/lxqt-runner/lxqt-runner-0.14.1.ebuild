@@ -5,8 +5,10 @@ EAPI=7
 
 inherit cmake-utils
 
-DESCRIPTION="LXQt notification daemon and library"
+DESCRIPTION="LXQt quick launcher"
 HOMEPAGE="https://lxqt.org/"
+
+MY_PV="$(ver_cut 1-2)*"
 
 if [[ ${PV} = *9999* ]]; then
 	inherit git-r3
@@ -22,15 +24,24 @@ SLOT="0"
 BDEPEND="
 	dev-qt/linguist-tools:5
 	>=dev-util/lxqt-build-tools-0.6.0
+	virtual/pkgconfig
 "
 RDEPEND="
-	>=dev-libs/libqtxdg-3.3.0
+	>=dev-cpp/muParser-2.2.3:=
+	>=dev-libs/libqtxdg-3.3.1
 	dev-qt/qtcore:5
-	dev-qt/qtdbus:5
 	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
+	dev-qt/qtxml:5
 	kde-frameworks/kwindowsystem:5
-	=lxqt-base/liblxqt-$(ver_cut 1-2)*
+	>=lxde-base/menu-cache-0.5.1
+	=lxqt-base/liblxqt-${MY_PV}
+	=lxqt-base/lxqt-globalkeys-${MY_PV}
 	!lxqt-base/lxqt-l10n
 "
 DEPEND="${RDEPEND}"
+
+src_install(){
+	cmake-utils_src_install
+	doman man/*.1
+}

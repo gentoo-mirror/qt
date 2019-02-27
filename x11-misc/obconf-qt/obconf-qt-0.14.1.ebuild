@@ -3,9 +3,9 @@
 
 EAPI=7
 
-inherit cmake-utils
+inherit cmake-utils gnome2-utils xdg-utils
 
-DESCRIPTION="Common base library for the LXQt desktop environment"
+DESCRIPTION="Openbox window manager configuration tool"
 HOMEPAGE="https://lxqt.org/"
 
 if [[ ${PV} = *9999* ]]; then
@@ -16,26 +16,34 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
-LICENSE="LGPL-2.1+ BSD"
-SLOT="0/$(ver_cut 1-2)"
+LICENSE="GPL-2+"
+SLOT="0"
 
 BDEPEND="
 	dev-qt/linguist-tools:5
 	>=dev-util/lxqt-build-tools-0.6.0
+	virtual/pkgconfig
 "
 RDEPEND="
-	>=dev-libs/libqtxdg-3.3.0
+	dev-libs/glib:2
 	dev-qt/qtcore:5
-	dev-qt/qtdbus:5
 	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
 	dev-qt/qtx11extras:5
-	dev-qt/qtxml:5
-	kde-frameworks/kwindowsystem:5[X]
+	x11-wm/openbox:3
 	x11-libs/libX11
-	x11-libs/libXScrnSaver
 	!lxqt-base/lxqt-l10n
 "
 DEPEND="${RDEPEND}
-	sys-auth/polkit-qt
+	sys-apps/sed
 "
+
+pkg_postinst() {
+	xdg_desktop_database_update
+	gnome2_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_desktop_database_update
+	gnome2_icon_cache_update
+}

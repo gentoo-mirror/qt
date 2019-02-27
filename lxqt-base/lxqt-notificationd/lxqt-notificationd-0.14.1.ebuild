@@ -5,7 +5,7 @@ EAPI=7
 
 inherit cmake-utils
 
-DESCRIPTION="LXQt GUI frontend for sudo"
+DESCRIPTION="LXQt notification daemon and library"
 HOMEPAGE="https://lxqt.org/"
 
 if [[ ${PV} = *9999* ]]; then
@@ -19,12 +19,17 @@ fi
 LICENSE="LGPL-2.1+"
 SLOT="0"
 
-BDEPEND=">=dev-util/lxqt-build-tools-0.6.0"
+BDEPEND="
+	dev-qt/linguist-tools:5
+	>=dev-util/lxqt-build-tools-0.6.0
+"
 RDEPEND="
-	app-admin/sudo
-	>=dev-libs/libqtxdg-3.3.0
+	>=dev-libs/libqtxdg-3.3.1
 	dev-qt/qtcore:5
+	dev-qt/qtdbus:5
+	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
+	kde-frameworks/kwindowsystem:5
 	=lxqt-base/liblxqt-$(ver_cut 1-2)*
 	!lxqt-base/lxqt-l10n
 "

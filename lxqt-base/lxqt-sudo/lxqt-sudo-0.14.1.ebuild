@@ -5,7 +5,7 @@ EAPI=7
 
 inherit cmake-utils
 
-DESCRIPTION="LXQt PolKit authentication agent"
+DESCRIPTION="LXQt GUI frontend for sudo"
 HOMEPAGE="https://lxqt.org/"
 
 if [[ ${PV} = *9999* ]]; then
@@ -19,24 +19,13 @@ fi
 LICENSE="LGPL-2.1+"
 SLOT="0"
 
-BDEPEND="
-	dev-qt/linguist-tools:5
-	>=dev-util/lxqt-build-tools-0.6.0
-	virtual/pkgconfig
-"
+BDEPEND=">=dev-util/lxqt-build-tools-0.6.0"
 RDEPEND="
-	dev-libs/glib:2
-	>=dev-libs/libqtxdg-3.3.0
+	app-admin/sudo
+	>=dev-libs/libqtxdg-3.3.1
 	dev-qt/qtcore:5
-	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
 	=lxqt-base/liblxqt-$(ver_cut 1-2)*
-	sys-auth/polkit-qt[qt5(+)]
 	!lxqt-base/lxqt-l10n
 "
 DEPEND="${RDEPEND}"
-
-src_install(){
-	cmake-utils_src_install
-	doman man/*.1
-}

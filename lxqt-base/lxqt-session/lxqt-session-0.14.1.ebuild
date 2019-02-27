@@ -5,7 +5,7 @@ EAPI=7
 
 inherit cmake-utils
 
-DESCRIPTION="LXQt quick launcher"
+DESCRIPTION="LXQT session manager"
 HOMEPAGE="https://lxqt.org/"
 
 MY_PV="$(ver_cut 1-2)*"
@@ -18,30 +18,43 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
+IUSE="+themes +udev"
+
 LICENSE="LGPL-2.1+"
 SLOT="0"
 
 BDEPEND="
 	dev-qt/linguist-tools:5
 	>=dev-util/lxqt-build-tools-0.6.0
-	virtual/pkgconfig
 "
 RDEPEND="
-	>=dev-cpp/muParser-2.2.3:=
-	>=dev-libs/libqtxdg-3.3.0
+	>=dev-libs/libqtxdg-3.3.1
 	dev-qt/qtcore:5
+	dev-qt/qtdbus:5
 	dev-qt/qtgui:5
 	dev-qt/qtwidgets:5
-	dev-qt/qtxml:5
-	kde-frameworks/kwindowsystem:5
-	>=lxde-base/menu-cache-0.5.1
+	dev-qt/qtx11extras:5
+	kde-frameworks/kwindowsystem:5[X]
 	=lxqt-base/liblxqt-${MY_PV}
-	=lxqt-base/lxqt-globalkeys-${MY_PV}
+	x11-libs/libX11
+	x11-misc/xdg-user-dirs
+	themes? ( =x11-themes/lxqt-themes-${MY_PV} )
+	udev? ( virtual/libudev )
 	!lxqt-base/lxqt-l10n
 "
 DEPEND="${RDEPEND}"
 
+src_configure() {
+	local mycmakeargs=(
+		-DWITH_LIBUDEV=$(usex udev)
+	)
+	cmake-utils_src_configure
+}
+
 src_install(){
 	cmake-utils_src_install
-	doman man/*.1
+	doman lxqt-config-session/man/*.1 lxqt-session/man/*.1
+
+	echo XDG_CONFIG_DIRS=\"${EPREFIX}/usr/share\" >> 91lxqt-config-dir
+	doenvd 91lxqt-config-dir
 }
