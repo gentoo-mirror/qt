@@ -20,6 +20,8 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
+PATCHES=( "${FILESDIR}/${P}-scrollviewstyle-div-by-zero.patch" )
+
 src_prepare() {
 	qt_use_disable_mod widgets widgets \
 		src/src.pro \
