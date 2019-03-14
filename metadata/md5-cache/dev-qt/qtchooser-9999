@@ -7,5 +7,5 @@ HOMEPAGE=https://code.qt.io/cgit/qtsdk/qtchooser.git/
 IUSE=test
 LICENSE=|| ( LGPL-2.1 GPL-3 )
 SLOT=0
-_eclasses_=estack	43ddf5aaffa7a8d0482df54d25a66a1f	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	b2f01ad412baf81650c23fcf0975fa33	qmake-utils	b88301a48247131e4c8172ac6e6803ff	toolchain-funcs	f164325a2cdb5b3ea39311d483988861
+_eclasses_=estack	43ddf5aaffa7a8d0482df54d25a66a1f	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	b2f01ad412baf81650c23fcf0975fa33	qmake-utils	b88301a48247131e4c8172ac6e6803ff	toolchain-funcs	b45201c4e6c096b98e250336954e64b9
 _md5_=ea54b997a33edf834c6f277085b7b870
