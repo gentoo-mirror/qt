@@ -1,11 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
-DEPEND=~dev-qt/qtcore-5.9999 ~dev-qt/qtgui-5.9999[gles2=] qml? ( ~dev-qt/qtdeclarative-5.9999[gles2=] ) >=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig test? ( ~dev-qt/qttest-5.9999 )
+DEPEND=~dev-qt/qtcore-5.9999 ~dev-qt/qtgui-5.9999[gles2=] qml? ( ~dev-qt/qtdeclarative-5.9999[gles2=] ) test? ( ~dev-qt/qttest-5.9999 )
 DESCRIPTION=3D data visualization library for the Qt5 framework
-EAPI=6
+EAPI=7
 HOMEPAGE=https://www.qt.io/
 IUSE=gles2 qml debug test
 LICENSE=GPL-3
 RDEPEND=~dev-qt/qtcore-5.9999 ~dev-qt/qtgui-5.9999[gles2=] qml? ( ~dev-qt/qtdeclarative-5.9999[gles2=] ) dev-qt/qtchooser
 SLOT=5/5.9999
-_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	eapi7-ver	756b3f27d8e46131d5cf3c51bd876446	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	git-r3	0d4635eeb5a96cd5315597a47eba25c9	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	1d91b03d42ab6308b5f4f6b598ed110e	preserve-libs	ef207dc62baddfddfd39a164d9797648	qt5-build	8935de18480c35136f4659ce4d3c35eb	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	virtualx	401b718cc14d43a5a7fbe062c4851ba5
-_md5_=4f21dea58f96d06896536007b6de8dae
+_eclasses_=estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	flag-o-matic	a09389deba2c0a7108b581e02c7cecbf	git-r3	0d4635eeb5a96cd5315597a47eba25c9	multilib	1d91b03d42ab6308b5f4f6b598ed110e	qt5-build	32c6b92cbc940aea3252cc6d7ee6adde	toolchain-funcs	8c7f9d80beedd16f2e5a7f612c609529	virtualx	401b718cc14d43a5a7fbe062c4851ba5
+_md5_=fdf45f3e493ec93af05050518dde22ec
