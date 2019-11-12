@@ -78,10 +78,6 @@ DEPEND="${RDEPEND}
 	pax_kernel? ( sys-apps/elfix )
 "
 
-PATCHES+=(
-	"${FILESDIR}/${P}-icu-65.patch"
-)
-
 src_prepare() {
 	use pax_kernel && PATCHES+=( "${FILESDIR}/${PN}-5.11.2-paxmark-mksnapshot.patch" )
 

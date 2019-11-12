@@ -43,7 +43,7 @@ QT5_GENTOO_PRIVATE_CONFIG=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${P}-disable-hwrng-in-boostrapped-mode.patch" # QTBUG-78937
+	"${FILESDIR}/${PN}-5.14.0_beta2-disable-hwrng-in-boostrapped-mode.patch" # QTBUG-78937
 )
 
 src_prepare() {
