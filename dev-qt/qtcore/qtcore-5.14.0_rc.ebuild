@@ -42,10 +42,6 @@ QT5_GENTOO_PRIVATE_CONFIG=(
 	!:xml
 )
 
-PATCHES=(
-	"${FILESDIR}/${PN}-5.14.0_beta2-disable-hwrng-in-boostrapped-mode.patch" # QTBUG-78937
-)
-
 src_prepare() {
 	# don't add -O3 to CXXFLAGS, bug 549140
 	sed -i -e '/CONFIG\s*+=/s/optimize_full//' src/corelib/corelib.pro || die
