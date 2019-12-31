@@ -78,7 +78,6 @@ lxqt-base/lxqt-session 9999: LXQT session manager
 lxqt-base/lxqt-sudo 9999: LXQt GUI frontend for sudo
 media-gfx/lximage-qt 9999: LXImage Image Viewer - GPicView replacement
 media-gfx/phototonic 9999: Image viewer and organizer
-net-libs/telepathy-qt 9999: Qt bindings for the Telepathy D-Bus protocol
 x11-libs/libfm-qt 9999: Qt port of libfm, a library providing components to build desktop file managers
 x11-misc/obconf-qt 9999: Openbox window manager configuration tool
 x11-misc/pcmanfm-qt 9999: Fast lightweight tabbed filemanager (Qt port)

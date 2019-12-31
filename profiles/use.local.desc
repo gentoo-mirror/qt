@@ -117,6 +117,5 @@ lxqt-base/lxqt-panel:tray - Build tray plugin
 lxqt-base/lxqt-panel:volume - Build volume plugin
 lxqt-base/lxqt-panel:worldclock - Build worldclock plugin
 lxqt-base/lxqt-session:themes - Install LXQt themes and graphics
-net-libs/telepathy-qt:farstream - Enable support for audio/video calls via farstream
 x11-misc/sddm:consolekit - Use ck-launch-session from sys-auth/consolekit (no native support)
 x11-misc/sddm:elogind - Use sys-auth/elogind for session tracking.
