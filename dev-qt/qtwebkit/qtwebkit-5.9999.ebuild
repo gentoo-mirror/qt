@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -11,8 +11,8 @@ else
 	SRC_URI="https://github.com/annulen/webkit/releases/download/${P}/${P}.tar.xz"
 	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~x86"
 fi
-PYTHON_COMPAT=( python2_7 )
-USE_RUBY="ruby25 ruby26"
+PYTHON_COMPAT=( python3_{6,7,8} )
+USE_RUBY="ruby25 ruby26 ruby27"
 inherit check-reqs cmake flag-o-matic python-any-r1 qmake-utils ruby-single toolchain-funcs
 
 DESCRIPTION="WebKit rendering library for the Qt5 framework (deprecated)"
@@ -20,7 +20,7 @@ HOMEPAGE="https://www.qt.io/"
 
 LICENSE="BSD LGPL-2+"
 SLOT="5/5.9999"
-IUSE="geolocation gles2 +gstreamer +hyphen +jit multimedia nsplugin opengl orientation +printsupport qml webp X"
+IUSE="crypt geolocation gles2 +gstreamer +hyphen +jit multimedia nsplugin opengl orientation +printsupport qml webp X"
 
 REQUIRED_USE="
 	nsplugin? ( X )
@@ -49,7 +49,12 @@ DEPEND="
 	>=dev-qt/qtnetwork-${QT_MIN_VER}
 	>=dev-qt/qtwidgets-${QT_MIN_VER}=
 	media-libs/libpng:0=
+	media-libs/woff2
 	virtual/jpeg:0
+	crypt? (
+		dev-libs/libgcrypt:=
+		dev-libs/libtasn1:=
+	)
 	geolocation? ( >=dev-qt/qtpositioning-${QT_MIN_VER} )
 	gstreamer? (
 		dev-libs/glib:2
@@ -107,6 +112,7 @@ src_configure() {
 		-DPORT=Qt
 		-DENABLE_API_TESTS=OFF
 		-DENABLE_TOOLS=OFF
+		-DENABLE_WEB_CRYPTO=$(usex crypt)
 		-DENABLE_GEOLOCATION=$(usex geolocation)
 		-DUSE_GSTREAMER=$(usex gstreamer)
 		-DUSE_LIBHYPHEN=$(usex hyphen)
@@ -116,12 +122,14 @@ src_configure() {
 		-DENABLE_OPENGL=$(usex opengl)
 		-DENABLE_PRINT_SUPPORT=$(usex printsupport)
 		-DENABLE_DEVICE_ORIENTATION=$(usex orientation)
-		-DENABLE_WEBKIT2=$(usex qml)
+		-DENABLE_WEBKIT=$(usex qml)
 		$(cmake_use_find_package webp WebP)
 		-DENABLE_X11_TARGET=$(usex X)
 	)
 
-	if has_version "virtual/rubygems[ruby_targets_ruby26]"; then
+	if has_version "virtual/rubygems[ruby_targets_ruby27]"; then
+		mycmakeargs+=( -DRUBY_EXECUTABLE=$(type -P ruby27) )
+	elif has_version "virtual/rubygems[ruby_targets_ruby26]"; then
 		mycmakeargs+=( -DRUBY_EXECUTABLE=$(type -P ruby26) )
 	else
 		mycmakeargs+=( -DRUBY_EXECUTABLE=$(type -P ruby25) )
