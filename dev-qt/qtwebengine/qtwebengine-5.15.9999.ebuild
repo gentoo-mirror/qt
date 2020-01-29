@@ -11,8 +11,8 @@ if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
-IUSE="alsa bindist designer jumbo-build pax_kernel pulseaudio
-	+system-ffmpeg +system-icu widgets"
+IUSE="alsa bindist designer geolocation jumbo-build pax_kernel
+	pulseaudio +system-ffmpeg +system-icu widgets"
 REQUIRED_USE="designer? ( widgets )"
 
 RDEPEND="
@@ -24,7 +24,6 @@ RDEPEND="
 	~dev-qt/qtdeclarative-${PV}
 	~dev-qt/qtgui-${PV}
 	~dev-qt/qtnetwork-${PV}
-	~dev-qt/qtpositioning-${PV}
 	~dev-qt/qtprintsupport-${PV}
 	~dev-qt/qtwebchannel-${PV}[qml]
 	dev-libs/expat
@@ -60,6 +59,7 @@ RDEPEND="
 	x11-libs/libXtst
 	alsa? ( media-libs/alsa-lib )
 	designer? ( ~dev-qt/designer-${PV} )
+	geolocation? ( ~dev-qt/qtpositioning-${PV} )
 	pulseaudio? ( media-sound/pulseaudio:= )
 	system-ffmpeg? ( media-video/ffmpeg:0= )
 	system-icu? ( >=dev-libs/icu-60.2:= )
@@ -89,10 +89,6 @@ src_prepare() {
 	# bug 620444 - ensure local headers are used
 	find "${S}" -type f -name "*.pr[fio]" | xargs sed -i -e 's|INCLUDEPATH += |&$$QTWEBENGINE_ROOT/include |' || die
 
-	# Disable 'qtpdf' for now to fix build.
-	sed -i -e 's|qtConfig(build-qtpdf)|false|g' \
-		src/src.pro || die
-
 	qt_use_disable_config alsa webengine-alsa src/buildtools/config/linux.pri
 	qt_use_disable_config pulseaudio webengine-pulseaudio src/buildtools/config/linux.pri
 
@@ -109,14 +105,16 @@ src_configure() {
 
 	local myqmakeargs=(
 		--
-		-opus
+		-no-build-qtpdf
 		-printing-and-pdf
-		-webp
-		$(usex alsa '-alsa' '')
-		$(usex bindist '' '-proprietary-codecs')
-		$(usex pulseaudio '-pulseaudio' '')
-		$(usex system-ffmpeg '-ffmpeg' '')
-		$(usex system-icu '-webengine-icu' '')
+		-system-opus
+		-system-webp
+		$(usex alsa '-alsa' '-no-alsa')
+		$(usex bindist '-no-proprietary-codecs' '-proprietary-codecs')
+		$(usex geolocation '-webengine-geolocation' '-no-webengine-geolocation')
+		$(usex pulseaudio '-pulseaudio' '-no-pulseaudio')
+		$(usex system-ffmpeg '-system-ffmpeg' '-qt-ffmpeg')
+		$(usex system-icu '-webengine-icu' '-no-webengine-icu')
 	)
 	qt5-build_src_configure
 }
