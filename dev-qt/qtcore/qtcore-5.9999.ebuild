@@ -1,17 +1,19 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
+
 QT5_MODULE="qtbase"
-inherit qt5-build
+inherit linux-info qt5-build
 
 DESCRIPTION="Cross-platform application development framework"
+SLOT=5/$(ver_cut 1-3)
 
 if [[ ${QT5_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
 fi
 
-IUSE="icu systemd"
+IUSE="icu old-kernel systemd"
 
 DEPEND="
 	dev-libs/double-conversion:=
@@ -43,6 +45,15 @@ QT5_GENTOO_PRIVATE_CONFIG=(
 	!:xml
 )
 
+pkg_pretend() {
+	use kernel_linux || return
+	get_running_version
+	if kernel_is -lt 3 17 && ! use old-kernel; then
+		ewarn "The running kernel is older than 3.17. USE=old-kernel is needed for ${CATEGORY}/${PN}"
+		ewarn "to function on this kernel properly.  See Bug #669994."
+	fi
+}
+
 src_prepare() {
 	# don't add -O3 to CXXFLAGS, bug 549140
 	sed -i -e '/CONFIG\s*+=/s/optimize_full//' src/corelib/corelib.pro || die
@@ -58,6 +69,8 @@ src_configure() {
 		-no-feature-statx	# bug 672856
 		$(qt_use icu)
 		$(qt_use !icu iconv)
+		$(qt_use !old-kernel feature-renameat2)  # needs Linux 3.16, bug 669994
+		$(qt_use !old-kernel feature-getentropy) # needs Linux 3.17, bug 669994
 		$(qt_use systemd journald)
 	)
 	qt5-build_src_configure
