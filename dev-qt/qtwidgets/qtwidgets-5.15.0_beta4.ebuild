@@ -43,8 +43,6 @@ QT5_GENTOO_PRIVATE_CONFIG=(
 	:widgets
 )
 
-PATCHES=( "${FILESDIR}"/${P}-cmake-targets-double-inclusion-{0,1}.patch ) # QTBUG-83282
-
 src_configure() {
 	local myconf=(
 		-opengl $(usex gles2-only es2 desktop)
