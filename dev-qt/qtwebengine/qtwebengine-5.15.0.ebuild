@@ -81,7 +81,7 @@ DEPEND="${RDEPEND}
 PATCHES=(
 	"${FILESDIR}/${PN}-5.15.0-disable-fatal-warnings.patch" # bug 695446
 	"${FILESDIR}/${PN}-5.14.2-icu67.patch" # bug 720054
-	"${FILESDIR}/${P}-gcc-10.patch" # bug 721876
+	"${FILESDIR}/${PN}-5.15.0_rc2-gcc-10.patch" # bug 721876
 )
 
 src_prepare() {
