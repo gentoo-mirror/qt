@@ -38,6 +38,7 @@ dev-qt/qtpositioning 5.15.9999: Physical position determination library for the 
 dev-qt/qtprintsupport 5.15.9999: Printing support library for the Qt5 framework
 dev-qt/qtquickcontrols 5.15.9999: Set of Qt Quick controls to create complete user interfaces (deprecated)
 dev-qt/qtquickcontrols2 5.15.9999: Set of next generation Qt Quick controls for the Qt5 framework
+dev-qt/qtquicktimeline 5.15.9999: Qt module for keyframe-based timeline construction
 dev-qt/qtscript 5.15.9999: Application scripting library for the Qt5 framework (deprecated)
 dev-qt/qtscxml 5.15.9999: State Chart XML (SCXML) support library for the Qt5 framework
 dev-qt/qtsensors 5.15.9999: Hardware sensor access library for the Qt5 framework
