@@ -53,7 +53,6 @@ dev-qt/qtvirtualkeyboard 5.15.9999: Customizable input framework and virtual key
 dev-qt/qtwayland 5.15.9999: Wayland platform plugin for Qt
 dev-qt/qtwebchannel 5.15.9999: Qt5 module for integrating C++ and QML applications with HTML/JavaScript clients
 dev-qt/qtwebengine 5.15.9999: Library for rendering dynamic web content in Qt5 C++ and QML applications
-dev-qt/qtwebkit 5.212.9999: WebKit rendering library for the Qt5 framework (deprecated)
 dev-qt/qtwebsockets 5.15.9999: Implementation of the WebSocket protocol for the Qt5 framework
 dev-qt/qtwebview 5.15.9999: Module for displaying web content in a QML application using the Qt5 framework
 dev-qt/qtwidgets 5.15.9999: Set of components for creating classic desktop-style UIs for the Qt5 framework
