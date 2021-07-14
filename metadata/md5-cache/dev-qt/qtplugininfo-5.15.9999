@@ -1,9 +1,9 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
-DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
+DEFINED_PHASES=compile configure install nofetch postinst postrm prepare test unpack
 DEPEND=~dev-qt/qtcore-5.15.9999 test? ( ~dev-qt/qttest-5.15.9999 )
 DESCRIPTION=Qt5 plugin metadata dumper
 EAPI=7
-HOMEPAGE=https://www.qt.io/ https://invent.kde.org/qt/qt/
+HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
 INHERIT=qt5-build
 IUSE=debug test
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=~dev-qt/qtcore-5.15.9999
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	dab5d8ec471d025b79c9e6906bcf3bff	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	0a780e1ab49c75da33a78ede35ab8f9c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	qt5-build	3fd65aa5bb0aaebed6ce398859d27a79
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	dab5d8ec471d025b79c9e6906bcf3bff	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	0a780e1ab49c75da33a78ede35ab8f9c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	6e4d9db9698dba71a2c9085b861e29b5	qt5-build	9d734ccbc090b177f571a4224e518733
 _md5_=a3b6060aff20e3ec7af7429c3aca7ab0
