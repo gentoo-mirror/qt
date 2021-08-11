@@ -12,4 +12,4 @@ RDEPEND=!<dev-qt/qtcore-5.15.2-r2:5
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	qmake-utils	f5eb2f69fffe94292aaaf802fb21c8d1	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=cef21938e985568dd7a0824209daf389
+_md5_=21057e81c8c0981250c552036241c24c
