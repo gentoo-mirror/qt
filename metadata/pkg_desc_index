@@ -81,4 +81,5 @@ media-gfx/phototonic 9999: Image viewer and organizer
 x11-libs/libfm-qt 9999: Qt port of libfm, a library providing components to build desktop file managers
 x11-misc/obconf-qt 9999: Openbox window manager configuration tool
 x11-misc/pcmanfm-qt 9999: Fast lightweight tabbed filemanager (Qt port)
+x11-misc/sddm 9999: Simple Desktop Display Manager
 x11-themes/lxqt-themes 9999: Themes, graphics and icons for LXQt
