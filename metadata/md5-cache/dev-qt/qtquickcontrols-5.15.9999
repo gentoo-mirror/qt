@@ -2,7 +2,7 @@ BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=compile configure install nofetch postinst postrm prepare test unpack
 DEPEND=~dev-qt/qtcore-5.15.9999 ~dev-qt/qtdeclarative-5.15.9999 ~dev-qt/qtgui-5.15.9999 widgets? ( ~dev-qt/qtwidgets-5.15.9999 ) test? ( ~dev-qt/qttest-5.15.9999 )
 DESCRIPTION=Set of Qt Quick controls to create complete user interfaces (deprecated)
-EAPI=7
+EAPI=8
 HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
 INHERIT=qt5-build
 IUSE=+widgets debug test
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=~dev-qt/qtcore-5.15.9999 ~dev-qt/qtdeclarative-5.15.9999 ~dev-qt/qtgui-5.15.9999 widgets? ( ~dev-qt/qtwidgets-5.15.9999 )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	dab5d8ec471d025b79c9e6906bcf3bff	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	ae7bc95c18d3cb7a5fe3643a8f630c64	qt5-build	9d734ccbc090b177f571a4224e518733
-_md5_=af88f14944ba15244dfd0ca525e72e5c
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	ae7bc95c18d3cb7a5fe3643a8f630c64	qt5-build	5765fc0380c21b1adecfda69474e63af
+_md5_=5ceb5bc1fbe53ae45e994e96606dcf6a

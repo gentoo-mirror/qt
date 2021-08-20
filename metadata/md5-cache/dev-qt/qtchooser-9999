@@ -2,7 +2,7 @@ BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install test unpack
 DEPEND=test? ( dev-qt/qtcore:5 dev-qt/qttest:5 )
 DESCRIPTION=Tool to quickly switch between multiple Qt installations
-EAPI=7
+EAPI=8
 HOMEPAGE=https://code.qt.io/cgit/qtsdk/qtchooser.git/
 INHERIT=qmake-utils toolchain-funcs git-r3
 IUSE=test
@@ -12,4 +12,4 @@ RDEPEND=!<dev-qt/qtcore-5.15.2-r2:5
 RESTRICT=!test? ( test )
 SLOT=0
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	qmake-utils	f5eb2f69fffe94292aaaf802fb21c8d1	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=21057e81c8c0981250c552036241c24c
+_md5_=2f403b7065c7ed350b8beddb8e3ae653
