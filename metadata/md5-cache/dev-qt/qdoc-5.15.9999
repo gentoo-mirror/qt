@@ -1,6 +1,6 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=compile configure install nofetch postinst postrm prepare test unpack
-DEPEND=~dev-qt/qtcore-5.15.9999:5= sys-devel/clang:= qml? ( ~dev-qt/qtdeclarative-5.15.9999 ) test? ( ~dev-qt/qttest-5.15.9999 )
+DEPEND=~dev-qt/qtcore-5.15.9999:5= sys-devel/clang:= qml? ( ~dev-qt/qtdeclarative-5.15.9999 ) ~dev-qt/qtxml-5.15.9999 test? ( ~dev-qt/qttest-5.15.9999 )
 DESCRIPTION=Qt documentation generator
 EAPI=8
 HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
@@ -12,4 +12,4 @@ RDEPEND=~dev-qt/qtcore-5.15.9999:5= sys-devel/clang:= qml? ( ~dev-qt/qtdeclarati
 RESTRICT=!test? ( test )
 SLOT=5/5.15
 _eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	ae7bc95c18d3cb7a5fe3643a8f630c64	qt5-build	5765fc0380c21b1adecfda69474e63af
-_md5_=9b6211dfe68fcc1782c5cf55f415e44e
+_md5_=b2852b18f679247c598a9a9bcb7db81c
