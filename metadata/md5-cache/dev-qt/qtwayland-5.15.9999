@@ -1,6 +1,6 @@
 BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=compile configure install nofetch postinst postrm prepare test unpack
-DEPEND=dev-libs/wayland ~dev-qt/qtcore-5.15.9999:5= ~dev-qt/qtdeclarative-5.15.9999:5= ~dev-qt/qtgui-5.15.9999:5=[egl,libinput,vulkan=] media-libs/mesa[egl] >=x11-libs/libxkbcommon-0.2.0 vulkan? ( dev-util/vulkan-headers ) X? ( ~dev-qt/qtgui-5.15.9999[-gles2-only] x11-libs/libX11 x11-libs/libXcomposite ) test? ( ~dev-qt/qttest-5.15.9999 )
+DEPEND=dev-libs/wayland ~dev-qt/qtcore-5.15.9999:5= ~dev-qt/qtdeclarative-5.15.9999:5= ~dev-qt/qtgui-5.15.9999:5=[egl,libinput,vulkan=,X?] media-libs/mesa[egl] >=x11-libs/libxkbcommon-0.2.0 vulkan? ( dev-util/vulkan-headers ) X? ( ~dev-qt/qtgui-5.15.9999[-gles2-only] x11-libs/libX11 x11-libs/libXcomposite ) test? ( ~dev-qt/qttest-5.15.9999 )
 DESCRIPTION=Wayland platform plugin for Qt
 EAPI=8
 HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
@@ -8,8 +8,8 @@ INHERIT=qt5-build
 IUSE=vulkan X debug test
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
 PROPERTIES=live
-RDEPEND=dev-libs/wayland ~dev-qt/qtcore-5.15.9999:5= ~dev-qt/qtdeclarative-5.15.9999:5= ~dev-qt/qtgui-5.15.9999:5=[egl,libinput,vulkan=] media-libs/mesa[egl] >=x11-libs/libxkbcommon-0.2.0 vulkan? ( dev-util/vulkan-headers ) X? ( ~dev-qt/qtgui-5.15.9999[-gles2-only] x11-libs/libX11 x11-libs/libXcomposite )
+RDEPEND=dev-libs/wayland ~dev-qt/qtcore-5.15.9999:5= ~dev-qt/qtdeclarative-5.15.9999:5= ~dev-qt/qtgui-5.15.9999:5=[egl,libinput,vulkan=,X?] media-libs/mesa[egl] >=x11-libs/libxkbcommon-0.2.0 vulkan? ( dev-util/vulkan-headers ) X? ( ~dev-qt/qtgui-5.15.9999[-gles2-only] x11-libs/libX11 x11-libs/libXcomposite )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
 _eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	ae7bc95c18d3cb7a5fe3643a8f630c64	qt5-build	c2c9aae8c07be570ebdd1dbc221db782
-_md5_=402f84cd732e2496e9f93e4a88cc060b
+_md5_=56f5c886592ad68cf0f4eca54c63199a
