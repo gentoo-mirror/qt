@@ -14,19 +14,29 @@ fi
 
 IUSE="qml"
 
-RDEPEND="
+DEPEND="
 	~dev-qt/qtcore-${PV}:5=
 	sys-devel/clang:=
 	qml? ( ~dev-qt/qtdeclarative-${PV} )
 "
-# TODO: we know it is bogus, figure out how to disable checks, bug 802492
-DEPEND="${RDEPEND}
-	~dev-qt/qtxml-${PV}
-"
+RDEPEND="${DEPEND}"
+
+QT5_TARGET_SUBDIRS=(
+	src/qdoc
+)
 
 src_prepare() {
 	qt_use_disable_mod qml qmldevtools-private \
 		src/qdoc/qdoc.pro
 
 	qt5-build_src_prepare
+}
+
+src_configure() {
+	# qt5_tools_configure() not enough here, needs another fix, bug 676948
+	mkdir -p "${QT5_BUILD_DIR}"/src/qdoc || die
+	qt5_qmake "${QT5_BUILD_DIR}"
+	cp src/qdoc/qtqdoc-config.pri "${QT5_BUILD_DIR}"/src/qdoc || die
+
+	qt5-build_src_configure
 }
