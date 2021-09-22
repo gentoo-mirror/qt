@@ -4,12 +4,12 @@
 EAPI=7
 
 DESCRIPTION="Meta ebuild for LXQt, the Lightweight Desktop Environment"
-HOMEPAGE="https://lxqt.org/"
+HOMEPAGE="https://lxqt.github.io/"
 
 MY_PV="$(ver_cut 1-2)*"
 
 if [[ ${PV} != *9999* ]]; then
-	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
 fi
 
 LICENSE="metapackage"
