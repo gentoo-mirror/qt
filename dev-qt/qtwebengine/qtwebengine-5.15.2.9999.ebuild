@@ -99,8 +99,14 @@ BDEPEND="${PYTHON_DEPS}
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-5.15.0-disable-fatal-warnings.patch" # bug 695446
+	"${FILESDIR}/${PN}-5.15.2-disable-fatal-warnings.patch" # downstream, bug 695446
+	"${FILESDIR}/${PN}-5.15.2-extra_gn.patch" # downstream, bug 774186
+	"${FILESDIR}/${PN}-5.15.2_p20210224-chromium-87-v8-icu68.patch" # downstream, bug 757606
 	"${FILESDIR}/${PN}-5.15.2_p20210224-disable-git.patch" # downstream snapshot fix
+	"${FILESDIR}/${PN}-5.15.2_p20210406-glibc-2.33.patch" # by Fedora, bug 769989
+	"${FILESDIR}/${PN}-5.15.2_p20210521-gcc11.patch" # by Fedora, bug 768261
+	"${FILESDIR}/${PN}-5.15.2_p20210824-abseil-cpp-glibc-2.34.patch" # bug 811312
+	"${FILESDIR}/${PN}-5.15.2_p20210824-breakpad-glibc-2.34.patch" # bug 811312
 )
 
 pkg_preinst() {
@@ -139,6 +145,7 @@ src_prepare() {
 	fi
 	# We need to make sure this integrates well into Qt 5.15.2 installation.
 	# Otherwise revdeps fail w/o heavy changes. This is the simplest way to do it.
+	# See also: https://www.qt.io/blog/building-qt-webengine-against-other-qt-versions
 	sed -e "/^MODULE_VERSION/s/5\.15\.[3456789]/${QT5_PV}/" -i .qmake.conf || die
 
 	# QTBUG-88657 - jumbo-build could still make trouble
