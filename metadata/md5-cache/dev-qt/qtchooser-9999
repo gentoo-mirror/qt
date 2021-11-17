@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=!<dev-qt/qtcore-5.15.2-r10:5
 RESTRICT=!test? ( test )
 SLOT=0
-_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	qmake-utils	f5eb2f69fffe94292aaaf802fb21c8d1	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	qmake-utils	55427cc8f0a3fe31bea575dca9040f46	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=836127b48db9c96392157c006260105a
