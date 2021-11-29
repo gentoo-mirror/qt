@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/double-conversion:= dev-libs/glib:2 dev-libs/libpcre2[pcre16,unicode] sys-libs/zlib:= icu? ( dev-libs/icu:= ) !icu? ( virtual/libiconv ) systemd? ( sys-apps/systemd:= )
 RESTRICT=!test? ( test )
 SLOT=5/5.15.2
-_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	linux-info	6b67971d8a0a029d13181f2cfb9f5fa9	estack	055c42df72f76a4f45ec92b35e83cd56	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	f95aaca4085d2d633c2b76abfd72208f	qt5-build	3dd6aa2952bf864755d5029a06d2bb34
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	linux-info	6b67971d8a0a029d13181f2cfb9f5fa9	estack	055c42df72f76a4f45ec92b35e83cd56	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	10ca734e4845124395fc126944c8d053	qt5-build	3dd6aa2952bf864755d5029a06d2bb34
 _md5_=41b33ae382a06c864053a8b14d802f50
