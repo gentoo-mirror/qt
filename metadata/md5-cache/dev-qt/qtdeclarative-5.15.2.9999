@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.2* =dev-qt/qtgui-5.15.2*:5=[gles2-only=,vulkan=] =dev-qt/qtnetwork-5.15.2* =dev-qt/qttest-5.15.2* media-libs/libglvnd localstorage? ( =dev-qt/qtsql-5.15.2* ) widgets? ( =dev-qt/qtwidgets-5.15.2*[gles2-only=] )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	python-utils-r1	a8b7938ade305f087865de7e52d079b5	python-any-r1	13f6d423c5c5bc519a9b552654cc745f	estack	055c42df72f76a4f45ec92b35e83cd56	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	10ca734e4845124395fc126944c8d053	qt5-build	3dd6aa2952bf864755d5029a06d2bb34
+_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4b66d835ec72e021e359bb81eacfe988	python-utils-r1	a8b7938ade305f087865de7e52d079b5	python-any-r1	13f6d423c5c5bc519a9b552654cc745f	estack	055c42df72f76a4f45ec92b35e83cd56	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	virtualx	fa024aa649b6bd544144bf94893d402c	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	kde.org	10ca734e4845124395fc126944c8d053	qt5-build	3dd6aa2952bf864755d5029a06d2bb34
 _md5_=b2e1d4de1aaef60669ea9e90fb7945b5
