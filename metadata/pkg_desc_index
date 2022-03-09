@@ -2,7 +2,7 @@ app-arch/lxqt-archiver 9999: Qt GUI File Archiver
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-emulation/q4wine 9999: Qt GUI configuration tool for Wine
 app-text/goldendict 9999: Feature-rich dictionary lookup program
-dev-libs/libqtxdg 9999: Qt implementation of XDG standards
+dev-libs/libqtxdg 9999: Qt Implementation of XDG Standards
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-qt/assistant 5.15.3.9999: Tool for viewing on-line documentation in Qt help file format
 dev-qt/designer 5.15.3.9999: WYSIWYG tool for designing and building graphical user interfaces with QtWidgets
@@ -62,7 +62,7 @@ dev-qt/qtwidgets 5.15.3.9999: Set of components for creating classic desktop-sty
 dev-qt/qtx11extras 5.15.3.9999: Linux/X11-specific support library for the Qt5 framework
 dev-qt/qtxml 5.15.3.9999: Implementation of SAX and DOM for the Qt5 framework
 dev-qt/qtxmlpatterns 5.15.3.9999: XPath, XQuery, XSLT, and XML Schema validation library for the Qt5 framework
-dev-util/lxqt-build-tools 9999: LXQt Build tools
+dev-util/lxqt-build-tools 9999: LXQt Build Tools
 lxqt-base/liblxqt 9999: Common base library for the LXQt desktop environment
 lxqt-base/libsysstat 9999: Qt GUI for System Statistics
 lxqt-base/lxqt-about 9999: LXQt about dialog
@@ -77,11 +77,11 @@ lxqt-base/lxqt-policykit 9999: LXQt PolKit authentication agent
 lxqt-base/lxqt-powermanagement 9999: LXQt daemon for power management and auto-suspend
 lxqt-base/lxqt-qtplugin 9999: LXQt system integration plugin for Qt
 lxqt-base/lxqt-runner 9999: LXQt quick launcher
-lxqt-base/lxqt-session 9999: LXQt session manager
+lxqt-base/lxqt-session 9999: LXQt Session Manager
 lxqt-base/lxqt-sudo 9999: LXQt GUI frontend for sudo
 media-gfx/lximage-qt 9999: Qt Image Viewer
 media-gfx/phototonic 9999: Image viewer and organizer
-x11-libs/libfm-qt 9999: Qt library for building file managers
+x11-libs/libfm-qt 9999: Qt Library for Building File Managers
 x11-misc/obconf-qt 9999: Qt GUI Openbox Configuration Tool
 x11-misc/pcmanfm-qt 9999: Qt GUI Tabbed Filemanager
 x11-misc/sddm 9999: Simple Desktop Display Manager

@@ -1,14 +1,14 @@
-BDEPEND=dev-qt/linguist-tools:5 >=dev-util/lxqt-build-tools-0.9.0 dev-util/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/linguist-tools-5.15:5 dev-util/ninja >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
-DEPEND=>=dev-libs/libqtxdg-3.3.1 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 kde-frameworks/kwindowsystem:5 =lxqt-base/liblxqt-9999* sys-libs/zlib:= x11-apps/setxkbmap x11-libs/libxcb:= x11-libs/libX11 x11-libs/libXcursor x11-libs/libXfixes monitor? ( kde-plasma/libkscreen:5= ) touchpad? ( virtual/libudev x11-drivers/xf86-input-libinput x11-libs/libXext x11-libs/libXi )
+DEPEND=>=dev-libs/libqtxdg-3.3.1 >=dev-qt/qtcore-5.15:5 >=dev-qt/qtgui-5.15:5 >=dev-qt/qtwidgets-5.15:5 >=dev-qt/qtsvg-5.15:5 >=dev-qt/qtx11extras-5.15:5 >=dev-qt/qtxml-5.15:5 kde-frameworks/kwindowsystem:5 =lxqt-base/liblxqt-9999*:= sys-libs/zlib:= x11-apps/setxkbmap x11-libs/libxcb:= x11-libs/libX11 x11-libs/libXcursor x11-libs/libXfixes monitor? ( kde-plasma/libkscreen:5= ) touchpad? ( virtual/libudev:= x11-drivers/xf86-input-libinput x11-libs/libXi )
 DESCRIPTION=LXQt system configuration control center
-EAPI=7
-HOMEPAGE=https://lxqt.github.io/
+EAPI=8
+HOMEPAGE=https://lxqt-project.org/
 INHERIT=cmake xdg-utils git-r3
 IUSE=+monitor +touchpad
 LICENSE=GPL-2 GPL-2+ GPL-3 LGPL-2 LGPL-2+ LGPL-2.1+ WTFPL-2
 PROPERTIES=live
-RDEPEND=>=dev-libs/libqtxdg-3.3.1 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 dev-qt/qtx11extras:5 dev-qt/qtxml:5 kde-frameworks/kwindowsystem:5 =lxqt-base/liblxqt-9999* sys-libs/zlib:= x11-apps/setxkbmap x11-libs/libxcb:= x11-libs/libX11 x11-libs/libXcursor x11-libs/libXfixes monitor? ( kde-plasma/libkscreen:5= ) touchpad? ( virtual/libudev x11-drivers/xf86-input-libinput x11-libs/libXext x11-libs/libXi )
+RDEPEND=>=dev-libs/libqtxdg-3.3.1 >=dev-qt/qtcore-5.15:5 >=dev-qt/qtgui-5.15:5 >=dev-qt/qtwidgets-5.15:5 >=dev-qt/qtsvg-5.15:5 >=dev-qt/qtx11extras-5.15:5 >=dev-qt/qtxml-5.15:5 kde-frameworks/kwindowsystem:5 =lxqt-base/liblxqt-9999*:= sys-libs/zlib:= x11-apps/setxkbmap x11-libs/libxcb:= x11-libs/libX11 x11-libs/libXcursor x11-libs/libXfixes monitor? ( kde-plasma/libkscreen:5= ) touchpad? ( virtual/libudev:= x11-drivers/xf86-input-libinput x11-libs/libXi )
 SLOT=0
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4251d4c84c25f59094fd557e0063a974	eutils	dab5d8ec471d025b79c9e6906bcf3bff	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	9f12546ab831b81c615d90e6b9e34e68	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=ec44d9137677a77dcd9bf0aa81160af0
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	xdg-utils	4f29a8b760a594a212abe9c2ba957c31	cmake	9f12546ab831b81c615d90e6b9e34e68	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=8b7f07d213508a3d7cbd351544e3df6f
