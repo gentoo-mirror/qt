@@ -124,7 +124,25 @@ fi
 : ${QT5_BUILD_DIR:=${S}_build}
 
 LICENSE="|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3"
-SLOT=5/$(ver_cut 1-2)
+
+case ${PV} in
+	5.15.2*)
+		SLOT=5/$(ver_cut 1-2)
+		;;
+	*)
+		case ${PN} in
+			assistant|linguist|qdbus|qdbusviewer|pixeltool)
+				SLOT=0 ;;
+			linguist-tools|qdoc|qtdiag|qtgraphicaleffects|qtimageformats| \
+			qtpaths|qtplugininfo|qtquickcontrols|qtquicktimeline| \
+			qttranslations|qtwaylandscanner|qtxmlpatterns)
+				SLOT=5 ;;
+			*)
+				SLOT=5/$(ver_cut 1-2) ;;
+		esac
+		;;
+esac
+
 IUSE="debug test"
 
 if [[ ${QT5_BUILD_TYPE} == release ]]; then
@@ -315,6 +333,16 @@ qt5-build_pkg_postrm() {
 
 
 ######  Public helpers  ######
+
+# @FUNCTION: qt5_symlink_binary_to_path
+# @USAGE: <target binary name> [suffix]
+# @DESCRIPTION:
+# Symlink a given binary from QT5_BINDIR to QT5_PREFIX/bin, with optional suffix
+qt5_symlink_binary_to_path() {
+	[[ $# -ge 1 ]] || die "${FUNCNAME}() requires at least one argument"
+
+	dosym -r "${QT5_BINDIR}"/${1} /usr/bin/${1}${2}
+}
 
 # @FUNCTION: qt_use
 # @USAGE: <flag> [feature] [enableval]
