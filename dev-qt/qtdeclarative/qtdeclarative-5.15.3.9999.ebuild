@@ -29,7 +29,6 @@ BDEPEND="${PYTHON_DEPS}"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-5.14.2-QQuickItemView-fix-maxXY-extent.patch" # QTBUG-83890
-	"${FILESDIR}/${PN}-5.15.2-riscv-atomic.patch" # bug 790689
 )
 
 src_prepare() {
@@ -60,7 +59,6 @@ src_install() {
 	qt5-build_src_install
 	qt5_symlink_binary_to_path qml 5
 	qt5_symlink_binary_to_path qmleasing 5
-	qt5_symlink_binary_to_path qmljs 5
 	qt5_symlink_binary_to_path qmlpreview 5
 	qt5_symlink_binary_to_path qmlscene 5
 }
