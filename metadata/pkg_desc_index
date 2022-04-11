@@ -37,9 +37,10 @@ dev-qt/qtpaths 5.15.3.9999: Command line client to QStandardPaths
 dev-qt/qtplugininfo 5.15.3.9999: Qt5 plugin metadata dumper
 dev-qt/qtpositioning 5.15.3.9999 6.2.3 6.2.4 6.3.9999 6.9999: Physical position determination library for the Qt6 framework
 dev-qt/qtprintsupport 5.15.3.9999: Printing support library for the Qt5 framework
+dev-qt/qtquick3d 6.3.9999: Qt module and API for defining 3D content in Qt QuickTools
 dev-qt/qtquickcontrols 5.15.3.9999: Set of Qt Quick controls to create complete user interfaces (deprecated)
 dev-qt/qtquickcontrols2 5.15.3.9999: Set of next generation Qt Quick controls for the Qt5 framework
-dev-qt/qtquicktimeline 5.15.3.9999: Qt module for keyframe-based timeline construction
+dev-qt/qtquicktimeline 5.15.3.9999 6.3.9999: Qt module for keyframe-based timeline construction
 dev-qt/qtscript 5.15.3.9999: Application scripting library for the Qt5 framework (deprecated)
 dev-qt/qtscxml 5.15.3.9999: State Chart XML (SCXML) support library for the Qt5 framework
 dev-qt/qtsensors 5.15.3.9999: Hardware sensor access library for the Qt5 framework
