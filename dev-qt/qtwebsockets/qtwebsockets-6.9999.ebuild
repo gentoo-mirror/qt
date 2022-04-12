@@ -5,7 +5,7 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="Qt Tools"
+DESCRIPTION="Implementation of the WebSocket protocol for the Qt6 framework"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"

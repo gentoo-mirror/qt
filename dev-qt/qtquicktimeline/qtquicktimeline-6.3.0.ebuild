@@ -5,7 +5,7 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="Physical position determination library for the Qt6 framework"
+DESCRIPTION="Qt module for keyframe-based timeline construction"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"
@@ -15,6 +15,4 @@ DEPEND="
 	=dev-qt/qtbase-${PV}*
 	=dev-qt/qtdeclarative-${PV}*
 "
-RDEPEND="${DEPEND}
-	!<dev-qt/qtlocation-6.2.2:6
-"
+RDEPEND="${DEPEND}"

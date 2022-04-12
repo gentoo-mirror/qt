@@ -5,7 +5,7 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="Qt APIs and Tools for Graphics Pipelines"
+DESCRIPTION="Implementation of the WebSocket protocol for the Qt6 framework"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"
@@ -13,5 +13,6 @@ fi
 
 DEPEND="
 	=dev-qt/qtbase-${PV}*
+	=dev-qt/qtdeclarative-${PV}*
 "
 RDEPEND="${DEPEND}"

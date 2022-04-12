@@ -5,16 +5,14 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="Qt Declarative (Quick 2)"
+DESCRIPTION="Qt module for keyframe-based timeline construction"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"
 fi
 
 DEPEND="
-	=dev-qt/qtbase-${PV}*[gui,network,opengl,sql,test,widgets]
-	=dev-qt/qtshadertools-${PV}*
+	=dev-qt/qtbase-${PV}*
+	=dev-qt/qtdeclarative-${PV}*
 "
 RDEPEND="${DEPEND}"
-
-# TODO: qml/quick automagic

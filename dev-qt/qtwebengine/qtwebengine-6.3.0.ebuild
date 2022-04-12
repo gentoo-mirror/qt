@@ -3,10 +3,10 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python2_7 )
+PYTHON_COMPAT=( python3_{9,10} )
 PYTHON_REQ_USE="xml(+)"
-CHROMIUM_VER="90.0.4430.228"
-CHROMIUM_PATCHES_VER="98.0.4758.102"
+CHROMIUM_VER="94.0.4606.126"
+CHROMIUM_PATCHES_VER="99.0.4844.84"
 
 inherit estack flag-o-matic multiprocessing python-any-r1 qt6-build
 
@@ -23,6 +23,7 @@ IUSE="
 REQUIRED_USE="designer? ( widgets )"
 
 BDEPEND="${PYTHON_DEPS}
+	$(python_gen_any_dep 'dev-python/html5lib[${PYTHON_USEDEP}]')
 	>=dev-util/gn-0.1807
 	dev-util/gperf
 	dev-util/ninja
@@ -86,6 +87,10 @@ DEPEND="${RDEPEND}
 	media-libs/libglvnd
 "
 
+python_check_deps() {
+	has_version "dev-python/html5lib[${PYTHON_USEDEP}]"
+}
+
 pkg_preinst() {
 	elog "This version of Qt WebEngine is based on Chromium version ${CHROMIUM_VER}, with"
 	elog "additional security fixes up to ${CHROMIUM_PATCHES_VER}. Extensive as it is, the"
@@ -109,7 +114,10 @@ src_unpack() {
 	fi
 	eshopts_pop
 
-	default
+	case ${QT6_BUILD_TYPE} in
+		live)    git-r3_src_unpack ;&
+		release) default ;;
+	esac
 }
 
 src_prepare() {
