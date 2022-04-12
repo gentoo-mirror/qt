@@ -1,16 +1,16 @@
 BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=compile configure install prepare test
-DEPEND==dev-qt/qtbase-6.2.3* =dev-qt/qtdeclarative-6.2.3*
-DESCRIPTION=Qt WebChannel
+DEPEND==dev-qt/qtbase-6.3.0*[gui,network,opengl,sql,test,widgets] =dev-qt/qtshadertools-6.3.0*
+DESCRIPTION=Qt Declarative (Quick 2)
 EAPI=8
 HOMEPAGE=https://www.qt.io/
 INHERIT=qt6-build
 IUSE=debug test
 KEYWORDS=~amd64
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
-RDEPEND==dev-qt/qtbase-6.2.3* =dev-qt/qtdeclarative-6.2.3*
+RDEPEND==dev-qt/qtbase-6.3.0*[gui,network,opengl,sql,test,widgets] =dev-qt/qtshadertools-6.3.0*
 RESTRICT=test
-SLOT=6/6.2
-SRC_URI=https://download.qt.io/official_releases/qt/6.2/6.2.3/submodules/qtwebchannel-everywhere-src-6.2.3.tar.xz
+SLOT=6/6.3
+SRC_URI=https://download.qt.io/official_releases/qt/6.3/6.3.0/submodules/qtdeclarative-everywhere-src-6.3.0.tar.xz
 _eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	cmake	3c38df051095289667b6f09ebd0cc149	virtualx	975d49ff3b3f451efe7a95f230532135	qt6-build	ccd1e41d202cb1e4d426b7e0601482f2
-_md5_=0cb6929e13ea27c70982fa46bc2a4bf6
+_md5_=f1cfa8c9e582fe7cab03c8585ab526a5
