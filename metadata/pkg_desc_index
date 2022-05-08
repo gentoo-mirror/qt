@@ -1,6 +1,7 @@
 app-arch/lxqt-archiver 9999: Qt GUI File Archiver
 app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-emulation/q4wine 9999: Qt GUI configuration tool for Wine
+app-misc/qtxdg-tools 9999: User Tools from libqtxdg
 app-text/goldendict 9999: Feature-rich dictionary lookup program
 dev-libs/libqtxdg 9999: Qt Implementation of XDG Standards
 dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
