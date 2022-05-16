@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.4*:5= =dev-qt/qtgui-5.15.4* =dev-qt/qtsql-5.15.4*[sqlite] =dev-qt/qtwidgets-5.15.4*
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	virtualx	975d49ff3b3f451efe7a95f230532135	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	916c61efa7151f09c7701328b88cafc1	qt5-build	a5a0ff059a4fa28ec744cd82cc8de1d7
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	fd9cde67030b26e479eeadaced488253	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	virtualx	975d49ff3b3f451efe7a95f230532135	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	916c61efa7151f09c7701328b88cafc1	qt5-build	a5a0ff059a4fa28ec744cd82cc8de1d7
 _md5_=7a3129551ef59de18ff38a7d660fc43a
