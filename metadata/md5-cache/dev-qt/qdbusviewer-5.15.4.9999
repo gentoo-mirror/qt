@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.4* =dev-qt/qtdbus-5.15.4* =dev-qt/qtgui-5.15.4* =dev-qt/qtwidgets-5.15.4* =dev-qt/qtxml-5.15.4* !dev-qt/qdbusviewer:5 !<dev-qt/qtchooser-66-r2
 RESTRICT=!test? ( test )
 SLOT=0
-_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	fd9cde67030b26e479eeadaced488253	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	virtualx	975d49ff3b3f451efe7a95f230532135	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	916c61efa7151f09c7701328b88cafc1	qt5-build	a5a0ff059a4fa28ec744cd82cc8de1d7	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	fd9cde67030b26e479eeadaced488253	multilib	4fbbbc98f236f1b43acd99476bc3cd85	flag-o-matic	a500d7cc40da3de38c361e889153bdf7	virtualx	975d49ff3b3f451efe7a95f230532135	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	916c61efa7151f09c7701328b88cafc1	qt5-build	a5a0ff059a4fa28ec744cd82cc8de1d7	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e
 _md5_=73d700a6a82f420e5190ec4751a391f0
