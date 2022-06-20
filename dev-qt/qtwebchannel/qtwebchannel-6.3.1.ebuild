@@ -5,14 +5,15 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="Implementation of the WebSocket protocol for the Qt6 framework"
+DESCRIPTION="Qt WebChannel"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"
 fi
 
 DEPEND="
-	=dev-qt/qtbase-${PV}*
+	=dev-qt/qtbase-${PV}*[concurrent]
 	=dev-qt/qtdeclarative-${PV}*
+	=dev-qt/qtwebsockets-${PV}*
 "
 RDEPEND="${DEPEND}"

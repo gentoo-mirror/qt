@@ -5,27 +5,29 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="Qt module and API for defining 3D content in Qt QuickTools"
+DESCRIPTION="Qt Declarative (Quick 2)"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"
-elif [[ ${QT6_BUILD_TYPE} == live ]]; then
-	# Don't clone qtquick3d-assimp.
-	EGIT_SUBMODULES=()
 fi
 
+IUSE="opengl sql widgets"
+
 DEPEND="
-	=dev-qt/qtbase-${PV}*
-	=dev-qt/qtdeclarative-${PV}*
+	=dev-qt/qtbase-${PV}*[network]
 	=dev-qt/qtshadertools-${PV}*
-	=dev-qt/qtquicktimeline-${PV}*
-	media-libs/assimp
+	opengl? ( =dev-qt/qtbase-${PV}*[opengl] )
+	sql? ( =dev-qt/qtbase-${PV}*[sql] )
+	widgets? ( =dev-qt/qtbase-${PV}*[widgets] )
 "
 RDEPEND="${DEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
-		-DQT_FEATURE_system_assimp=ON
+		$(qt_feature opengl)
+		$(qt_feature sql)
+		$(qt_feature widgets)
 	)
+
 	qt6-build_src_configure
 }

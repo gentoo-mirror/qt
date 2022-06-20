@@ -5,15 +5,13 @@ EAPI=8
 
 inherit qt6-build
 
-DESCRIPTION="SVG rendering library for the Qt6 framework"
+DESCRIPTION="Qt APIs and Tools for Graphics Pipelines"
 
 if [[ ${QT6_BUILD_TYPE} == release ]]; then
 	KEYWORDS="~amd64"
 fi
 
 DEPEND="
-	=dev-qt/qtbase-${PV}*
-	sys-libs/zlib:=
-
+	=dev-qt/qtbase-${PV}*[gui]
 "
 RDEPEND="${DEPEND}"
