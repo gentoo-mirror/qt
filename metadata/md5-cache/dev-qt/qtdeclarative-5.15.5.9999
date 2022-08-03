@@ -1,4 +1,4 @@
-BDEPEND=|| ( >=dev-lang/python-3.10.4:3.10 >=dev-lang/python-3.9.12:3.9 >=dev-lang/python-3.8.13:3.8 ) >=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
+BDEPEND=|| ( >=dev-lang/python-3.11.0_beta4:3.11 >=dev-lang/python-3.10.4:3.10 >=dev-lang/python-3.9.12:3.9 >=dev-lang/python-3.8.13:3.8 ) >=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=compile configure install nofetch postinst postrm prepare setup test unpack
 DEPEND==dev-qt/qtcore-5.15.5* =dev-qt/qtgui-5.15.5*:5=[gles2-only=,vulkan=] =dev-qt/qtnetwork-5.15.5* =dev-qt/qttest-5.15.5* media-libs/libglvnd localstorage? ( =dev-qt/qtsql-5.15.5* ) widgets? ( =dev-qt/qtwidgets-5.15.5*[gles2-only=] ) test? ( =dev-qt/qttest-5.15.5* )
 DESCRIPTION=The QML and Quick modules for the Qt5 framework
@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.5* =dev-qt/qtgui-5.15.5*:5=[gles2-only=,vulkan=] =dev-qt/qtnetwork-5.15.5* =dev-qt/qttest-5.15.5* media-libs/libglvnd localstorage? ( =dev-qt/qtsql-5.15.5* ) widgets? ( =dev-qt/qtwidgets-5.15.5*[gles2-only=] )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	38d6ec96711cea42a5cb1cc723a6e906	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	dd5e1098e305ad508d21f496e9e37046	python-any-r1	a3e9c0524a795d7f2767a2cf12a2e8c0	estack	055c42df72f76a4f45ec92b35e83cd56	virtualx	644887c82aefdf12001489391fca4f02	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	34ddb6baf66ca3c9fba554b0c7c31cb4	qt5-build	f2dfafcf0c2b89d7f474fae87a25d2dc
-_md5_=af867973a8fbd1a3ab1361bade3b4f7c
+_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	38d6ec96711cea42a5cb1cc723a6e906	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-utils-r1	dd5e1098e305ad508d21f496e9e37046	python-any-r1	a3e9c0524a795d7f2767a2cf12a2e8c0	estack	055c42df72f76a4f45ec92b35e83cd56	virtualx	644887c82aefdf12001489391fca4f02	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	34ddb6baf66ca3c9fba554b0c7c31cb4	qt5-build	cf8f4209b29d03d798d9c1be5e674faa
+_md5_=8e22f3bac6fd9a4ea3420526829732a3
