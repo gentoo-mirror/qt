@@ -28,7 +28,7 @@ dev-qt/qtgamepad 5.15.6.9999: Qt module to support gamepad hardware
 dev-qt/qtgraphicaleffects 5.15.6.9999: Set of QML types for adding visual effects to user interfaces
 dev-qt/qtgui 5.15.6.9999: The GUI module and platform plugins for the Qt5 framework
 dev-qt/qthelp 5.15.6.9999: Qt5 module for integrating online documentation into applications
-dev-qt/qtimageformats 5.15.6.9999: Additional format plugins for the Qt image I/O system
+dev-qt/qtimageformats 5.15.6.9999 6.3.2 6.3.9999 6.4.9999 6.9999: Additional format plugins for the Qt image I/O system
 dev-qt/qtlocation 5.15.6.9999 6.3.9999 6.4.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
 dev-qt/qtmultimedia 5.15.6.9999 6.3.2 6.3.9999 6.4.9999 6.9999: Qt Multimedia
 dev-qt/qtnetwork 5.15.6.9999: Network abstraction library for the Qt5 framework
