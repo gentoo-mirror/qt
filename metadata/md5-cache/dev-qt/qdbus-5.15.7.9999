@@ -1,0 +1,15 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
+DEFINED_PHASES=compile configure install nofetch postinst postrm prepare test unpack
+DEPEND==dev-qt/qtcore-5.15.7* =dev-qt/qtdbus-5.15.7* =dev-qt/qtxml-5.15.7* test? ( =dev-qt/qttest-5.15.7* )
+DESCRIPTION=Interface to Qt applications communicating over D-Bus
+EAPI=8
+HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
+INHERIT=qt5-build
+IUSE=debug test
+LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
+PROPERTIES=live
+RDEPEND==dev-qt/qtcore-5.15.7* =dev-qt/qtdbus-5.15.7* =dev-qt/qtxml-5.15.7* !dev-qt/qdbus:5 !<dev-qt/qtchooser-66-r2
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	29a755b1291d64133634d80b0328f153	virtualx	644887c82aefdf12001489391fca4f02	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	qt5-build	cf8f4209b29d03d798d9c1be5e674faa
+_md5_=27a1a8593c96c50f53cadd25e9d1e20e
