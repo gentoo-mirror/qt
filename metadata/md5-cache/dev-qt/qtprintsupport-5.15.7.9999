@@ -12,5 +12,5 @@ RDEPEND==dev-qt/qtcore-5.15.7*:5= =dev-qt/qtgui-5.15.7*[gles2-only=] =dev-qt/qtw
 RESTRICT=!test? ( test ) !test? ( test )
 SLOT=5/5.15
 SRC_URI=https://dev.gentoo.org/~asturm/distfiles/qtbase-5.15-gentoo-patchset-1.tar.xz
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	29a755b1291d64133634d80b0328f153	virtualx	644887c82aefdf12001489391fca4f02	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	qt5-build	cf8f4209b29d03d798d9c1be5e674faa
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	441f754fd75cd4fd1fa06fbc17da6144	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	29a755b1291d64133634d80b0328f153	virtualx	644887c82aefdf12001489391fca4f02	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	f4e23ee9fed407c2ceb93f819e8d9263	qt5-build	cf8f4209b29d03d798d9c1be5e674faa
 _md5_=0c2ea9d2c4ab61cc51ba955b07d97d53
