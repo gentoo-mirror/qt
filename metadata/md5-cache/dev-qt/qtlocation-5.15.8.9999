@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/icu:= =dev-qt/qtcore-5.15.8* =dev-qt/qtdeclarative-5.15.8* =dev-qt/qtgui-5.15.8* =dev-qt/qtnetwork-5.15.8* =dev-qt/qtpositioning-5.15.8*[qml] =dev-qt/qtsql-5.15.8* sys-libs/zlib
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	ec8bbc28394c7305b43ea07164bd8f5f	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	virtualx	644887c82aefdf12001489391fca4f02	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	5dd311d12cdba33b446368fad288784d	qt5-build	b6c643c692be2aa94e7c88937a6ca685
-_md5_=70080b9173693f7cb8ea42663ff37093
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	ec8bbc28394c7305b43ea07164bd8f5f	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	virtualx	644887c82aefdf12001489391fca4f02	git-r3	2347f8fe2d392b2a091191f94be37e6f	kde.org	5dd311d12cdba33b446368fad288784d	qt5-build	2b5cd479b477d25eb6d67fcb61116c2b
+_md5_=73ffdc48e136f10222bf7721d61abf57
