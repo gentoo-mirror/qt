@@ -138,4 +138,3 @@ lxqt-base/lxqt-panel:taskbar - Build taskbar plugin
 lxqt-base/lxqt-panel:tray - Build tray plugin
 lxqt-base/lxqt-panel:volume - Build volume plugin
 lxqt-base/lxqt-panel:worldclock - Build worldclock plugin
-x11-misc/sddm:elogind - Use sys-auth/elogind for session tracking.
