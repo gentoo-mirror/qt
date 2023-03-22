@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.8* qml? ( =dev-qt/qtdeclarative-5.15.8* )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	virtualx	ab0d5fcb35ad650a57b516e6f4c467e7	git-r3	c57c50c922e121043788de0b40ada60a	kde.org	dc88b76f82ae1a1d2892cc7e0f3020db	qt5-build	2b5cd479b477d25eb6d67fcb61116c2b
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	virtualx	ab0d5fcb35ad650a57b516e6f4c467e7	git-r3	c57c50c922e121043788de0b40ada60a	kde.org	dc88b76f82ae1a1d2892cc7e0f3020db	qt5-build	2b5cd479b477d25eb6d67fcb61116c2b
 _md5_=0d1f69d6336ee2584f048d11b4344496
