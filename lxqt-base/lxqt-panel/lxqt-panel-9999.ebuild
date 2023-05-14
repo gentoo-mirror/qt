@@ -32,11 +32,11 @@ REQUIRED_USE="
 
 BDEPEND="
 	>=dev-qt/linguist-tools-5.15:5
-	>=dev-util/lxqt-build-tools-0.12.0
+	>=dev-util/lxqt-build-tools-0.13.0
 	virtual/pkgconfig
 "
 DEPEND="
-	>=dev-libs/libqtxdg-3.10.0
+	>=dev-libs/libqtxdg-3.11.0
 	>=dev-qt/qtcore-5.15:5
 	>=dev-qt/qtdbus-5.15:5
 	>=dev-qt/qtgui-5.15:5
@@ -45,10 +45,10 @@ DEPEND="
 	>=dev-qt/qtx11extras-5.15:5
 	>=dev-qt/qtxml-5.15:5
 	kde-frameworks/kwindowsystem:5[X]
-	>=lxde-base/lxmenu-data-0.1.5
 	>=lxde-base/menu-cache-1.1.0
 	=lxqt-base/liblxqt-${MY_PV}*:=
 	=lxqt-base/lxqt-globalkeys-${MY_PV}*
+	=lxqt-base/lxqt-menu-data-${MY_PV}*
 	x11-libs/libX11
 	cpuload? ( sys-libs/libstatgrab )
 	kbindicator? ( x11-libs/libxkbcommon )
