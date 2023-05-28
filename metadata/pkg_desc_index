@@ -30,7 +30,7 @@ dev-qt/qtgui 5.15.9.9999: The GUI module and platform plugins for the Qt5 framew
 dev-qt/qthelp 5.15.9.9999: Qt5 module for integrating online documentation into applications
 dev-qt/qtimageformats 5.15.9.9999 6.5.9999 6.9999: Additional format plugins for the Qt image I/O system
 dev-qt/qtlocation 5.15.9.9999 6.5.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
-dev-qt/qtmultimedia 5.15.9.9999 6.5.9999 6.9999: Qt Multimedia
+dev-qt/qtmultimedia 5.15.9.9999 6.5.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
 dev-qt/qtnetwork 5.15.9.9999: Network abstraction library for the Qt5 framework
 dev-qt/qtnetworkauth 5.15.9.9999 6.5.9999 6.9999: Network authorization library for the Qt6 framework
 dev-qt/qtopengl 5.15.9.9999: OpenGL support library for the Qt5 framework (deprecated)
