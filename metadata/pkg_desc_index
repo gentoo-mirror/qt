@@ -12,7 +12,7 @@ dev-qt/pixeltool 5.15.9.9999: Qt screen magnifier
 dev-qt/qdbus 5.15.9.9999: Interface to Qt applications communicating over D-Bus
 dev-qt/qdbusviewer 5.15.9.9999: Graphical tool that lets you introspect D-Bus objects and messages
 dev-qt/qdoc 5.15.9.9999: Qt documentation generator
-dev-qt/qt3d 5.15.9.9999: 3D rendering module for the Qt5 framework
+dev-qt/qt3d 5.15.9.9999 6.5.9999 6.9999: 3D rendering module for the Qt6 framework
 dev-qt/qt5compat 6.5.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
 dev-qt/qtbase 6.5.9999 6.9999: Cross-platform application development framework
 dev-qt/qtbluetooth 5.15.9.9999: Bluetooth support library for the Qt5 framework
