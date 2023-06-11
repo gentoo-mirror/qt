@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # @ECLASS: qmake-utils.eclass
@@ -9,7 +9,7 @@
 # @SUPPORTED_EAPIS: 7 8
 # @BLURB: Common functions for qmake-based packages.
 # @DESCRIPTION:
-# Utility eclass providing wrapper functions for Qt5 qmake.
+# Utility eclass providing wrapper functions for Qt qmake.
 #
 # This eclass does not set any metadata variables nor export any phase
 # functions. It can be inherited safely.
@@ -78,12 +78,15 @@ qt5_get_qmake_args() {
 		QMAKE_CFLAGS="${CFLAGS}"
 		QMAKE_CFLAGS_RELEASE=
 		QMAKE_CFLAGS_DEBUG=
+		QMAKE_CFLAGS_RELEASE_WITH_DEBUGINFO=
 		QMAKE_CXXFLAGS="${CXXFLAGS}"
 		QMAKE_CXXFLAGS_RELEASE=
 		QMAKE_CXXFLAGS_DEBUG=
+		QMAKE_CXXFLAGS_RELEASE_WITH_DEBUGINFO=
 		QMAKE_LFLAGS="${LDFLAGS}"
 		QMAKE_LFLAGS_RELEASE=
 		QMAKE_LFLAGS_DEBUG=
+		QMAKE_LFLAGS_RELEASE_WITH_DEBUGINFO=
 	EOF
 }
 
