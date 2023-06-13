@@ -12,5 +12,5 @@ RDEPEND==dev-qt/qtcore-5.15.9*:5=
 RESTRICT=!test? ( test )
 SLOT=5/5.15
 SRC_URI=https://dev.gentoo.org/~asturm/distfiles/qtbase-5.15-gentoo-patchset-4.tar.xz
-_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	16483e58fadb0d47b4528f0aa7e171f6	virtualx	817571665ee28575da44ee08135089e5	git-r3	27e13c09a4c7e4c78ac812f74727e676	kde.org	dc60243572471279b11120514b85b558	qt5-build	05fc0acbe32c70e8648da14fcd419bff
+_eclasses_=estack	055c42df72f76a4f45ec92b35e83cd56	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	16483e58fadb0d47b4528f0aa7e171f6	virtualx	817571665ee28575da44ee08135089e5	git-r3	27e13c09a4c7e4c78ac812f74727e676	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	05fc0acbe32c70e8648da14fcd419bff
 _md5_=1256adb2e70cda66e60a9bdf4c4d44ef
