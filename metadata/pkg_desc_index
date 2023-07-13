@@ -53,7 +53,7 @@ dev-qt/qtsql 5.15.10.9999: SQL abstraction library for the Qt5 framework
 dev-qt/qtsvg 5.15.10.9999 6.5.9999 6.9999: SVG rendering library for the Qt6 framework
 dev-qt/qttest 5.15.10.9999: Unit testing library for the Qt5 framework
 dev-qt/qttools 6.5.9999 6.9999: Qt Tools Collection
-dev-qt/qttranslations 5.15.10.9999: Translation files for the Qt5 framework
+dev-qt/qttranslations 5.15.10.9999 6.5.9999 6.9999: Translation files for the Qt6 framework
 dev-qt/qtvirtualkeyboard 5.15.10.9999: Customizable input framework and virtual keyboard for Qt
 dev-qt/qtwayland 5.15.10.9999 6.5.9999 6.9999: Wayland platform plugin for Qt
 dev-qt/qtwaylandscanner 5.15.10.9999: Tool that generates certain boilerplate C++ code from Wayland protocol xml spec
