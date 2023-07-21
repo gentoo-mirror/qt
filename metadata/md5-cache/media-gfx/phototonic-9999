@@ -10,5 +10,5 @@ LICENSE=GPL-3+
 PROPERTIES=live
 RDEPEND=dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtwidgets:5 media-gfx/exiv2:= svg? ( dev-qt/qtsvg:5 ) tiff? ( dev-qt/qtimageformats:5 )
 SLOT=0
-_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a9633c59de46f2f1e040e40d06658a60	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	97f7f638070d17e4c2b6542589bb4575
+_eclasses_=toolchain-funcs	67b3e3d8916d690003f645486ed86aac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a9633c59de46f2f1e040e40d06658a60	xdg-utils	baea6080dd821f5562d715887954c9d3	git-r3	97f7f638070d17e4c2b6542589bb4575
 _md5_=51229960aae9ccf642b035d7c4fe6e8e
