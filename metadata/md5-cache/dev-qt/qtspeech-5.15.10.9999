@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=>=app-accessibility/speech-dispatcher-0.8.7 =dev-qt/qtcore-5.15.10* flite? ( >=app-accessibility/flite-2[alsa?] =dev-qt/qtmultimedia-5.15.10*[alsa?] alsa? ( media-libs/alsa-lib ) )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e356bb9aa600fd4b0dc539d33513bba7	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	virtualx	817571665ee28575da44ee08135089e5	git-r3	2358a7b20091609e24bd3a83b3ac5991	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	e6315b433ff1f5a5778a08518785ba91
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	0c8a0b0d318eb5d5180d114bd3f6592b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	ad475baa777c9978fa035216c8264a10	virtualx	817571665ee28575da44ee08135089e5	git-r3	2358a7b20091609e24bd3a83b3ac5991	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	e6315b433ff1f5a5778a08518785ba91
 _md5_=087aac1d05feb20413bc0ae9301decbf
