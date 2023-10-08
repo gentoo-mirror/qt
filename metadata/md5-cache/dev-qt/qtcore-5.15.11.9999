@@ -4,7 +4,7 @@ DEPEND=dev-libs/double-conversion:= dev-libs/glib:2 dev-libs/libpcre2[pcre16,uni
 DESCRIPTION=Cross-platform application development framework
 EAPI=8
 HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
-INHERIT=linux-info flag-o-matic qt5-build
+INHERIT=linux-info flag-o-matic toolchain-funcs qt5-build
 IUSE=icu old-kernel debug test
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
 PROPERTIES=live
@@ -13,4 +13,4 @@ RESTRICT=!test? ( test )
 SLOT=5/5.15.11
 SRC_URI=https://dev.gentoo.org/~asturm/distfiles/qtbase-5.15-gentoo-patchset-4.tar.xz
 _eclasses_=toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	flag-o-matic	e5cc383ea8420f92fe3737be790021dc	estack	c61c368a76fdf3a82fdf8dbaebea3804	virtualx	817571665ee28575da44ee08135089e5	git-r3	2358a7b20091609e24bd3a83b3ac5991	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	e6315b433ff1f5a5778a08518785ba91
-_md5_=f83237bf76515b4933f398b92cc894a2
+_md5_=8205051b91a2b318484ba1d948698b98
