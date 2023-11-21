@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.11*:5= !<dev-qt/qtwayland-5.15.3:5
 RESTRICT=!test? ( test )
 SLOT=5
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	baa4d385108ac87993edac956a916a36	virtualx	817571665ee28575da44ee08135089e5	git-r3	5133e393e8717a3a093660f990801dc1	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	f0728f5ce3a6057f30c499160295064d
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b1206d933fc5a96cc864180a3cdbf18c	virtualx	817571665ee28575da44ee08135089e5	git-r3	5133e393e8717a3a093660f990801dc1	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	f0728f5ce3a6057f30c499160295064d
 _md5_=bec03d88137ad4526df2dff4e7f8aa6a
