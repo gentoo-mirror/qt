@@ -13,5 +13,5 @@ REQUIRED_USE=gtk? ( dbus )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
 SRC_URI=https://dev.gentoo.org/~asturm/distfiles/qtbase-5.15-gentoo-patchset-4.tar.xz
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b97a0a7215b2f463a485ff0599ab30bb	virtualx	817571665ee28575da44ee08135089e5	git-r3	5133e393e8717a3a093660f990801dc1	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	f0728f5ce3a6057f30c499160295064d
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b97a0a7215b2f463a485ff0599ab30bb	virtualx	817571665ee28575da44ee08135089e5	git-r3	5133e393e8717a3a093660f990801dc1	kde.org	411cb92019a6e2aa174d06896084bf57	qt5-build	af0314ca65632e3f4df0c5c0a6e1dff6
 _md5_=d742ee379f79ad2497e479f931acc3e5
