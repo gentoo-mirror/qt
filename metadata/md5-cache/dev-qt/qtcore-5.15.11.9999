@@ -12,5 +12,5 @@ RDEPEND=dev-libs/double-conversion:= dev-libs/glib:2 dev-libs/libpcre2[pcre16,un
 RESTRICT=!test? ( test )
 SLOT=5/5.15.11
 SRC_URI=https://dev.gentoo.org/~asturm/distfiles/qtbase-5.15-gentoo-patchset-4.tar.xz
-_eclasses_=toolchain-funcs	eed10cf5e5a06916e654d31f5a1925cc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	estack	c61c368a76fdf3a82fdf8dbaebea3804	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	af0314ca65632e3f4df0c5c0a6e1dff6
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	estack	c61c368a76fdf3a82fdf8dbaebea3804	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	af0314ca65632e3f4df0c5c0a6e1dff6
 _md5_=8205051b91a2b318484ba1d948698b98
