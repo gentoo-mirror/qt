@@ -1,0 +1,15 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl] dev-lang/perl virtual/pkgconfig
+DEFINED_PHASES=compile configure install nofetch postinst postrm prepare test unpack
+DEPEND=dev-libs/icu:= =dev-qt/qtcore-5.15.12* =dev-qt/qtdeclarative-5.15.12* =dev-qt/qtgui-5.15.12* =dev-qt/qtnetwork-5.15.12* =dev-qt/qtpositioning-5.15.12*[qml] =dev-qt/qtsql-5.15.12* sys-libs/zlib =dev-qt/qtconcurrent-5.15.12* test? ( =dev-qt/qttest-5.15.12* )
+DESCRIPTION=Location (places, maps, navigation) library for the Qt5 framework
+EAPI=8
+HOMEPAGE=https://community.kde.org/Qt5PatchCollection https://invent.kde.org/qt/qt/ https://www.qt.io/
+INHERIT=qt5-build
+IUSE=debug test
+LICENSE=|| ( GPL-2 GPL-3 LGPL-3 ) FDL-1.3
+PROPERTIES=live
+RDEPEND=dev-libs/icu:= =dev-qt/qtcore-5.15.12* =dev-qt/qtdeclarative-5.15.12* =dev-qt/qtgui-5.15.12* =dev-qt/qtnetwork-5.15.12* =dev-qt/qtpositioning-5.15.12*[qml] =dev-qt/qtsql-5.15.12* sys-libs/zlib
+RESTRICT=!test? ( test )
+SLOT=5/5.15
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	af0314ca65632e3f4df0c5c0a6e1dff6
+_md5_=0a8743e8544c150e08b424207771c2ab
