@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/wayland =dev-qt/qtcore-5.15.12*:5= =dev-qt/qtgui-5.15.12*:5=[egl,libinput] media-libs/libglvnd x11-libs/libxkbcommon compositor? ( =dev-qt/qtdeclarative-5.15.12*:5= =dev-qt/qtgui-5.15.12*:5=[vulkan] )
 RESTRICT=!test? ( test )
 SLOT=5/5.15.12
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	49fc396fe68112ef1765a43b5fadc3db
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	1d16b2a531f4011f7278954508b30ff9
 _md5_=f9a4c1522dc1bb044fcdb2fd2b047ebf
