@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.12* =dev-qt/qtgui-5.15.12*[gles2-only=] =dev-qt/qtnetwork-5.15.12* alsa? ( media-libs/alsa-lib ) gstreamer? ( dev-libs/glib:2 media-libs/gstreamer:1.0 media-libs/gst-plugins-bad:1.0 media-libs/gst-plugins-base:1.0 ) pulseaudio? ( media-libs/libpulse[glib] ) qml? ( =dev-qt/qtdeclarative-5.15.12* gles2-only? ( =dev-qt/qtgui-5.15.12*[egl] ) openal? ( media-libs/openal ) ) widgets? ( =dev-qt/qtwidgets-5.15.12*[gles2-only=] media-libs/libglvnd )
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	78cf3cc2d5572fddf5e5e10c70f7c81a	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	7ab7af7ab79ca881fefaa549e0695f58
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	b2b07efa51009704f88173b2c7feab47	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	7ab7af7ab79ca881fefaa549e0695f58
 _md5_=0c49bd2ad9668e1477123376c3e31c65
