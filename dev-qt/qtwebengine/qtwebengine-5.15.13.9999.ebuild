@@ -96,13 +96,13 @@ DEPEND="${RDEPEND}
 	media-libs/libglvnd
 "
 BDEPEND="${PYTHON_DEPS}
+	app-alternatives/ninja
 	dev-util/gperf
-	dev-build/ninja
 	dev-util/re2c
 	net-libs/nodejs[ssl]
 	sys-devel/bison
 	sys-devel/flex
-	ppc64? ( >=dev-util/gn-0.1807 )
+	ppc64? ( >=dev-build/gn-0.1807 )
 "
 
 PATCHES=( "${WORKDIR}/${PATCHSET}" )
