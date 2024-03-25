@@ -1,26 +1,24 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit cmake
 
-DESCRIPTION="LXQt Build Tools"
+DESCRIPTION="LXQt DBusMenu Implementation"
 HOMEPAGE="https://lxqt-project.org/"
 
-if [[ ${PV} = *9999* ]]; then
+if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/lxqt/${PN}.git"
 else
 	SRC_URI="https://github.com/lxqt/${PN}/releases/download/${PV}/${P}.tar.xz"
-	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~loong ~ppc64 ~riscv ~x86"
+	KEYWORDS="~amd64"
 fi
 
-LICENSE="BSD"
+LICENSE="LGPL-2"
 SLOT="0"
 
-DEPEND="
-	>=dev-libs/glib-2.50.0
-	>=dev-qt/qtbase-6.6:6
-"
-RDEPEND="${DEPEND}"
+RDEPEND=">=dev-qt/qtbase-6.6:6[dbus,widgets]"
+
+PATCHES=( "${FILESDIR}/${PN}-2024-03-20-cmake.patch" )
