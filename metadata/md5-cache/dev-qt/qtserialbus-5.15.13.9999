@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.13* =dev-qt/qtnetwork-5.15.13* =dev-qt/qtserialport-5.15.13*
 RESTRICT=!test? ( test )
 SLOT=5/5.15
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	24c947ff5f858625cf0b33c15eed4425	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	7ab7af7ab79ca881fefaa549e0695f58
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	virtualx	817571665ee28575da44ee08135089e5	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b	kde.org	60fcb935e4206806bf9f38e3537521a2	qt5-build	7ab7af7ab79ca881fefaa549e0695f58
 _md5_=3d2c6d9047b96a29f57dc2b0a59f1b64
