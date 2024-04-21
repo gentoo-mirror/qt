@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="LXQt DBusMenu Implementation"
 HOMEPAGE="https://lxqt-project.org/"
 
-if [[ ${PV} == *9999 ]]; then
+if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/lxqt/${PN}.git"
 else
@@ -21,4 +21,4 @@ SLOT="0"
 
 RDEPEND=">=dev-qt/qtbase-6.6:6[dbus,widgets]"
 
-PATCHES=( "${FILESDIR}/${PN}-2024-03-20-cmake.patch" )
+PATCHES=( "${FILESDIR}/${PN}-0.1.0-cmake.patch" )
