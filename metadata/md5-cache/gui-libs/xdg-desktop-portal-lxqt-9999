@@ -1,13 +1,13 @@
-BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.0.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-util/lxqt-build-tools-2.0.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/libdbusmenu-lxqt >=dev-libs/libqtxdg-4.0.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets] =x11-libs/libfm-qt-9999*
-DESCRIPTION=LXQt system integration plugin for Qt
+DEPEND=>=dev-qt/qtbase-6.6:6[dbus,gui,widgets] kde-frameworks/kwindowsystem:6 >=x11-libs/libfm-qt-2.0:=
+DESCRIPTION=Backend implementation for xdg-desktop-portal using Qt/KF5/libfm-qt
 EAPI=8
 HOMEPAGE=https://lxqt-project.org/
 INHERIT=cmake git-r3
-LICENSE=LGPL-2.1+
+LICENSE=LGPL-2.1
 PROPERTIES=live
-RDEPEND=dev-libs/libdbusmenu-lxqt >=dev-libs/libqtxdg-4.0.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets] =x11-libs/libfm-qt-9999*
+RDEPEND=>=dev-qt/qtbase-6.6:6[dbus,gui,widgets] kde-frameworks/kwindowsystem:6 >=x11-libs/libfm-qt-2.0:= sys-apps/xdg-desktop-portal
 SLOT=0
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c	git-r3	fbb2889c81f3a05910c1524db69425c1
-_md5_=3dc73c8a8312d296d6cf8b0b3c9bb55d
+_md5_=15bf4cacd1d5ff95b4f0e3ed6892e5ce
