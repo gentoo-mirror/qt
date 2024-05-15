@@ -71,7 +71,7 @@ lxqt-base/lxqt-globalkeys 2.0.0 9999: Daemon and library for global keyboard sho
 lxqt-base/lxqt-menu-data 2.0.0 9999: LXQt Menu Files and Translations for Menu Categories
 lxqt-base/lxqt-meta 9999: Meta ebuild for LXQt, the Lightweight Desktop Environment
 lxqt-base/lxqt-notificationd 2.0.1 9999: LXQt notification daemon and library
-lxqt-base/lxqt-openssh-askpass 2.0.0 9999: LXQt OpenSSH user password prompt tool
+lxqt-base/lxqt-openssh-askpass 2.0.1 9999: LXQt OpenSSH user password prompt tool
 lxqt-base/lxqt-panel 2.0.1 9999: LXQt desktop panel and plugins
 lxqt-base/lxqt-policykit 2.0.0 9999: LXQt PolKit authentication agent
 lxqt-base/lxqt-powermanagement 2.0.0 9999: LXQt daemon for power management and auto-suspend
