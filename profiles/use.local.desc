@@ -2,14 +2,6 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
-app-crypt/qca:botan - Enable botan plugin
-app-crypt/qca:gcrypt - Enable gcrypt plugin
-app-crypt/qca:gpg - Enable GnuPG plugin
-app-crypt/qca:logger - Enable logger plugin
-app-crypt/qca:nss - Enable NSS plugin
-app-crypt/qca:pkcs11 - Enable PKCS#11 plugin
-app-crypt/qca:sasl - Enable SASL plugin
-app-crypt/qca:softstore - Enable softstore plugin
 dev-qt/designer:declarative - Build the qdeclarativeview plugin
 dev-qt/linguist-tools:qml - Enable QML support in lupdate
 dev-qt/qdoc:qml - Enable QML/JS parsing support

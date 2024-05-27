@@ -1,5 +1,4 @@
 app-arch/lxqt-archiver 1.0.0 9999: Qt GUI File Archiver
-app-crypt/qca 9999: Qt Cryptographic Architecture (QCA)
 app-misc/qtxdg-tools 4.0.0 9999: User Tools from libqtxdg
 dev-libs/libdbusmenu-lxqt 9999: LXQt DBusMenu Implementation
 dev-libs/libqtxdg 4.0.0 9999: Qt Implementation of XDG Standards
