@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND==dev-qt/qtcore-5.15.14* =dev-qt/qtgui-5.15.14* media-libs/libwebp:= media-libs/tiff:= mng? ( media-libs/libmng:= )
 RESTRICT=!test? ( test )
 SLOT=5
-_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	virtualx	817571665ee28575da44ee08135089e5	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	5b717883256e9841ce52e6cad2fca427	qt5-build	5da31317f3a4f046ca2083f4986469fb
+_eclasses_=estack	c61c368a76fdf3a82fdf8dbaebea3804	toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	virtualx	0654dc258d045433af18ffe046363961	git-r3	875eb471682d3e1f18da124be97dcc81	kde.org	5b717883256e9841ce52e6cad2fca427	qt5-build	5da31317f3a4f046ca2083f4986469fb
 _md5_=3e0d067a7ecb7296a11435efbac478d0
