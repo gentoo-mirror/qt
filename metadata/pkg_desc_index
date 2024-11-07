@@ -2,7 +2,6 @@ app-arch/lxqt-archiver 9999: Qt GUI File Archiver
 app-misc/qtxdg-tools 9999: User Tools from libqtxdg
 dev-libs/libdbusmenu-lxqt 9999: LXQt DBusMenu Implementation
 dev-libs/libqtxdg 9999: Qt Implementation of XDG Standards
-dev-libs/libsystemd-qt 9999: Qt wrapper for systemd API
 dev-qt/assistant 5.15.14.9999: Tool for viewing on-line documentation in Qt help file format
 dev-qt/designer 5.15.14.9999: WYSIWYG tool for designing and building graphical user interfaces with QtWidgets
 dev-qt/linguist 5.15.14.9999: Graphical tool for translating Qt applications
