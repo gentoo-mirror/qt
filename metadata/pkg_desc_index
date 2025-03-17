@@ -77,6 +77,7 @@ lxqt-base/lxqt-qtplugin 9999: LXQt system integration plugin for Qt
 lxqt-base/lxqt-runner 9999: LXQt quick launcher
 lxqt-base/lxqt-session 9999: LXQt Session Manager
 lxqt-base/lxqt-sudo 9999: LXQt GUI frontend for sudo
+lxqt-base/lxqt-wayland-session 9999: LXQt Wayland Session Support
 media-gfx/lximage-qt 9999: Qt Image Viewer
 x11-libs/libfm-qt 9999: Qt Library for Building File Managers
 x11-libs/qtermwidget 9999: Qt terminal emulator widget
