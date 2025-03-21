@@ -85,6 +85,5 @@ x11-misc/obconf-qt 9999: Qt GUI Openbox Configuration Tool
 x11-misc/pcmanfm-qt 9999: Qt GUI Tabbed Filemanager
 x11-misc/qps 9999: Qt GUI Process Manager
 x11-misc/screengrab 9999: Qt GUI Screenshot Utility
-x11-misc/sddm 9999: Simple Desktop Display Manager
 x11-terms/qterminal 9999: Qt-based multitab terminal emulator
 x11-themes/lxqt-themes 9999: LXQt Themes
