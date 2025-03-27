@@ -25,7 +25,6 @@ lxqt-base/lxqt-wayland-session 9999: LXQt Wayland Session Support
 media-gfx/lximage-qt 9999: Qt Image Viewer
 x11-libs/libfm-qt 9999: Qt Library for Building File Managers
 x11-libs/qtermwidget 9999: Qt terminal emulator widget
-x11-misc/obconf-qt 9999: Qt GUI Openbox Configuration Tool
 x11-misc/pcmanfm-qt 9999: Qt GUI Tabbed Filemanager
 x11-misc/qps 9999: Qt GUI Process Manager
 x11-misc/screengrab 9999: Qt GUI Screenshot Utility
