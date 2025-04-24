@@ -21,11 +21,11 @@ SLOT="0"
 
 BDEPEND="
 	>=dev-qt/qttools-6.6:6[linguist]
-	>=dev-util/lxqt-build-tools-2.1.0
+	>=dev-util/lxqt-build-tools-2.2.0
 	virtual/pkgconfig
 "
 DEPEND="
-	>=app-misc/qtxdg-tools-4.1.0
+	>=app-misc/qtxdg-tools-4.2.0
 	kde-plasma/layer-shell-qt:6
 	>=lxqt-base/lxqt-session-2.1.0
 	x11-misc/xdg-user-dirs
@@ -34,8 +34,9 @@ RDEPEND="${DEPEND}"
 
 pkg_postinst() {
 	einfo "By default, the labwc compositor will be used."
-	einfo "To change the default, set, for example, 'compositor=kwin_wayland' in '.config/lxqt/session.conf'."
+	einfo "To use something else, define, for example, the following in '.config/lxqt/session.conf':"
+	einfo "    compositor=kwin_wayland"
 	einfo ""
 	einfo "For more configuration details, and a list of supported compositors, see:"
-	einfo "    '/usr/share/doc/${P}/README*'"
+	einfo "    /usr/share/doc/${P}/README*"
 }
