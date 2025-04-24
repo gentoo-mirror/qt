@@ -1,13 +1,13 @@
-BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.1.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.2.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=dev-libs/libqtxdg-4.1.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets] kde-frameworks/kwindowsystem:6 >=kde-plasma/layer-shell-qt-6.0:6 =lxqt-base/liblxqt-9999*:=
+DEPEND=>=dev-libs/libqtxdg-4.2.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets] kde-frameworks/kwindowsystem:6 >=kde-plasma/layer-shell-qt-6.0:6 =lxqt-base/liblxqt-9999*:=
 DESCRIPTION=LXQt notification daemon and library
 EAPI=8
 HOMEPAGE=https://lxqt-project.org/
 INHERIT=cmake git-r3
 LICENSE=LGPL-2.1 LGPL-2.1+
 PROPERTIES=live
-RDEPEND=>=dev-libs/libqtxdg-4.1.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets] kde-frameworks/kwindowsystem:6 >=kde-plasma/layer-shell-qt-6.0:6 =lxqt-base/liblxqt-9999*:=
+RDEPEND=>=dev-libs/libqtxdg-4.2.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets] kde-frameworks/kwindowsystem:6 >=kde-plasma/layer-shell-qt-6.0:6 =lxqt-base/liblxqt-9999*:=
 SLOT=0
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=c256004bf56888401c76b33a19e6bba8
+_md5_=5aa74b13263de1675b70ea0028ded4ea

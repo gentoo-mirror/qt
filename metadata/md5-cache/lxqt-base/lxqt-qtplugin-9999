@@ -1,13 +1,13 @@
-BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.1.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.2.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-libs/libdbusmenu-lxqt >=dev-libs/libqtxdg-4.1.0 >=dev-qt/qtbase-6.6:6=[dbus,gui,widgets] =x11-libs/libfm-qt-9999*
+DEPEND=dev-libs/libdbusmenu-lxqt >=dev-libs/libqtxdg-4.2.0 >=dev-qt/qtbase-6.6:6=[dbus,gui,widgets] =x11-libs/libfm-qt-9999*
 DESCRIPTION=LXQt system integration plugin for Qt
 EAPI=8
 HOMEPAGE=https://lxqt-project.org/
 INHERIT=cmake git-r3
 LICENSE=LGPL-2.1+
 PROPERTIES=live
-RDEPEND=dev-libs/libdbusmenu-lxqt >=dev-libs/libqtxdg-4.1.0 >=dev-qt/qtbase-6.6:6=[dbus,gui,widgets] =x11-libs/libfm-qt-9999*
+RDEPEND=dev-libs/libdbusmenu-lxqt >=dev-libs/libqtxdg-4.2.0 >=dev-qt/qtbase-6.6:6=[dbus,gui,widgets] =x11-libs/libfm-qt-9999*
 SLOT=0
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=4bb81223c55889e84ffb2e157a85a1cb
+_md5_=de51f1112151b6863b722b7c75d0032f

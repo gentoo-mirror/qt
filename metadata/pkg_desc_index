@@ -23,6 +23,7 @@ lxqt-base/lxqt-session 9999: LXQt Session Manager
 lxqt-base/lxqt-sudo 9999: LXQt GUI frontend for sudo
 lxqt-base/lxqt-wayland-session 9999: LXQt Wayland Session Support
 media-gfx/lximage-qt 9999: Qt Image Viewer
+media-sound/pavucontrol-qt 9999: Qt GUI Pulseaudio Mixer
 x11-libs/libfm-qt 9999: Qt Library for Building File Managers
 x11-libs/qtermwidget 9999: Qt terminal emulator widget
 x11-misc/pcmanfm-qt 9999: Qt GUI Tabbed Filemanager

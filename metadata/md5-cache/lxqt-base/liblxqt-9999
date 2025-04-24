@@ -1,6 +1,6 @@
-BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.1.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-qt/qttools-6.6:6[linguist] >=dev-util/lxqt-build-tools-2.2.0 app-alternatives/ninja >=dev-build/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=dev-libs/libqtxdg-4.1.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets,xml] kde-frameworks/kwindowsystem:6[X] x11-libs/libX11 x11-libs/libXScrnSaver backlight? ( >=sys-auth/polkit-qt-0.200.0[qt6] )
+DEPEND=>=dev-libs/libqtxdg-4.2.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets,xml] kde-frameworks/kwindowsystem:6[X] x11-libs/libX11 x11-libs/libXScrnSaver backlight? ( >=sys-auth/polkit-qt-0.200.0[qt6] )
 DESCRIPTION=Common base library for the LXQt desktop environment
 EAPI=8
 HOMEPAGE=https://lxqt-project.org/
@@ -8,7 +8,7 @@ INHERIT=cmake git-r3
 IUSE=+backlight
 LICENSE=LGPL-2.1+ BSD
 PROPERTIES=live
-RDEPEND=>=dev-libs/libqtxdg-4.1.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets,xml] kde-frameworks/kwindowsystem:6[X] x11-libs/libX11 x11-libs/libXScrnSaver backlight? ( >=sys-auth/polkit-qt-0.200.0[qt6] )
+RDEPEND=>=dev-libs/libqtxdg-4.2.0 >=dev-qt/qtbase-6.6:6[dbus,gui,widgets,xml] kde-frameworks/kwindowsystem:6[X] x11-libs/libX11 x11-libs/libXScrnSaver backlight? ( >=sys-auth/polkit-qt-0.200.0[qt6] )
 SLOT=0/9999
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f	git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=1fb32abd217a5bb2c2a949e75d9951f4
+_md5_=0cea6992d51a511e7f72ef15d02519f0
